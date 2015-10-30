@@ -23,7 +23,8 @@
    </property>
 
    <!-- List of XML mapping files -->
-   <mapping resource="nju/iip/dto/TargetWeiboAccount.hbm.xml"/>
+   <mapping resource="nju/iip/dto/WeiboAccount.hbm.xml"/>
+   <mapping resource="nju/iip/dto/WeiboData.hbm.xml"/>
 
 </session-factory>
 </hibernate-configuration>

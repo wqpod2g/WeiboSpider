@@ -4,18 +4,21 @@
  "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 
 <hibernate-mapping>
-	<class name="nju.iip.dto.WeixinUser" table="weixin_userinfo">
+	<class name="nju.iip.dto.WeiboData" table="WeiboData">
 		<meta attribute="class-description">
-			This class contains the nju.iip.dto.WeixinUser detail.
+			This class contains the nju.iip.dto.WeiboData detail.
 		</meta>
-		<id name="openId" type="string" column="openId">
-			<generator class="assigned" />
+		<id name="id" type="int" column="id">
+			<generator class="native" />
 		</id>
-		<property name="nickname" column="nickname" type="string" />
-		<property name="country" column="country" type="string" />
-		<property name="province" column="province" type="string" />
-		<property name="city" column="city" type="string" />
-		<property name="headImgUrl" column="headImgUrl" type="string" />
-		<property name="sex" column="sex" type="int" />
+		<property name="baseUrl" column="baseUrl" type="string" />
+		<property name="author" column="author" type="string" />
+		<property name="text" column="text" type="string" />
+		<property name="loves" column="loves" type="int" />
+		<property name="repost" column="repost" type="int" />
+		<property name="comment" column="comment" type="int" />
+		<property name="device" column="device" type="string" />
+		<property name="time" column="time" type="string" />
+		<property name="inputTime" column="inputTime" type="string" />
 	</class>
 </hibernate-mapping>

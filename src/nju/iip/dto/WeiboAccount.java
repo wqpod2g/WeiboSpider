@@ -5,16 +5,20 @@ package nju.iip.dto;
  * @author wangqiang
  *
  */
-public class TargetWeiboAccount {
+public class WeiboAccount {
 	
 	private int id;
 	private String accountName;//微博名
 	private String accountUrl;//微博url
 	private int history;//是否被爬过
 	
-	public TargetWeiboAccount(String accountName,String accountUrl) {
+	public WeiboAccount(String accountName,String accountUrl) {
 		this.accountName = accountName;
 		this.accountUrl = accountUrl;
+	}
+	
+	public WeiboAccount() {
+		
 	}
 	
 	public int getId() {

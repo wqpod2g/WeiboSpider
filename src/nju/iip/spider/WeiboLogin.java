@@ -27,13 +27,15 @@ import org.slf4j.LoggerFactory;
 
 /**
  * 登录微博获取cookies
+ * 
  * @author wangqiang
- *
+ * 
  */
 public class WeiboLogin {
-	
-	private static final Logger logger = LoggerFactory.getLogger(WeiboLogin.class);
-	
+
+	private static final Logger logger = LoggerFactory
+			.getLogger(WeiboLogin.class);
+
 	private CloseableHttpClient httpclient = HttpClients.createDefault();;
 
 	private String username;// 微博用户名
@@ -50,6 +52,7 @@ public class WeiboLogin {
 
 	/**
 	 * 构造方法
+	 * 
 	 * @param username
 	 * @param password
 	 */
@@ -62,9 +65,9 @@ public class WeiboLogin {
 	 * 登录前的准备工作（获取一些必要的参数）
 	 */
 	public void getPostValue() {
+		String loginUrl = "http://login.weibo.cn/login/?backURL=&backTitle=&vt=4&revalid=2&ns=1";
+		HttpGet httpget = new HttpGet(loginUrl);
 		try {
-			String loginUrl = "http://login.weibo.cn/login/?backURL=&backTitle=&vt=4&revalid=2&ns=1";
-			HttpGet httpget = new HttpGet(loginUrl);
 			CloseableHttpResponse response = httpclient.execute(httpget);
 			HttpEntity entity = response.getEntity();
 			String html = EntityUtils.toString(entity);
@@ -76,7 +79,9 @@ public class WeiboLogin {
 			backURL = elements.get(3).attr("value");
 			passwordName = elements.get(1).attr("name");
 		} catch (Exception e) {
-			logger.info("getPostValue failed",e);;
+			logger.info("getPostValue failed", e);
+		}finally {
+			httpget.releaseConnection();
 		}
 
 	}
@@ -89,8 +94,8 @@ public class WeiboLogin {
 	 */
 	public boolean login(HttpContext localContext) {
 		boolean flag = false;
+		HttpPost httppost = new HttpPost(postUrl);
 		try {
-			HttpPost httppost = new HttpPost(postUrl);
 			List<NameValuePair> params = new ArrayList<NameValuePair>();
 			params.add(new BasicNameValuePair("backTitle", "微博"));
 			params.add(new BasicNameValuePair("backURL", backURL));
@@ -105,9 +110,10 @@ public class WeiboLogin {
 			int statuts_code = response.getStatusLine().getStatusCode();
 			if (statuts_code == 302)
 				flag = true;
-
 		} catch (Exception e) {
-			logger.info("login failed",e);
+			logger.info("login failed", e);
+		}finally {
+			httppost.releaseConnection();
 		}
 		return flag;
 	}
@@ -125,7 +131,8 @@ public class WeiboLogin {
 			// 创建一个本地上下文信息
 			HttpContext localContext = new BasicHttpContext();
 			// 在本地上下问中绑定一个本地存储
-			localContext.setAttribute(HttpClientContext.COOKIE_STORE, cookieStore);
+			localContext.setAttribute(HttpClientContext.COOKIE_STORE,
+					cookieStore);
 			if (login(localContext)) {
 				List<Cookie> list = cookieStore.getCookies();
 				for (Cookie cookie : list) {

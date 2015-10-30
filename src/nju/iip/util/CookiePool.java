@@ -2,8 +2,8 @@ package nju.iip.util;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
-import java.util.LinkedList;
-import java.util.Queue;
+import java.util.concurrent.BlockingQueue;
+import java.util.concurrent.LinkedBlockingQueue;
 
 import nju.iip.spider.WeiboLogin;
 
@@ -15,11 +15,16 @@ import org.slf4j.LoggerFactory;
  * @author wangqiang
  * 
  */
-public class CookiePool {
+public class CookiePool implements Runnable{
 	
 	private static final Logger logger = LoggerFactory.getLogger(CookiePool.class);
 
-	private static Queue<String> cookieQueue = new LinkedList<String>();// 用于存放cookie的队列
+	private static BlockingQueue<String> cookieQueue = new LinkedBlockingQueue<String>();// 用于存放cookie的队列
+	
+	@Override
+	public void run() {
+		initializeCookiePool();
+	}
 
 	/**
 	 * 获取一个cookie
@@ -27,15 +32,20 @@ public class CookiePool {
 	 * @return
 	 */
 	public static String getCookie() {
-		String cookie = cookieQueue.poll();
-		cookieQueue.offer(cookie);// 将该cookie插至队尾
+		String cookie = null;
+		try{
+			cookie = cookieQueue.take();
+			cookieQueue.offer(cookie);// 将该cookie插至队尾
+		}catch(Exception e) {
+			logger.error("getCookie error",e);
+		}
 		return cookie;
 	}
 
 	/**
 	 * 初始化cookie池
 	 */
-	public static void initializeCookiePool() {
+	public void initializeCookiePool() {
 		try{
 			BufferedReader in = new BufferedReader(new FileReader("WeiboAccount.data"));
 			String s = "";
@@ -61,7 +71,5 @@ public class CookiePool {
 	}
 	
 	public static void main(String[] args) {
-		initializeCookiePool();
-		System.out.println(getCookie());
 	}
 }

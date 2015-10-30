@@ -4,9 +4,9 @@
  "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 
 <hibernate-mapping>
-	<class name="nju.iip.dto.TargetWeiboAccount" table="TargetWeiboAccount">
+	<class name="nju.iip.dto.WeiboAccount" table="WeiboAccount">
 		<meta attribute="class-description">
-			This class contains the nju.iip.dto.TargetWeiboAccount detail.
+			This class contains the nju.iip.dto.WeiboAccount detail.
 		</meta>
 		<id name="id" type="int" column="id">
 			<generator class="native" />
