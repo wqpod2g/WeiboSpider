@@ -1,0 +1,401 @@
+2015-10-30 14:33:52   INFO WeiboLogin:79 -getPostValue failed
+java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(Unknown Source)
+	at java.net.SocketInputStream.read(Unknown Source)
+	at org.apache.http.impl.io.SessionInputBufferImpl.streamRead(SessionInputBufferImpl.java:136)
+	at org.apache.http.impl.io.SessionInputBufferImpl.fillBuffer(SessionInputBufferImpl.java:152)
+	at org.apache.http.impl.io.SessionInputBufferImpl.read(SessionInputBufferImpl.java:203)
+	at org.apache.http.impl.io.ContentLengthInputStream.read(ContentLengthInputStream.java:178)
+	at org.apache.http.conn.EofSensorInputStream.read(EofSensorInputStream.java:137)
+	at java.util.zip.InflaterInputStream.fill(Unknown Source)
+	at java.util.zip.InflaterInputStream.read(Unknown Source)
+	at java.util.zip.GZIPInputStream.read(Unknown Source)
+	at org.apache.http.client.entity.LazyDecompressingInputStream.read(LazyDecompressingInputStream.java:74)
+	at sun.nio.cs.StreamDecoder.readBytes(Unknown Source)
+	at sun.nio.cs.StreamDecoder.implRead(Unknown Source)
+	at sun.nio.cs.StreamDecoder.read(Unknown Source)
+	at java.io.InputStreamReader.read(Unknown Source)
+	at java.io.Reader.read(Unknown Source)
+	at org.apache.http.util.EntityUtils.toString(EntityUtils.java:244)
+	at org.apache.http.util.EntityUtils.toString(EntityUtils.java:288)
+	at nju.iip.spider.WeiboLogin.getPostValue(WeiboLogin.java:70)
+	at nju.iip.spider.WeiboLogin.getCookies(WeiboLogin.java:123)
+	at nju.iip.spider.WeiboSpider.main(WeiboSpider.java:43)
+2015-10-30 14:33:53   INFO WeiboLogin:110 -login failed
+java.lang.NullPointerException
+	at java.net.URI$Parser.parse(Unknown Source)
+	at java.net.URI.<init>(Unknown Source)
+	at java.net.URI.create(Unknown Source)
+	at org.apache.http.client.methods.HttpPost.<init>(HttpPost.java:76)
+	at nju.iip.spider.WeiboLogin.login(WeiboLogin.java:93)
+	at nju.iip.spider.WeiboLogin.getCookies(WeiboLogin.java:129)
+	at nju.iip.spider.WeiboSpider.main(WeiboSpider.java:43)
+2015-10-30 14:33:53   INFO WeiboLogin:136 -getCookies failed!
+2015-10-30 14:33:53  ERROR WeiboSpider:34 -getHTML error
+java.lang.IllegalArgumentException: Cookie value must not be null
+	at org.jsoup.helper.Validate.notNull(Validate.java:26)
+	at org.jsoup.helper.HttpConnection$Base.cookie(HttpConnection.java:292)
+	at org.jsoup.helper.HttpConnection.cookie(HttpConnection.java:148)
+	at nju.iip.spider.WeiboSpider.getHTML(WeiboSpider.java:29)
+	at nju.iip.spider.WeiboSpider.main(WeiboSpider.java:45)
+2015-10-30 15:55:53   INFO Version:37 -Hibernate Commons Annotations 3.2.0.Final
+2015-10-30 15:55:53   INFO Environment:603 -Hibernate 3.6.4.Final
+2015-10-30 15:55:53   INFO Environment:636 -hibernate.properties not found
+2015-10-30 15:55:53   INFO Environment:814 -Bytecode provider name : javassist
+2015-10-30 15:55:53   INFO Environment:695 -using JDK 1.4 java.sql.Timestamp handling
+2015-10-30 15:55:53   INFO Configuration:2156 -configuring from resource: /hibernate.cfg.xml
+2015-10-30 15:55:53   INFO Configuration:2175 -Configuration resource: /hibernate.cfg.xml
+2015-10-30 15:55:53   INFO Configuration:789 -Reading mappings from resource : nju/iip/dto/Furniture.hbm.xml
+2015-10-30 15:56:28   INFO Version:37 -Hibernate Commons Annotations 3.2.0.Final
+2015-10-30 15:56:28   INFO Environment:603 -Hibernate 3.6.4.Final
+2015-10-30 15:56:28   INFO Environment:636 -hibernate.properties not found
+2015-10-30 15:56:28   INFO Environment:814 -Bytecode provider name : javassist
+2015-10-30 15:56:28   INFO Environment:695 -using JDK 1.4 java.sql.Timestamp handling
+2015-10-30 15:56:29   INFO Configuration:2156 -configuring from resource: /hibernate.cfg.xml
+2015-10-30 15:56:29   INFO Configuration:2175 -Configuration resource: /hibernate.cfg.xml
+2015-10-30 15:56:29   INFO Configuration:789 -Reading mappings from resource : nju/iip/dto/TargetWeiboAccount.hbm.xml
+2015-10-30 15:56:29   INFO Configuration:2297 -Configured SessionFactory: null
+2015-10-30 15:56:29   INFO HbmBinder:353 -Mapping class: nju.iip.dto.TargetWeiboAccount -> TargetWeiboAccount
+2015-10-30 15:56:29   INFO Configuration:1676 -Hibernate Validator not found: ignoring
+2015-10-30 15:56:29   INFO HibernateSearchEventListenerRegister:75 -Unable to find org.hibernate.search.event.FullTextIndexEventListener on the classpath. Hibernate Search is not enabled.
+2015-10-30 15:56:29   INFO DriverManagerConnectionProvider:64 -Using Hibernate built-in connection pool (not for production use!)
+2015-10-30 15:56:29   INFO DriverManagerConnectionProvider:65 -Hibernate connection pool size: 20
+2015-10-30 15:56:29   INFO DriverManagerConnectionProvider:68 -autocommit mode: false
+2015-10-30 15:56:30   INFO DriverManagerConnectionProvider:103 -using driver: com.mysql.jdbc.Driver at URL: jdbc:mysql://114.212.80.14/weibo
+2015-10-30 15:56:30   INFO DriverManagerConnectionProvider:109 -connection properties: {user=root, password=****}
+2015-10-30 15:56:30   INFO Dialect:135 -Using dialect: org.hibernate.dialect.MySQLDialect
+2015-10-30 15:56:30   INFO JdbcSupportLoader:79 -Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2015-10-30 15:56:30   INFO SettingsFactory:126 -Database ->
+       name : MySQL
+    version : 5.0.96-community-nt
+      major : 5
+      minor : 0
+2015-10-30 15:56:30   INFO SettingsFactory:132 -Driver ->
+       name : MySQL-AB JDBC Driver
+    version : mysql-connector-java-5.0.8 ( Revision: ${svn.Revision} )
+      major : 5
+      minor : 0
+2015-10-30 15:56:30   INFO TransactionFactoryFactory:62 -Using default transaction strategy (direct JDBC transactions)
+2015-10-30 15:56:30   INFO TransactionManagerLookupFactory:83 -No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+2015-10-30 15:56:30   INFO SettingsFactory:179 -Automatic flush during beforeCompletion(): disabled
+2015-10-30 15:56:30   INFO SettingsFactory:183 -Automatic session close at end of transaction: disabled
+2015-10-30 15:56:30   INFO SettingsFactory:190 -JDBC batch size: 15
+2015-10-30 15:56:30   INFO SettingsFactory:193 -JDBC batch updates for versioned data: disabled
+2015-10-30 15:56:30   INFO SettingsFactory:198 -Scrollable result sets: enabled
+2015-10-30 15:56:30   INFO SettingsFactory:206 -JDBC3 getGeneratedKeys(): enabled
+2015-10-30 15:56:30   INFO SettingsFactory:214 -Connection release mode: auto
+2015-10-30 15:56:30   INFO SettingsFactory:238 -Maximum outer join fetch depth: 2
+2015-10-30 15:56:30   INFO SettingsFactory:241 -Default batch fetch size: 1
+2015-10-30 15:56:30   INFO SettingsFactory:245 -Generate SQL with comments: disabled
+2015-10-30 15:56:30   INFO SettingsFactory:249 -Order SQL updates by primary key: disabled
+2015-10-30 15:56:30   INFO SettingsFactory:253 -Order SQL inserts for batching: disabled
+2015-10-30 15:56:30   INFO SettingsFactory:431 -Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+2015-10-30 15:56:30   INFO ASTQueryTranslatorFactory:47 -Using ASTQueryTranslatorFactory
+2015-10-30 15:56:30   INFO SettingsFactory:261 -Query language substitutions: {}
+2015-10-30 15:56:30   INFO SettingsFactory:266 -JPA-QL strict compliance: disabled
+2015-10-30 15:56:30   INFO SettingsFactory:271 -Second-level cache: enabled
+2015-10-30 15:56:30   INFO SettingsFactory:275 -Query cache: disabled
+2015-10-30 15:56:30   INFO SettingsFactory:406 -Cache region factory : org.hibernate.cache.impl.NoCachingRegionFactory
+2015-10-30 15:56:30   INFO SettingsFactory:285 -Optimize cache for minimal puts: disabled
+2015-10-30 15:56:30   INFO SettingsFactory:294 -Structured second-level cache entries: disabled
+2015-10-30 15:56:30   INFO SettingsFactory:323 -Statistics: disabled
+2015-10-30 15:56:30   INFO SettingsFactory:327 -Deleted entity synthetic identifier rollback: disabled
+2015-10-30 15:56:30   INFO SettingsFactory:343 -Default entity-mode: pojo
+2015-10-30 15:56:30   INFO SettingsFactory:347 -Named query checking : enabled
+2015-10-30 15:56:30   INFO SettingsFactory:351 -Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+2015-10-30 15:56:30   INFO SessionFactoryImpl:202 -building session factory
+2015-10-30 15:56:30   INFO BasicTypeRegistry:150 -Type registration [clob] overrides previous : org.hibernate.type.ClobType@f2f2cc1
+2015-10-30 15:56:30   INFO BasicTypeRegistry:150 -Type registration [java.sql.Clob] overrides previous : org.hibernate.type.ClobType@f2f2cc1
+2015-10-30 15:56:30   INFO BasicTypeRegistry:150 -Type registration [materialized_blob] overrides previous : org.hibernate.type.MaterializedBlobType@3a079870
+2015-10-30 15:56:30   INFO BasicTypeRegistry:150 -Type registration [wrapper_materialized_blob] overrides previous : org.hibernate.type.WrappedMaterializedBlobType@3b2cf7ab
+2015-10-30 15:56:30   INFO BasicTypeRegistry:150 -Type registration [characters_clob] overrides previous : org.hibernate.type.PrimitiveCharacterArrayClobType@2aa5fe93
+2015-10-30 15:56:30   INFO BasicTypeRegistry:150 -Type registration [blob] overrides previous : org.hibernate.type.BlobType@5c1a8622
+2015-10-30 15:56:30   INFO BasicTypeRegistry:150 -Type registration [java.sql.Blob] overrides previous : org.hibernate.type.BlobType@5c1a8622
+2015-10-30 15:56:30   INFO BasicTypeRegistry:150 -Type registration [materialized_clob] overrides previous : org.hibernate.type.MaterializedClobType@5ad851c9
+2015-10-30 15:56:30   INFO BasicTypeRegistry:150 -Type registration [wrapper_characters_clob] overrides previous : org.hibernate.type.CharacterArrayClobType@6156496
+2015-10-30 15:56:31   INFO PojoInstantiator:84 -no default (no-argument) constructor for class: nju.iip.dto.TargetWeiboAccount (class must be instantiated by Interceptor)
+2015-10-30 15:56:31   INFO SessionFactoryObjectFactory:105 -Not binding factory to JNDI, no JNDI name configured
+2015-10-30 15:56:31  ERROR TargetWeiboAccountDao:30 -importFromXls error!
+java.io.FileNotFoundException: source.xls (系统找不到指定的文件。)
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at jxl.Workbook.getWorkbook(Workbook.java:213)
+	at jxl.Workbook.getWorkbook(Workbook.java:198)
+	at nju.iip.dao.TargetWeiboAccountDao.importFromXls(TargetWeiboAccountDao.java:28)
+	at nju.iip.dao.TargetWeiboAccountDao.main(TargetWeiboAccountDao.java:46)
+2015-10-30 15:56:57   INFO Version:37 -Hibernate Commons Annotations 3.2.0.Final
+2015-10-30 15:56:57   INFO Environment:603 -Hibernate 3.6.4.Final
+2015-10-30 15:56:57   INFO Environment:636 -hibernate.properties not found
+2015-10-30 15:56:57   INFO Environment:814 -Bytecode provider name : javassist
+2015-10-30 15:56:57   INFO Environment:695 -using JDK 1.4 java.sql.Timestamp handling
+2015-10-30 15:56:57   INFO Configuration:2156 -configuring from resource: /hibernate.cfg.xml
+2015-10-30 15:56:57   INFO Configuration:2175 -Configuration resource: /hibernate.cfg.xml
+2015-10-30 15:56:57   INFO Configuration:789 -Reading mappings from resource : nju/iip/dto/TargetWeiboAccount.hbm.xml
+2015-10-30 15:56:57   INFO Configuration:2297 -Configured SessionFactory: null
+2015-10-30 15:56:57   INFO HbmBinder:353 -Mapping class: nju.iip.dto.TargetWeiboAccount -> TargetWeiboAccount
+2015-10-30 15:56:57   INFO Configuration:1676 -Hibernate Validator not found: ignoring
+2015-10-30 15:56:57   INFO HibernateSearchEventListenerRegister:75 -Unable to find org.hibernate.search.event.FullTextIndexEventListener on the classpath. Hibernate Search is not enabled.
+2015-10-30 15:56:57   INFO DriverManagerConnectionProvider:64 -Using Hibernate built-in connection pool (not for production use!)
+2015-10-30 15:56:57   INFO DriverManagerConnectionProvider:65 -Hibernate connection pool size: 20
+2015-10-30 15:56:57   INFO DriverManagerConnectionProvider:68 -autocommit mode: false
+2015-10-30 15:56:58   INFO DriverManagerConnectionProvider:103 -using driver: com.mysql.jdbc.Driver at URL: jdbc:mysql://114.212.80.14/weibo
+2015-10-30 15:56:58   INFO DriverManagerConnectionProvider:109 -connection properties: {user=root, password=****}
+2015-10-30 15:56:58   INFO Dialect:135 -Using dialect: org.hibernate.dialect.MySQLDialect
+2015-10-30 15:56:58   INFO JdbcSupportLoader:79 -Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2015-10-30 15:56:58   INFO SettingsFactory:126 -Database ->
+       name : MySQL
+    version : 5.0.96-community-nt
+      major : 5
+      minor : 0
+2015-10-30 15:56:58   INFO SettingsFactory:132 -Driver ->
+       name : MySQL-AB JDBC Driver
+    version : mysql-connector-java-5.0.8 ( Revision: ${svn.Revision} )
+      major : 5
+      minor : 0
+2015-10-30 15:56:58   INFO TransactionFactoryFactory:62 -Using default transaction strategy (direct JDBC transactions)
+2015-10-30 15:56:58   INFO TransactionManagerLookupFactory:83 -No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+2015-10-30 15:56:58   INFO SettingsFactory:179 -Automatic flush during beforeCompletion(): disabled
+2015-10-30 15:56:58   INFO SettingsFactory:183 -Automatic session close at end of transaction: disabled
+2015-10-30 15:56:58   INFO SettingsFactory:190 -JDBC batch size: 15
+2015-10-30 15:56:58   INFO SettingsFactory:193 -JDBC batch updates for versioned data: disabled
+2015-10-30 15:56:58   INFO SettingsFactory:198 -Scrollable result sets: enabled
+2015-10-30 15:56:58   INFO SettingsFactory:206 -JDBC3 getGeneratedKeys(): enabled
+2015-10-30 15:56:58   INFO SettingsFactory:214 -Connection release mode: auto
+2015-10-30 15:56:58   INFO SettingsFactory:238 -Maximum outer join fetch depth: 2
+2015-10-30 15:56:58   INFO SettingsFactory:241 -Default batch fetch size: 1
+2015-10-30 15:56:58   INFO SettingsFactory:245 -Generate SQL with comments: disabled
+2015-10-30 15:56:58   INFO SettingsFactory:249 -Order SQL updates by primary key: disabled
+2015-10-30 15:56:58   INFO SettingsFactory:253 -Order SQL inserts for batching: disabled
+2015-10-30 15:56:58   INFO SettingsFactory:431 -Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+2015-10-30 15:56:58   INFO ASTQueryTranslatorFactory:47 -Using ASTQueryTranslatorFactory
+2015-10-30 15:56:58   INFO SettingsFactory:261 -Query language substitutions: {}
+2015-10-30 15:56:58   INFO SettingsFactory:266 -JPA-QL strict compliance: disabled
+2015-10-30 15:56:58   INFO SettingsFactory:271 -Second-level cache: enabled
+2015-10-30 15:56:58   INFO SettingsFactory:275 -Query cache: disabled
+2015-10-30 15:56:58   INFO SettingsFactory:406 -Cache region factory : org.hibernate.cache.impl.NoCachingRegionFactory
+2015-10-30 15:56:58   INFO SettingsFactory:285 -Optimize cache for minimal puts: disabled
+2015-10-30 15:56:58   INFO SettingsFactory:294 -Structured second-level cache entries: disabled
+2015-10-30 15:56:58   INFO SettingsFactory:323 -Statistics: disabled
+2015-10-30 15:56:58   INFO SettingsFactory:327 -Deleted entity synthetic identifier rollback: disabled
+2015-10-30 15:56:58   INFO SettingsFactory:343 -Default entity-mode: pojo
+2015-10-30 15:56:58   INFO SettingsFactory:347 -Named query checking : enabled
+2015-10-30 15:56:58   INFO SettingsFactory:351 -Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+2015-10-30 15:56:58   INFO SessionFactoryImpl:202 -building session factory
+2015-10-30 15:56:58   INFO BasicTypeRegistry:150 -Type registration [clob] overrides previous : org.hibernate.type.ClobType@f2f2cc1
+2015-10-30 15:56:58   INFO BasicTypeRegistry:150 -Type registration [java.sql.Clob] overrides previous : org.hibernate.type.ClobType@f2f2cc1
+2015-10-30 15:56:58   INFO BasicTypeRegistry:150 -Type registration [materialized_blob] overrides previous : org.hibernate.type.MaterializedBlobType@3a079870
+2015-10-30 15:56:58   INFO BasicTypeRegistry:150 -Type registration [wrapper_materialized_blob] overrides previous : org.hibernate.type.WrappedMaterializedBlobType@3b2cf7ab
+2015-10-30 15:56:58   INFO BasicTypeRegistry:150 -Type registration [characters_clob] overrides previous : org.hibernate.type.PrimitiveCharacterArrayClobType@2aa5fe93
+2015-10-30 15:56:58   INFO BasicTypeRegistry:150 -Type registration [blob] overrides previous : org.hibernate.type.BlobType@5c1a8622
+2015-10-30 15:56:58   INFO BasicTypeRegistry:150 -Type registration [java.sql.Blob] overrides previous : org.hibernate.type.BlobType@5c1a8622
+2015-10-30 15:56:58   INFO BasicTypeRegistry:150 -Type registration [materialized_clob] overrides previous : org.hibernate.type.MaterializedClobType@5ad851c9
+2015-10-30 15:56:58   INFO BasicTypeRegistry:150 -Type registration [wrapper_characters_clob] overrides previous : org.hibernate.type.CharacterArrayClobType@6156496
+2015-10-30 15:56:58   INFO PojoInstantiator:84 -no default (no-argument) constructor for class: nju.iip.dto.TargetWeiboAccount (class must be instantiated by Interceptor)
+2015-10-30 15:56:59   INFO SessionFactoryObjectFactory:105 -Not binding factory to JNDI, no JNDI name configured
+2015-10-30 15:57:53   INFO Version:37 -Hibernate Commons Annotations 3.2.0.Final
+2015-10-30 15:57:53   INFO Environment:603 -Hibernate 3.6.4.Final
+2015-10-30 15:57:53   INFO Environment:636 -hibernate.properties not found
+2015-10-30 15:57:53   INFO Environment:814 -Bytecode provider name : javassist
+2015-10-30 15:57:53   INFO Environment:695 -using JDK 1.4 java.sql.Timestamp handling
+2015-10-30 15:57:53   INFO Configuration:2156 -configuring from resource: /hibernate.cfg.xml
+2015-10-30 15:57:53   INFO Configuration:2175 -Configuration resource: /hibernate.cfg.xml
+2015-10-30 15:57:53   INFO Configuration:789 -Reading mappings from resource : nju/iip/dto/TargetWeiboAccount.hbm.xml
+2015-10-30 15:57:53   INFO Configuration:2297 -Configured SessionFactory: null
+2015-10-30 15:57:53   INFO HbmBinder:353 -Mapping class: nju.iip.dto.TargetWeiboAccount -> TargetWeiboAccount
+2015-10-30 15:57:53   INFO Configuration:1676 -Hibernate Validator not found: ignoring
+2015-10-30 15:57:53   INFO HibernateSearchEventListenerRegister:75 -Unable to find org.hibernate.search.event.FullTextIndexEventListener on the classpath. Hibernate Search is not enabled.
+2015-10-30 15:57:53   INFO DriverManagerConnectionProvider:64 -Using Hibernate built-in connection pool (not for production use!)
+2015-10-30 15:57:53   INFO DriverManagerConnectionProvider:65 -Hibernate connection pool size: 20
+2015-10-30 15:57:53   INFO DriverManagerConnectionProvider:68 -autocommit mode: false
+2015-10-30 15:57:53   INFO DriverManagerConnectionProvider:103 -using driver: com.mysql.jdbc.Driver at URL: jdbc:mysql://114.212.80.14/weibo
+2015-10-30 15:57:53   INFO DriverManagerConnectionProvider:109 -connection properties: {user=root, password=****}
+2015-10-30 15:57:54   INFO Dialect:135 -Using dialect: org.hibernate.dialect.MySQLDialect
+2015-10-30 15:57:54   INFO JdbcSupportLoader:79 -Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2015-10-30 15:57:54   INFO SettingsFactory:126 -Database ->
+       name : MySQL
+    version : 5.0.96-community-nt
+      major : 5
+      minor : 0
+2015-10-30 15:57:54   INFO SettingsFactory:132 -Driver ->
+       name : MySQL-AB JDBC Driver
+    version : mysql-connector-java-5.0.8 ( Revision: ${svn.Revision} )
+      major : 5
+      minor : 0
+2015-10-30 15:57:54   INFO TransactionFactoryFactory:62 -Using default transaction strategy (direct JDBC transactions)
+2015-10-30 15:57:54   INFO TransactionManagerLookupFactory:83 -No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+2015-10-30 15:57:54   INFO SettingsFactory:179 -Automatic flush during beforeCompletion(): disabled
+2015-10-30 15:57:54   INFO SettingsFactory:183 -Automatic session close at end of transaction: disabled
+2015-10-30 15:57:54   INFO SettingsFactory:190 -JDBC batch size: 15
+2015-10-30 15:57:54   INFO SettingsFactory:193 -JDBC batch updates for versioned data: disabled
+2015-10-30 15:57:54   INFO SettingsFactory:198 -Scrollable result sets: enabled
+2015-10-30 15:57:54   INFO SettingsFactory:206 -JDBC3 getGeneratedKeys(): enabled
+2015-10-30 15:57:54   INFO SettingsFactory:214 -Connection release mode: auto
+2015-10-30 15:57:54   INFO SettingsFactory:238 -Maximum outer join fetch depth: 2
+2015-10-30 15:57:54   INFO SettingsFactory:241 -Default batch fetch size: 1
+2015-10-30 15:57:54   INFO SettingsFactory:245 -Generate SQL with comments: disabled
+2015-10-30 15:57:54   INFO SettingsFactory:249 -Order SQL updates by primary key: disabled
+2015-10-30 15:57:54   INFO SettingsFactory:253 -Order SQL inserts for batching: disabled
+2015-10-30 15:57:54   INFO SettingsFactory:431 -Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+2015-10-30 15:57:54   INFO ASTQueryTranslatorFactory:47 -Using ASTQueryTranslatorFactory
+2015-10-30 15:57:54   INFO SettingsFactory:261 -Query language substitutions: {}
+2015-10-30 15:57:54   INFO SettingsFactory:266 -JPA-QL strict compliance: disabled
+2015-10-30 15:57:54   INFO SettingsFactory:271 -Second-level cache: enabled
+2015-10-30 15:57:54   INFO SettingsFactory:275 -Query cache: disabled
+2015-10-30 15:57:54   INFO SettingsFactory:406 -Cache region factory : org.hibernate.cache.impl.NoCachingRegionFactory
+2015-10-30 15:57:54   INFO SettingsFactory:285 -Optimize cache for minimal puts: disabled
+2015-10-30 15:57:54   INFO SettingsFactory:294 -Structured second-level cache entries: disabled
+2015-10-30 15:57:54   INFO SettingsFactory:323 -Statistics: disabled
+2015-10-30 15:57:54   INFO SettingsFactory:327 -Deleted entity synthetic identifier rollback: disabled
+2015-10-30 15:57:54   INFO SettingsFactory:343 -Default entity-mode: pojo
+2015-10-30 15:57:54   INFO SettingsFactory:347 -Named query checking : enabled
+2015-10-30 15:57:54   INFO SettingsFactory:351 -Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+2015-10-30 15:57:54   INFO SessionFactoryImpl:202 -building session factory
+2015-10-30 15:57:54   INFO BasicTypeRegistry:150 -Type registration [clob] overrides previous : org.hibernate.type.ClobType@f2f2cc1
+2015-10-30 15:57:54   INFO BasicTypeRegistry:150 -Type registration [java.sql.Clob] overrides previous : org.hibernate.type.ClobType@f2f2cc1
+2015-10-30 15:57:54   INFO BasicTypeRegistry:150 -Type registration [materialized_blob] overrides previous : org.hibernate.type.MaterializedBlobType@3a079870
+2015-10-30 15:57:54   INFO BasicTypeRegistry:150 -Type registration [wrapper_materialized_blob] overrides previous : org.hibernate.type.WrappedMaterializedBlobType@3b2cf7ab
+2015-10-30 15:57:54   INFO BasicTypeRegistry:150 -Type registration [characters_clob] overrides previous : org.hibernate.type.PrimitiveCharacterArrayClobType@2aa5fe93
+2015-10-30 15:57:54   INFO BasicTypeRegistry:150 -Type registration [blob] overrides previous : org.hibernate.type.BlobType@5c1a8622
+2015-10-30 15:57:54   INFO BasicTypeRegistry:150 -Type registration [java.sql.Blob] overrides previous : org.hibernate.type.BlobType@5c1a8622
+2015-10-30 15:57:54   INFO BasicTypeRegistry:150 -Type registration [materialized_clob] overrides previous : org.hibernate.type.MaterializedClobType@5ad851c9
+2015-10-30 15:57:54   INFO BasicTypeRegistry:150 -Type registration [wrapper_characters_clob] overrides previous : org.hibernate.type.CharacterArrayClobType@6156496
+2015-10-30 15:57:54   INFO PojoInstantiator:84 -no default (no-argument) constructor for class: nju.iip.dto.TargetWeiboAccount (class must be instantiated by Interceptor)
+2015-10-30 15:57:54   INFO SessionFactoryObjectFactory:105 -Not binding factory to JNDI, no JNDI name configured
+2015-10-30 15:58:54   INFO Version:37 -Hibernate Commons Annotations 3.2.0.Final
+2015-10-30 15:58:54   INFO Environment:603 -Hibernate 3.6.4.Final
+2015-10-30 15:58:54   INFO Environment:636 -hibernate.properties not found
+2015-10-30 15:58:54   INFO Environment:814 -Bytecode provider name : javassist
+2015-10-30 15:58:54   INFO Environment:695 -using JDK 1.4 java.sql.Timestamp handling
+2015-10-30 15:58:54   INFO Configuration:2156 -configuring from resource: /hibernate.cfg.xml
+2015-10-30 15:58:54   INFO Configuration:2175 -Configuration resource: /hibernate.cfg.xml
+2015-10-30 15:58:54   INFO Configuration:789 -Reading mappings from resource : nju/iip/dto/TargetWeiboAccount.hbm.xml
+2015-10-30 15:58:54   INFO Configuration:2297 -Configured SessionFactory: null
+2015-10-30 15:58:54   INFO HbmBinder:353 -Mapping class: nju.iip.dto.TargetWeiboAccount -> TargetWeiboAccount
+2015-10-30 15:58:54   INFO Configuration:1676 -Hibernate Validator not found: ignoring
+2015-10-30 15:58:54   INFO HibernateSearchEventListenerRegister:75 -Unable to find org.hibernate.search.event.FullTextIndexEventListener on the classpath. Hibernate Search is not enabled.
+2015-10-30 15:58:54   INFO DriverManagerConnectionProvider:64 -Using Hibernate built-in connection pool (not for production use!)
+2015-10-30 15:58:54   INFO DriverManagerConnectionProvider:65 -Hibernate connection pool size: 20
+2015-10-30 15:58:54   INFO DriverManagerConnectionProvider:68 -autocommit mode: false
+2015-10-30 15:58:54   INFO DriverManagerConnectionProvider:103 -using driver: com.mysql.jdbc.Driver at URL: jdbc:mysql://114.212.80.14/weibo
+2015-10-30 15:58:54   INFO DriverManagerConnectionProvider:109 -connection properties: {user=root, password=****}
+2015-10-30 15:58:55   INFO Dialect:135 -Using dialect: org.hibernate.dialect.MySQLDialect
+2015-10-30 15:58:55   INFO JdbcSupportLoader:79 -Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2015-10-30 15:58:55   INFO SettingsFactory:126 -Database ->
+       name : MySQL
+    version : 5.0.96-community-nt
+      major : 5
+      minor : 0
+2015-10-30 15:58:55   INFO SettingsFactory:132 -Driver ->
+       name : MySQL-AB JDBC Driver
+    version : mysql-connector-java-5.0.8 ( Revision: ${svn.Revision} )
+      major : 5
+      minor : 0
+2015-10-30 15:58:55   INFO TransactionFactoryFactory:62 -Using default transaction strategy (direct JDBC transactions)
+2015-10-30 15:58:55   INFO TransactionManagerLookupFactory:83 -No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+2015-10-30 15:58:55   INFO SettingsFactory:179 -Automatic flush during beforeCompletion(): disabled
+2015-10-30 15:58:55   INFO SettingsFactory:183 -Automatic session close at end of transaction: disabled
+2015-10-30 15:58:55   INFO SettingsFactory:190 -JDBC batch size: 15
+2015-10-30 15:58:55   INFO SettingsFactory:193 -JDBC batch updates for versioned data: disabled
+2015-10-30 15:58:55   INFO SettingsFactory:198 -Scrollable result sets: enabled
+2015-10-30 15:58:55   INFO SettingsFactory:206 -JDBC3 getGeneratedKeys(): enabled
+2015-10-30 15:58:55   INFO SettingsFactory:214 -Connection release mode: auto
+2015-10-30 15:58:55   INFO SettingsFactory:238 -Maximum outer join fetch depth: 2
+2015-10-30 15:58:55   INFO SettingsFactory:241 -Default batch fetch size: 1
+2015-10-30 15:58:55   INFO SettingsFactory:245 -Generate SQL with comments: disabled
+2015-10-30 15:58:55   INFO SettingsFactory:249 -Order SQL updates by primary key: disabled
+2015-10-30 15:58:55   INFO SettingsFactory:253 -Order SQL inserts for batching: disabled
+2015-10-30 15:58:55   INFO SettingsFactory:431 -Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+2015-10-30 15:58:55   INFO ASTQueryTranslatorFactory:47 -Using ASTQueryTranslatorFactory
+2015-10-30 15:58:55   INFO SettingsFactory:261 -Query language substitutions: {}
+2015-10-30 15:58:55   INFO SettingsFactory:266 -JPA-QL strict compliance: disabled
+2015-10-30 15:58:55   INFO SettingsFactory:271 -Second-level cache: enabled
+2015-10-30 15:58:55   INFO SettingsFactory:275 -Query cache: disabled
+2015-10-30 15:58:55   INFO SettingsFactory:406 -Cache region factory : org.hibernate.cache.impl.NoCachingRegionFactory
+2015-10-30 15:58:55   INFO SettingsFactory:285 -Optimize cache for minimal puts: disabled
+2015-10-30 15:58:55   INFO SettingsFactory:294 -Structured second-level cache entries: disabled
+2015-10-30 15:58:55   INFO SettingsFactory:323 -Statistics: disabled
+2015-10-30 15:58:55   INFO SettingsFactory:327 -Deleted entity synthetic identifier rollback: disabled
+2015-10-30 15:58:55   INFO SettingsFactory:343 -Default entity-mode: pojo
+2015-10-30 15:58:55   INFO SettingsFactory:347 -Named query checking : enabled
+2015-10-30 15:58:55   INFO SettingsFactory:351 -Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+2015-10-30 15:58:55   INFO SessionFactoryImpl:202 -building session factory
+2015-10-30 15:58:55   INFO BasicTypeRegistry:150 -Type registration [clob] overrides previous : org.hibernate.type.ClobType@f2f2cc1
+2015-10-30 15:58:55   INFO BasicTypeRegistry:150 -Type registration [java.sql.Clob] overrides previous : org.hibernate.type.ClobType@f2f2cc1
+2015-10-30 15:58:55   INFO BasicTypeRegistry:150 -Type registration [materialized_blob] overrides previous : org.hibernate.type.MaterializedBlobType@3a079870
+2015-10-30 15:58:55   INFO BasicTypeRegistry:150 -Type registration [wrapper_materialized_blob] overrides previous : org.hibernate.type.WrappedMaterializedBlobType@3b2cf7ab
+2015-10-30 15:58:55   INFO BasicTypeRegistry:150 -Type registration [characters_clob] overrides previous : org.hibernate.type.PrimitiveCharacterArrayClobType@2aa5fe93
+2015-10-30 15:58:55   INFO BasicTypeRegistry:150 -Type registration [blob] overrides previous : org.hibernate.type.BlobType@5c1a8622
+2015-10-30 15:58:55   INFO BasicTypeRegistry:150 -Type registration [java.sql.Blob] overrides previous : org.hibernate.type.BlobType@5c1a8622
+2015-10-30 15:58:55   INFO BasicTypeRegistry:150 -Type registration [materialized_clob] overrides previous : org.hibernate.type.MaterializedClobType@5ad851c9
+2015-10-30 15:58:55   INFO BasicTypeRegistry:150 -Type registration [wrapper_characters_clob] overrides previous : org.hibernate.type.CharacterArrayClobType@6156496
+2015-10-30 15:58:55   INFO PojoInstantiator:84 -no default (no-argument) constructor for class: nju.iip.dto.TargetWeiboAccount (class must be instantiated by Interceptor)
+2015-10-30 15:58:55   INFO SessionFactoryObjectFactory:105 -Not binding factory to JNDI, no JNDI name configured
+2015-10-30 16:11:57   INFO Version:37 -Hibernate Commons Annotations 3.2.0.Final
+2015-10-30 16:11:57   INFO Environment:603 -Hibernate 3.6.4.Final
+2015-10-30 16:11:57   INFO Environment:636 -hibernate.properties not found
+2015-10-30 16:11:57   INFO Environment:814 -Bytecode provider name : javassist
+2015-10-30 16:11:57   INFO Environment:695 -using JDK 1.4 java.sql.Timestamp handling
+2015-10-30 16:11:58   INFO Configuration:2156 -configuring from resource: /hibernate.cfg.xml
+2015-10-30 16:11:58   INFO Configuration:2175 -Configuration resource: /hibernate.cfg.xml
+2015-10-30 16:11:58   INFO Configuration:789 -Reading mappings from resource : nju/iip/dto/TargetWeiboAccount.hbm.xml
+2015-10-30 16:11:58   INFO Configuration:2297 -Configured SessionFactory: null
+2015-10-30 16:11:58   INFO HbmBinder:353 -Mapping class: nju.iip.dto.TargetWeiboAccount -> TargetWeiboAccount
+2015-10-30 16:11:58   INFO Configuration:1676 -Hibernate Validator not found: ignoring
+2015-10-30 16:11:58   INFO HibernateSearchEventListenerRegister:75 -Unable to find org.hibernate.search.event.FullTextIndexEventListener on the classpath. Hibernate Search is not enabled.
+2015-10-30 16:11:58   INFO DriverManagerConnectionProvider:64 -Using Hibernate built-in connection pool (not for production use!)
+2015-10-30 16:11:58   INFO DriverManagerConnectionProvider:65 -Hibernate connection pool size: 20
+2015-10-30 16:11:58   INFO DriverManagerConnectionProvider:68 -autocommit mode: false
+2015-10-30 16:11:58   INFO DriverManagerConnectionProvider:103 -using driver: com.mysql.jdbc.Driver at URL: jdbc:mysql://114.212.80.14/weibo
+2015-10-30 16:11:58   INFO DriverManagerConnectionProvider:109 -connection properties: {user=root, password=****}
+2015-10-30 16:11:59   INFO Dialect:135 -Using dialect: org.hibernate.dialect.MySQLDialect
+2015-10-30 16:11:59   INFO JdbcSupportLoader:79 -Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2015-10-30 16:11:59   INFO SettingsFactory:126 -Database ->
+       name : MySQL
+    version : 5.0.96-community-nt
+      major : 5
+      minor : 0
+2015-10-30 16:11:59   INFO SettingsFactory:132 -Driver ->
+       name : MySQL-AB JDBC Driver
+    version : mysql-connector-java-5.0.8 ( Revision: ${svn.Revision} )
+      major : 5
+      minor : 0
+2015-10-30 16:11:59   INFO TransactionFactoryFactory:62 -Using default transaction strategy (direct JDBC transactions)
+2015-10-30 16:11:59   INFO TransactionManagerLookupFactory:83 -No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+2015-10-30 16:11:59   INFO SettingsFactory:179 -Automatic flush during beforeCompletion(): disabled
+2015-10-30 16:11:59   INFO SettingsFactory:183 -Automatic session close at end of transaction: disabled
+2015-10-30 16:11:59   INFO SettingsFactory:190 -JDBC batch size: 15
+2015-10-30 16:11:59   INFO SettingsFactory:193 -JDBC batch updates for versioned data: disabled
+2015-10-30 16:11:59   INFO SettingsFactory:198 -Scrollable result sets: enabled
+2015-10-30 16:11:59   INFO SettingsFactory:206 -JDBC3 getGeneratedKeys(): enabled
+2015-10-30 16:11:59   INFO SettingsFactory:214 -Connection release mode: auto
+2015-10-30 16:11:59   INFO SettingsFactory:238 -Maximum outer join fetch depth: 2
+2015-10-30 16:11:59   INFO SettingsFactory:241 -Default batch fetch size: 1
+2015-10-30 16:11:59   INFO SettingsFactory:245 -Generate SQL with comments: disabled
+2015-10-30 16:11:59   INFO SettingsFactory:249 -Order SQL updates by primary key: disabled
+2015-10-30 16:11:59   INFO SettingsFactory:253 -Order SQL inserts for batching: disabled
+2015-10-30 16:11:59   INFO SettingsFactory:431 -Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+2015-10-30 16:11:59   INFO ASTQueryTranslatorFactory:47 -Using ASTQueryTranslatorFactory
+2015-10-30 16:11:59   INFO SettingsFactory:261 -Query language substitutions: {}
+2015-10-30 16:11:59   INFO SettingsFactory:266 -JPA-QL strict compliance: disabled
+2015-10-30 16:11:59   INFO SettingsFactory:271 -Second-level cache: enabled
+2015-10-30 16:11:59   INFO SettingsFactory:275 -Query cache: disabled
+2015-10-30 16:11:59   INFO SettingsFactory:406 -Cache region factory : org.hibernate.cache.impl.NoCachingRegionFactory
+2015-10-30 16:11:59   INFO SettingsFactory:285 -Optimize cache for minimal puts: disabled
+2015-10-30 16:11:59   INFO SettingsFactory:294 -Structured second-level cache entries: disabled
+2015-10-30 16:11:59   INFO SettingsFactory:323 -Statistics: disabled
+2015-10-30 16:11:59   INFO SettingsFactory:327 -Deleted entity synthetic identifier rollback: disabled
+2015-10-30 16:11:59   INFO SettingsFactory:343 -Default entity-mode: pojo
+2015-10-30 16:11:59   INFO SettingsFactory:347 -Named query checking : enabled
+2015-10-30 16:11:59   INFO SettingsFactory:351 -Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+2015-10-30 16:11:59   INFO SessionFactoryImpl:202 -building session factory
+2015-10-30 16:11:59   INFO BasicTypeRegistry:150 -Type registration [clob] overrides previous : org.hibernate.type.ClobType@f2f2cc1
+2015-10-30 16:11:59   INFO BasicTypeRegistry:150 -Type registration [java.sql.Clob] overrides previous : org.hibernate.type.ClobType@f2f2cc1
+2015-10-30 16:11:59   INFO BasicTypeRegistry:150 -Type registration [materialized_blob] overrides previous : org.hibernate.type.MaterializedBlobType@3a079870
+2015-10-30 16:11:59   INFO BasicTypeRegistry:150 -Type registration [wrapper_materialized_blob] overrides previous : org.hibernate.type.WrappedMaterializedBlobType@3b2cf7ab
+2015-10-30 16:11:59   INFO BasicTypeRegistry:150 -Type registration [characters_clob] overrides previous : org.hibernate.type.PrimitiveCharacterArrayClobType@2aa5fe93
+2015-10-30 16:11:59   INFO BasicTypeRegistry:150 -Type registration [blob] overrides previous : org.hibernate.type.BlobType@5c1a8622
+2015-10-30 16:11:59   INFO BasicTypeRegistry:150 -Type registration [java.sql.Blob] overrides previous : org.hibernate.type.BlobType@5c1a8622
+2015-10-30 16:11:59   INFO BasicTypeRegistry:150 -Type registration [materialized_clob] overrides previous : org.hibernate.type.MaterializedClobType@5ad851c9
+2015-10-30 16:11:59   INFO BasicTypeRegistry:150 -Type registration [wrapper_characters_clob] overrides previous : org.hibernate.type.CharacterArrayClobType@6156496
+2015-10-30 16:11:59   INFO PojoInstantiator:84 -no default (no-argument) constructor for class: nju.iip.dto.TargetWeiboAccount (class must be instantiated by Interceptor)
+2015-10-30 16:11:59   INFO SessionFactoryObjectFactory:105 -Not binding factory to JNDI, no JNDI name configured
