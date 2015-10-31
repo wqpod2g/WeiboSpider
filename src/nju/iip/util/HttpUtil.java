@@ -33,7 +33,7 @@ public class HttpUtil {
 	 * @param url
 	 * @return
 	 */
-	public static String getHTML(String url) {
+	public  static String getHTML(String url) {
 		String html = null;
 		if(cookie==null) {
 			cookie = CookiePool.getCookie();
