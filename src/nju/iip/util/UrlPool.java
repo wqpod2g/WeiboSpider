@@ -31,7 +31,7 @@ public class UrlPool implements Runnable{
 		List<WeiboAccount> list = wad.getAccountlist();
 		int n = 0;
 		for(WeiboAccount wa:list) {
-			String accountUrl = wa.getAccountUrl();
+			String accountUrl = wa.getAccountUrl().trim();
 			String url = "http://weibo.cn/"+accountUrl;
 			int sumPages = HttpUtil.getPageNum(url);
 			for(int i=1;i<=sumPages;i++) {

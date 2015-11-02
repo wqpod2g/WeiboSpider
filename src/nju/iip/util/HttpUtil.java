@@ -33,9 +33,9 @@ public class HttpUtil {
 	 * @param url
 	 * @return
 	 */
-	public  static String getHTML(String url) {
-		String html = null;
-		if(cookie==null) {
+	public static String getHTML(String url) {
+		String html = "";
+		while(cookie==null) {
 			cookie = CookiePool.getCookie();
 		}
 		try {
@@ -47,11 +47,13 @@ public class HttpUtil {
 			//检测到被反爬
 			if(JudgeAnti(doc)) {
 				times++;
-				if(times>3) {
+				if(times>CookiePool.getCookiesNum()) {
+					logger.info("the sum of cookies are:"+CookiePool.getCookiesNum());
 					logger.info("***************begin sleep!!!!***************");
-					Thread.sleep(10*60*1000);
+					Thread.sleep(20*60*1000);
+					times = 0;
 				}
-				cookie = CookiePool.getCookie();//更换cookie
+				cookie = CookiePool.changeCookie();//更换cookie
 				logger.info("***************new cookie is:"+cookie);
 				html = getHTML(url);
 			}

@@ -38,6 +38,10 @@ public class WeiboSpider implements Runnable {
 	public WeiboSpider(BlockingQueue<String> urlQueue) {
 		this.urlQueue = urlQueue;
 	}
+	
+	private static int sum = 0;//已爬取的微博数
+	
+	private static int count = 0;
 
 	@Override
 	public void run() {
@@ -47,7 +51,12 @@ public class WeiboSpider implements Runnable {
 				if (url != null) {
 					String html = HttpUtil.getHTML(url);
 					List<WeiboData> weibo_list = parserWeibo(html,url);
-					logger.info("weibo_list_size=" + weibo_list.size());
+					count+= weibo_list.size();
+					if(count>10000) {
+						sum = sum+count;
+						logger.info("already crawler weibo numbers:" + sum);
+						count = 0;
+					}
 					WeiboDataDao wdd = new WeiboDataDao();
 					wdd.saveWeibo(weibo_list);
 				}

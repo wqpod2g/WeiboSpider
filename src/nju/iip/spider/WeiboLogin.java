@@ -140,7 +140,7 @@ public class WeiboLogin {
 							+ ";");
 				}
 			} else {
-				logger.info("getCookies failed!");
+				logger.info("WeiboLogin getCookies failed!");
 				return null;
 			}
 			return cookies.toString();
