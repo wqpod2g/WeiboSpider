@@ -10,6 +10,7 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.LinkedBlockingQueue;
 
+import nju.iip.BloomFilter.BloomFactory;
 import nju.iip.dao.WeiboDataDao;
 import nju.iip.dto.WeiboData;
 import nju.iip.util.CookiePool;
@@ -39,6 +40,8 @@ public class WeiboSpider implements Runnable {
 		this.urlQueue = urlQueue;
 	}
 	
+	private BloomFactory bf = BloomFactory.getInstance();
+	
 	private static int sum = 0;//已爬取的微博数
 	
 	private static int count = 0;
@@ -54,6 +57,7 @@ public class WeiboSpider implements Runnable {
 					count+= weibo_list.size();
 					if(count>10000) {
 						sum = sum+count;
+						bf.saveBloomFilter();//持久化boolm过滤器
 						logger.info("already crawler weibo numbers:" + sum);
 						count = 0;
 					}
@@ -91,6 +95,14 @@ public class WeiboSpider implements Runnable {
 			WeiboData data = new WeiboData();
 			String text = weibo.getElementsByClass("ctt").text();// 微博正文
 			if (text != null && text.length() != 0) {
+				String key = text.substring(0,Math.min(100, text.length()));
+				//通过bloom过滤器判断当前微博是否存在
+				if(bf.contains(key)) {
+					continue;
+				}
+				else {
+					bf.add(key);
+				}
 				String reg = "转发理由";
 				Elements cmtEle = weibo.select("div:contains(" + reg + ")");
 				if (cmtEle.size() != 0) {
@@ -155,13 +167,6 @@ public class WeiboSpider implements Runnable {
             	data.setText(text);
             	data.setTime(time);
             	data.setInputTime(sdf.format(new Date()));
-//            	logger.info("author="+author);
-//            	logger.info("BaseUrl="+url);
-//            	logger.info("comment="+comment);
-//            	logger.info("attitude="+attitude);
-//            	logger.info("text="+text);
-//            	logger.info("time="+time);
-//            	logger.info("device="+device);
 				weibo_list.add(data);
 			}
 		}

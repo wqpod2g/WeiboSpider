@@ -79,8 +79,6 @@ public class HttpUtil {
 		if (e != null) {
 			String value = e.attr("value");
 			sumPages = Integer.valueOf(value);
-		} else {
-			sumPages = -1;
 		}
 		return sumPages;
 	}

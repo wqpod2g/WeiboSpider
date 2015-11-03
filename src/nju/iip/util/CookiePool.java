@@ -67,7 +67,7 @@ public class CookiePool implements Runnable{
 	public void initializeCookiePool() {
 		try{
 			int count = 0;
-			BufferedReader in = new BufferedReader(new FileReader("WeiboAccount.data"));
+			BufferedReader in = new BufferedReader(new FileReader(System.getProperty("user.dir")+"/resources/WeiboAccount.data"));
 			String s = "";
 			while ((s = in.readLine()) != null) {
 				if(!AccountList.contains(s)) {

@@ -21,7 +21,7 @@ public class CommonUtil {
 		List<WeiboAccount> Accountlist = new ArrayList<WeiboAccount>();
         Workbook workbook = null;
 		try {
-			workbook=Workbook.getWorkbook(new File("source.xls"));
+			workbook=Workbook.getWorkbook(new File(System.getProperty("user.dir")+"/resources/source.xls"));
 		} catch (Exception e) {
 			logger.error("importFromXls error!",e);
 		}

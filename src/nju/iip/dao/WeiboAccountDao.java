@@ -6,6 +6,7 @@ import org.hibernate.Query;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import nju.iip.dto.WeiboAccount;
+import nju.iip.util.CommonUtil;
 
 /**
  * 待爬取用户账户信息数据持久化
@@ -54,7 +55,7 @@ public class WeiboAccountDao extends DAO{
 	
 	public static void main(String[] args) {
 		WeiboAccountDao wa = new WeiboAccountDao();
-	//	wa.saveAccount(CommonUtil.importFromXls());
+		wa.saveAccount(CommonUtil.importFromXls());
 		System.out.println(wa.getAccountlist().size());
 	}
 
