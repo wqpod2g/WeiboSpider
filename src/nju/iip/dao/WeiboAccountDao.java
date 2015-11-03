@@ -35,6 +35,19 @@ public class WeiboAccountDao extends DAO{
 		}
 	}
 	
+	public void updateHistory(String accountUrl) {
+		try{
+			begin();
+			Query q = getSession().createQuery("update WeiboAccount a set a.history = 1 where accountUrl = :accountUrl");
+			q.setString("accountUrl", accountUrl);
+			q.executeUpdate();
+			commit();
+		}catch(HibernateException e) {
+			rollback();
+    		logger.info("getAccountlist",e);
+		}
+	}
+	
 	/**
 	 * 取出所有待爬取微博用户的信息
 	 * @return
@@ -55,7 +68,8 @@ public class WeiboAccountDao extends DAO{
 	
 	public static void main(String[] args) {
 		WeiboAccountDao wa = new WeiboAccountDao();
-		wa.saveAccount(CommonUtil.importFromXls());
+		//wa.saveAccount(CommonUtil.importFromXls());
+		wa.updateHistory("finance");
 		System.out.println(wa.getAccountlist().size());
 	}
 

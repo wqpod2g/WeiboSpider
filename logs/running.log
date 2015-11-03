@@ -1946,3 +1946,412 @@ Caused by: java.sql.SQLException: Incorrect string value: '\xF0\x9F\x92\xA0\xE4\
 	at org.hibernate.id.IdentityGenerator$GetGeneratedKeysDelegate.executeAndExtract(IdentityGenerator.java:94)
 	at org.hibernate.id.insert.AbstractReturningDelegate.performInsert(AbstractReturningDelegate.java:57)
 	... 20 more
+2015-11-03 14:50:52   INFO CookiePool:86 -add 0 cookies successful!
+2015-11-03 15:02:42   INFO Version:37 -Hibernate Commons Annotations 3.2.0.Final
+2015-11-03 15:02:42   INFO Environment:603 -Hibernate 3.6.4.Final
+2015-11-03 15:02:42   INFO Environment:636 -hibernate.properties not found
+2015-11-03 15:02:42   INFO Environment:814 -Bytecode provider name : javassist
+2015-11-03 15:02:42   INFO Environment:695 -using JDK 1.4 java.sql.Timestamp handling
+2015-11-03 15:02:42   INFO Configuration:2156 -configuring from resource: /hibernate.cfg.xml
+2015-11-03 15:02:42   INFO Configuration:2175 -Configuration resource: /hibernate.cfg.xml
+2015-11-03 15:02:42   INFO Configuration:789 -Reading mappings from resource : nju/iip/dto/WeiboAccount.hbm.xml
+2015-11-03 15:02:42   INFO Configuration:789 -Reading mappings from resource : nju/iip/dto/WeiboData.hbm.xml
+2015-11-03 15:02:42   INFO Configuration:2297 -Configured SessionFactory: null
+2015-11-03 15:02:42   INFO HbmBinder:353 -Mapping class: nju.iip.dto.WeiboAccount -> WeiboAccount
+2015-11-03 15:02:42   INFO HbmBinder:353 -Mapping class: nju.iip.dto.WeiboData -> WeiboData
+2015-11-03 15:02:42   INFO Configuration:1676 -Hibernate Validator not found: ignoring
+2015-11-03 15:02:42   INFO HibernateSearchEventListenerRegister:75 -Unable to find org.hibernate.search.event.FullTextIndexEventListener on the classpath. Hibernate Search is not enabled.
+2015-11-03 15:02:42   INFO DriverManagerConnectionProvider:64 -Using Hibernate built-in connection pool (not for production use!)
+2015-11-03 15:02:42   INFO DriverManagerConnectionProvider:65 -Hibernate connection pool size: 20
+2015-11-03 15:02:42   INFO DriverManagerConnectionProvider:68 -autocommit mode: false
+2015-11-03 15:02:42   INFO DriverManagerConnectionProvider:103 -using driver: com.mysql.jdbc.Driver at URL: jdbc:mysql://114.212.80.14/weibo
+2015-11-03 15:02:42   INFO DriverManagerConnectionProvider:109 -connection properties: {user=root, password=****}
+2015-11-03 15:02:43   INFO Dialect:135 -Using dialect: org.hibernate.dialect.MySQLDialect
+2015-11-03 15:02:43   INFO JdbcSupportLoader:79 -Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2015-11-03 15:02:43   INFO SettingsFactory:126 -Database ->
+       name : MySQL
+    version : 5.0.96-community-nt
+      major : 5
+      minor : 0
+2015-11-03 15:02:43   INFO SettingsFactory:132 -Driver ->
+       name : MySQL-AB JDBC Driver
+    version : mysql-connector-java-5.0.8 ( Revision: ${svn.Revision} )
+      major : 5
+      minor : 0
+2015-11-03 15:02:43   INFO TransactionFactoryFactory:62 -Using default transaction strategy (direct JDBC transactions)
+2015-11-03 15:02:43   INFO TransactionManagerLookupFactory:83 -No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+2015-11-03 15:02:43   INFO SettingsFactory:179 -Automatic flush during beforeCompletion(): disabled
+2015-11-03 15:02:43   INFO SettingsFactory:183 -Automatic session close at end of transaction: disabled
+2015-11-03 15:02:43   INFO SettingsFactory:190 -JDBC batch size: 15
+2015-11-03 15:02:43   INFO SettingsFactory:193 -JDBC batch updates for versioned data: disabled
+2015-11-03 15:02:43   INFO SettingsFactory:198 -Scrollable result sets: enabled
+2015-11-03 15:02:43   INFO SettingsFactory:206 -JDBC3 getGeneratedKeys(): enabled
+2015-11-03 15:02:43   INFO SettingsFactory:214 -Connection release mode: auto
+2015-11-03 15:02:43   INFO SettingsFactory:238 -Maximum outer join fetch depth: 2
+2015-11-03 15:02:43   INFO SettingsFactory:241 -Default batch fetch size: 1
+2015-11-03 15:02:43   INFO SettingsFactory:245 -Generate SQL with comments: disabled
+2015-11-03 15:02:43   INFO SettingsFactory:249 -Order SQL updates by primary key: disabled
+2015-11-03 15:02:43   INFO SettingsFactory:253 -Order SQL inserts for batching: disabled
+2015-11-03 15:02:43   INFO SettingsFactory:431 -Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+2015-11-03 15:02:43   INFO ASTQueryTranslatorFactory:47 -Using ASTQueryTranslatorFactory
+2015-11-03 15:02:43   INFO SettingsFactory:261 -Query language substitutions: {}
+2015-11-03 15:02:43   INFO SettingsFactory:266 -JPA-QL strict compliance: disabled
+2015-11-03 15:02:43   INFO SettingsFactory:271 -Second-level cache: enabled
+2015-11-03 15:02:43   INFO SettingsFactory:275 -Query cache: disabled
+2015-11-03 15:02:43   INFO SettingsFactory:406 -Cache region factory : org.hibernate.cache.impl.NoCachingRegionFactory
+2015-11-03 15:02:43   INFO SettingsFactory:285 -Optimize cache for minimal puts: disabled
+2015-11-03 15:02:43   INFO SettingsFactory:294 -Structured second-level cache entries: disabled
+2015-11-03 15:02:43   INFO SettingsFactory:323 -Statistics: disabled
+2015-11-03 15:02:43   INFO SettingsFactory:327 -Deleted entity synthetic identifier rollback: disabled
+2015-11-03 15:02:43   INFO SettingsFactory:343 -Default entity-mode: pojo
+2015-11-03 15:02:43   INFO SettingsFactory:347 -Named query checking : enabled
+2015-11-03 15:02:43   INFO SettingsFactory:351 -Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+2015-11-03 15:02:43   INFO SessionFactoryImpl:202 -building session factory
+2015-11-03 15:02:43   INFO BasicTypeRegistry:150 -Type registration [wrapper_characters_clob] overrides previous : org.hibernate.type.CharacterArrayClobType@5ad851c9
+2015-11-03 15:02:43   INFO BasicTypeRegistry:150 -Type registration [materialized_blob] overrides previous : org.hibernate.type.MaterializedBlobType@6156496
+2015-11-03 15:02:43   INFO BasicTypeRegistry:150 -Type registration [materialized_clob] overrides previous : org.hibernate.type.MaterializedClobType@3c153a1
+2015-11-03 15:02:43   INFO BasicTypeRegistry:150 -Type registration [blob] overrides previous : org.hibernate.type.BlobType@b62fe6d
+2015-11-03 15:02:43   INFO BasicTypeRegistry:150 -Type registration [java.sql.Blob] overrides previous : org.hibernate.type.BlobType@b62fe6d
+2015-11-03 15:02:43   INFO BasicTypeRegistry:150 -Type registration [characters_clob] overrides previous : org.hibernate.type.PrimitiveCharacterArrayClobType@13acb0d1
+2015-11-03 15:02:43   INFO BasicTypeRegistry:150 -Type registration [clob] overrides previous : org.hibernate.type.ClobType@3e3047e6
+2015-11-03 15:02:43   INFO BasicTypeRegistry:150 -Type registration [java.sql.Clob] overrides previous : org.hibernate.type.ClobType@3e3047e6
+2015-11-03 15:02:43   INFO BasicTypeRegistry:150 -Type registration [wrapper_materialized_blob] overrides previous : org.hibernate.type.WrappedMaterializedBlobType@37e547da
+2015-11-03 15:02:43   INFO SessionFactoryObjectFactory:105 -Not binding factory to JNDI, no JNDI name configured
+2015-11-03 15:04:34   INFO Version:37 -Hibernate Commons Annotations 3.2.0.Final
+2015-11-03 15:04:34   INFO Environment:603 -Hibernate 3.6.4.Final
+2015-11-03 15:04:34   INFO Environment:636 -hibernate.properties not found
+2015-11-03 15:04:34   INFO Environment:814 -Bytecode provider name : javassist
+2015-11-03 15:04:34   INFO Environment:695 -using JDK 1.4 java.sql.Timestamp handling
+2015-11-03 15:04:34   INFO Configuration:2156 -configuring from resource: /hibernate.cfg.xml
+2015-11-03 15:04:34   INFO Configuration:2175 -Configuration resource: /hibernate.cfg.xml
+2015-11-03 15:04:34   INFO Configuration:789 -Reading mappings from resource : nju/iip/dto/WeiboAccount.hbm.xml
+2015-11-03 15:04:35   INFO Configuration:789 -Reading mappings from resource : nju/iip/dto/WeiboData.hbm.xml
+2015-11-03 15:04:35   INFO Configuration:2297 -Configured SessionFactory: null
+2015-11-03 15:04:35   INFO HbmBinder:353 -Mapping class: nju.iip.dto.WeiboAccount -> WeiboAccount
+2015-11-03 15:04:35   INFO HbmBinder:353 -Mapping class: nju.iip.dto.WeiboData -> WeiboData
+2015-11-03 15:04:35   INFO Configuration:1676 -Hibernate Validator not found: ignoring
+2015-11-03 15:04:35   INFO HibernateSearchEventListenerRegister:75 -Unable to find org.hibernate.search.event.FullTextIndexEventListener on the classpath. Hibernate Search is not enabled.
+2015-11-03 15:04:35   INFO DriverManagerConnectionProvider:64 -Using Hibernate built-in connection pool (not for production use!)
+2015-11-03 15:04:35   INFO DriverManagerConnectionProvider:65 -Hibernate connection pool size: 20
+2015-11-03 15:04:35   INFO DriverManagerConnectionProvider:68 -autocommit mode: false
+2015-11-03 15:04:35   INFO DriverManagerConnectionProvider:103 -using driver: com.mysql.jdbc.Driver at URL: jdbc:mysql://114.212.80.14/weibo
+2015-11-03 15:04:35   INFO DriverManagerConnectionProvider:109 -connection properties: {user=root, password=****}
+2015-11-03 15:04:35   INFO Dialect:135 -Using dialect: org.hibernate.dialect.MySQLDialect
+2015-11-03 15:04:35   INFO JdbcSupportLoader:79 -Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2015-11-03 15:04:35   INFO SettingsFactory:126 -Database ->
+       name : MySQL
+    version : 5.0.96-community-nt
+      major : 5
+      minor : 0
+2015-11-03 15:04:35   INFO SettingsFactory:132 -Driver ->
+       name : MySQL-AB JDBC Driver
+    version : mysql-connector-java-5.0.8 ( Revision: ${svn.Revision} )
+      major : 5
+      minor : 0
+2015-11-03 15:04:35   INFO TransactionFactoryFactory:62 -Using default transaction strategy (direct JDBC transactions)
+2015-11-03 15:04:35   INFO TransactionManagerLookupFactory:83 -No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+2015-11-03 15:04:35   INFO SettingsFactory:179 -Automatic flush during beforeCompletion(): disabled
+2015-11-03 15:04:35   INFO SettingsFactory:183 -Automatic session close at end of transaction: disabled
+2015-11-03 15:04:35   INFO SettingsFactory:190 -JDBC batch size: 15
+2015-11-03 15:04:35   INFO SettingsFactory:193 -JDBC batch updates for versioned data: disabled
+2015-11-03 15:04:35   INFO SettingsFactory:198 -Scrollable result sets: enabled
+2015-11-03 15:04:35   INFO SettingsFactory:206 -JDBC3 getGeneratedKeys(): enabled
+2015-11-03 15:04:35   INFO SettingsFactory:214 -Connection release mode: auto
+2015-11-03 15:04:35   INFO SettingsFactory:238 -Maximum outer join fetch depth: 2
+2015-11-03 15:04:35   INFO SettingsFactory:241 -Default batch fetch size: 1
+2015-11-03 15:04:35   INFO SettingsFactory:245 -Generate SQL with comments: disabled
+2015-11-03 15:04:35   INFO SettingsFactory:249 -Order SQL updates by primary key: disabled
+2015-11-03 15:04:35   INFO SettingsFactory:253 -Order SQL inserts for batching: disabled
+2015-11-03 15:04:35   INFO SettingsFactory:431 -Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+2015-11-03 15:04:35   INFO ASTQueryTranslatorFactory:47 -Using ASTQueryTranslatorFactory
+2015-11-03 15:04:35   INFO SettingsFactory:261 -Query language substitutions: {}
+2015-11-03 15:04:35   INFO SettingsFactory:266 -JPA-QL strict compliance: disabled
+2015-11-03 15:04:35   INFO SettingsFactory:271 -Second-level cache: enabled
+2015-11-03 15:04:35   INFO SettingsFactory:275 -Query cache: disabled
+2015-11-03 15:04:35   INFO SettingsFactory:406 -Cache region factory : org.hibernate.cache.impl.NoCachingRegionFactory
+2015-11-03 15:04:35   INFO SettingsFactory:285 -Optimize cache for minimal puts: disabled
+2015-11-03 15:04:35   INFO SettingsFactory:294 -Structured second-level cache entries: disabled
+2015-11-03 15:04:35   INFO SettingsFactory:323 -Statistics: disabled
+2015-11-03 15:04:35   INFO SettingsFactory:327 -Deleted entity synthetic identifier rollback: disabled
+2015-11-03 15:04:35   INFO SettingsFactory:343 -Default entity-mode: pojo
+2015-11-03 15:04:35   INFO SettingsFactory:347 -Named query checking : enabled
+2015-11-03 15:04:35   INFO SettingsFactory:351 -Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+2015-11-03 15:04:35   INFO SessionFactoryImpl:202 -building session factory
+2015-11-03 15:04:35   INFO BasicTypeRegistry:150 -Type registration [wrapper_characters_clob] overrides previous : org.hibernate.type.CharacterArrayClobType@5ad851c9
+2015-11-03 15:04:35   INFO BasicTypeRegistry:150 -Type registration [materialized_blob] overrides previous : org.hibernate.type.MaterializedBlobType@6156496
+2015-11-03 15:04:35   INFO BasicTypeRegistry:150 -Type registration [materialized_clob] overrides previous : org.hibernate.type.MaterializedClobType@3c153a1
+2015-11-03 15:04:35   INFO BasicTypeRegistry:150 -Type registration [blob] overrides previous : org.hibernate.type.BlobType@b62fe6d
+2015-11-03 15:04:35   INFO BasicTypeRegistry:150 -Type registration [java.sql.Blob] overrides previous : org.hibernate.type.BlobType@b62fe6d
+2015-11-03 15:04:35   INFO BasicTypeRegistry:150 -Type registration [characters_clob] overrides previous : org.hibernate.type.PrimitiveCharacterArrayClobType@13acb0d1
+2015-11-03 15:04:35   INFO BasicTypeRegistry:150 -Type registration [clob] overrides previous : org.hibernate.type.ClobType@3e3047e6
+2015-11-03 15:04:35   INFO BasicTypeRegistry:150 -Type registration [java.sql.Clob] overrides previous : org.hibernate.type.ClobType@3e3047e6
+2015-11-03 15:04:35   INFO BasicTypeRegistry:150 -Type registration [wrapper_materialized_blob] overrides previous : org.hibernate.type.WrappedMaterializedBlobType@37e547da
+2015-11-03 15:04:36   INFO SessionFactoryObjectFactory:105 -Not binding factory to JNDI, no JNDI name configured
+2015-11-03 15:09:17   INFO UrlPool:31 -****************urlPool线程start！****************
+2015-11-03 15:09:17   INFO Version:37 -Hibernate Commons Annotations 3.2.0.Final
+2015-11-03 15:09:17   INFO Environment:603 -Hibernate 3.6.4.Final
+2015-11-03 15:09:17   INFO Environment:636 -hibernate.properties not found
+2015-11-03 15:09:17   INFO Environment:814 -Bytecode provider name : javassist
+2015-11-03 15:09:17   INFO Environment:695 -using JDK 1.4 java.sql.Timestamp handling
+2015-11-03 15:09:17   INFO Configuration:2156 -configuring from resource: /hibernate.cfg.xml
+2015-11-03 15:09:17   INFO Configuration:2175 -Configuration resource: /hibernate.cfg.xml
+2015-11-03 15:09:18   INFO Configuration:789 -Reading mappings from resource : nju/iip/dto/WeiboAccount.hbm.xml
+2015-11-03 15:09:18   INFO Configuration:789 -Reading mappings from resource : nju/iip/dto/WeiboData.hbm.xml
+2015-11-03 15:09:18   INFO Configuration:2297 -Configured SessionFactory: null
+2015-11-03 15:09:18   INFO HbmBinder:353 -Mapping class: nju.iip.dto.WeiboAccount -> WeiboAccount
+2015-11-03 15:09:18   INFO HbmBinder:353 -Mapping class: nju.iip.dto.WeiboData -> WeiboData
+2015-11-03 15:09:18   INFO Configuration:1676 -Hibernate Validator not found: ignoring
+2015-11-03 15:09:18   INFO HibernateSearchEventListenerRegister:75 -Unable to find org.hibernate.search.event.FullTextIndexEventListener on the classpath. Hibernate Search is not enabled.
+2015-11-03 15:09:18   INFO DriverManagerConnectionProvider:64 -Using Hibernate built-in connection pool (not for production use!)
+2015-11-03 15:09:18   INFO DriverManagerConnectionProvider:65 -Hibernate connection pool size: 20
+2015-11-03 15:09:18   INFO DriverManagerConnectionProvider:68 -autocommit mode: false
+2015-11-03 15:09:18   INFO DriverManagerConnectionProvider:103 -using driver: com.mysql.jdbc.Driver at URL: jdbc:mysql://114.212.80.14/weibo
+2015-11-03 15:09:18   INFO DriverManagerConnectionProvider:109 -connection properties: {user=root, password=****}
+2015-11-03 15:09:19   INFO Dialect:135 -Using dialect: org.hibernate.dialect.MySQLDialect
+2015-11-03 15:09:19   INFO JdbcSupportLoader:79 -Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2015-11-03 15:09:19   INFO SettingsFactory:126 -Database ->
+       name : MySQL
+    version : 5.0.96-community-nt
+      major : 5
+      minor : 0
+2015-11-03 15:09:19   INFO SettingsFactory:132 -Driver ->
+       name : MySQL-AB JDBC Driver
+    version : mysql-connector-java-5.0.8 ( Revision: ${svn.Revision} )
+      major : 5
+      minor : 0
+2015-11-03 15:09:19   INFO TransactionFactoryFactory:62 -Using default transaction strategy (direct JDBC transactions)
+2015-11-03 15:09:19   INFO TransactionManagerLookupFactory:83 -No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+2015-11-03 15:09:19   INFO SettingsFactory:179 -Automatic flush during beforeCompletion(): disabled
+2015-11-03 15:09:19   INFO SettingsFactory:183 -Automatic session close at end of transaction: disabled
+2015-11-03 15:09:19   INFO SettingsFactory:190 -JDBC batch size: 15
+2015-11-03 15:09:19   INFO SettingsFactory:193 -JDBC batch updates for versioned data: disabled
+2015-11-03 15:09:19   INFO SettingsFactory:198 -Scrollable result sets: enabled
+2015-11-03 15:09:19   INFO SettingsFactory:206 -JDBC3 getGeneratedKeys(): enabled
+2015-11-03 15:09:19   INFO SettingsFactory:214 -Connection release mode: auto
+2015-11-03 15:09:19   INFO SettingsFactory:238 -Maximum outer join fetch depth: 2
+2015-11-03 15:09:19   INFO SettingsFactory:241 -Default batch fetch size: 1
+2015-11-03 15:09:19   INFO SettingsFactory:245 -Generate SQL with comments: disabled
+2015-11-03 15:09:19   INFO SettingsFactory:249 -Order SQL updates by primary key: disabled
+2015-11-03 15:09:19   INFO SettingsFactory:253 -Order SQL inserts for batching: disabled
+2015-11-03 15:09:19   INFO SettingsFactory:431 -Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+2015-11-03 15:09:19   INFO ASTQueryTranslatorFactory:47 -Using ASTQueryTranslatorFactory
+2015-11-03 15:09:19   INFO SettingsFactory:261 -Query language substitutions: {}
+2015-11-03 15:09:19   INFO SettingsFactory:266 -JPA-QL strict compliance: disabled
+2015-11-03 15:09:19   INFO SettingsFactory:271 -Second-level cache: enabled
+2015-11-03 15:09:19   INFO SettingsFactory:275 -Query cache: disabled
+2015-11-03 15:09:19   INFO SettingsFactory:406 -Cache region factory : org.hibernate.cache.impl.NoCachingRegionFactory
+2015-11-03 15:09:19   INFO SettingsFactory:285 -Optimize cache for minimal puts: disabled
+2015-11-03 15:09:19   INFO SettingsFactory:294 -Structured second-level cache entries: disabled
+2015-11-03 15:09:19   INFO SettingsFactory:323 -Statistics: disabled
+2015-11-03 15:09:19   INFO SettingsFactory:327 -Deleted entity synthetic identifier rollback: disabled
+2015-11-03 15:09:19   INFO SettingsFactory:343 -Default entity-mode: pojo
+2015-11-03 15:09:19   INFO SettingsFactory:347 -Named query checking : enabled
+2015-11-03 15:09:19   INFO SettingsFactory:351 -Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+2015-11-03 15:09:19   INFO SessionFactoryImpl:202 -building session factory
+2015-11-03 15:09:19   INFO BasicTypeRegistry:150 -Type registration [wrapper_materialized_blob] overrides previous : org.hibernate.type.WrappedMaterializedBlobType@7054fdb9
+2015-11-03 15:09:19   INFO BasicTypeRegistry:150 -Type registration [wrapper_characters_clob] overrides previous : org.hibernate.type.CharacterArrayClobType@cdc9640
+2015-11-03 15:09:19   INFO BasicTypeRegistry:150 -Type registration [clob] overrides previous : org.hibernate.type.ClobType@10123d67
+2015-11-03 15:09:19   INFO BasicTypeRegistry:150 -Type registration [java.sql.Clob] overrides previous : org.hibernate.type.ClobType@10123d67
+2015-11-03 15:09:19   INFO BasicTypeRegistry:150 -Type registration [materialized_clob] overrides previous : org.hibernate.type.MaterializedClobType@498d1da
+2015-11-03 15:09:19   INFO BasicTypeRegistry:150 -Type registration [materialized_blob] overrides previous : org.hibernate.type.MaterializedBlobType@53764dc5
+2015-11-03 15:09:19   INFO BasicTypeRegistry:150 -Type registration [characters_clob] overrides previous : org.hibernate.type.PrimitiveCharacterArrayClobType@3b70af7d
+2015-11-03 15:09:19   INFO BasicTypeRegistry:150 -Type registration [blob] overrides previous : org.hibernate.type.BlobType@3a084471
+2015-11-03 15:09:19   INFO BasicTypeRegistry:150 -Type registration [java.sql.Blob] overrides previous : org.hibernate.type.BlobType@3a084471
+2015-11-03 15:09:19   INFO CookiePool:86 -add 3 cookies successful!
+2015-11-03 15:09:19   INFO SessionFactoryObjectFactory:105 -Not binding factory to JNDI, no JNDI name configured
+2015-11-03 15:09:19   INFO UrlPool:69 -0#finance:add 5 urls successful!
+2015-11-03 15:09:19   INFO UrlPool:69 -1#yicairibao:add 5 urls successful!
+2015-11-03 15:09:19   INFO UrlPool:69 -2#001qh:add 5 urls successful!
+2015-11-03 15:09:19   INFO UrlPool:69 -3#cmschina:add 5 urls successful!
+2015-11-03 15:09:19   INFO UrlPool:69 -4#stockyc:add 5 urls successful!
+2015-11-03 15:09:19   INFO UrlPool:69 -5#stocknews88:add 5 urls successful!
+2015-11-03 15:09:19   INFO UrlPool:69 -6#jrjia:add 5 urls successful!
+2015-11-03 15:09:19   INFO UrlPool:69 -7#jrjnews:add 5 urls successful!
+2015-11-03 15:09:19   INFO UrlPool:69 -8#21cbh:add 5 urls successful!
+2015-11-03 15:09:19   INFO UrlPool:69 -9#chinesewsj:add 5 urls successful!
+2015-11-03 15:09:19   INFO UrlPool:69 -10#mrjjxw:add 5 urls successful!
+2015-11-03 15:09:19   INFO UrlPool:69 -11#chuangyejia:add 5 urls successful!
+2015-11-03 15:09:19   INFO UrlPool:69 -12#financeifeng:add 5 urls successful!
+2015-11-03 15:09:19   INFO UrlPool:69 -13#caijing:add 5 urls successful!
+2015-11-03 15:09:19   INFO UrlPool:69 -14#xinhuacaijing:add 5 urls successful!
+2015-11-03 15:09:19   INFO UrlPool:69 -15#cctvcaijing:add 5 urls successful!
+2015-11-03 15:09:19   INFO UrlPool:69 -16#bankchannel:add 5 urls successful!
+2015-11-03 15:09:19   INFO UrlPool:69 -17#cctv2:add 5 urls successful!
+2015-11-03 15:09:19   INFO UrlPool:69 -18#czhidao:add 5 urls successful!
+2015-11-03 15:09:19   INFO UrlPool:69 -19#cctv2shizhendema:add 5 urls successful!
+2015-11-03 15:09:19   INFO UrlPool:69 -20#3gifengfinance:add 5 urls successful!
+2015-11-03 15:09:19   INFO UrlPool:69 -21#cctvduishou:add 5 urls successful!
+2015-11-03 15:09:19   INFO UrlPool:69 -22#cctv2jjxxlb:add 5 urls successful!
+2015-11-03 15:09:19   INFO UrlPool:69 -23#1923758382:add 5 urls successful!
+2015-11-03 15:09:19   INFO UrlPool:69 -24#dongfangcaijing:add 5 urls successful!
+2015-11-03 15:09:19   INFO UrlPool:69 -25#sdjjbd:add 5 urls successful!
+2015-11-03 15:09:19   INFO UrlPool:69 -26#managingchina:add 5 urls successful!
+2015-11-03 15:09:19   INFO UrlPool:69 -27#1915258194:add 5 urls successful!
+2015-11-03 15:09:19   INFO UrlPool:69 -28#gouwujieweibo:add 5 urls successful!
+2015-11-03 15:09:19   INFO UrlPool:69 -29#zjmoney:add 5 urls successful!
+2015-11-03 15:09:19   INFO UrlPool:69 -30#hbcjpd:add 5 urls successful!
+2015-11-03 15:09:19   INFO UrlPool:69 -31#sinahkfin:add 5 urls successful!
+2015-11-03 15:09:19   INFO UrlPool:69 -32#bxhudong:add 5 urls successful!
+2015-11-03 15:09:19   INFO UrlPool:69 -33#cbnlicai:add 5 urls successful!
+2015-11-03 15:09:19   INFO UrlPool:69 -34#cctvyscjzgcyby:add 5 urls successful!
+2015-11-03 15:09:19   INFO UrlPool:69 -35#caijingwanglifestyle:add 5 urls successful!
+2015-11-03 15:09:19   INFO UrlPool:69 -36#qingdaocaijing:add 5 urls successful!
+2015-11-03 15:09:19   INFO UrlPool:69 -37#2551269245:add 5 urls successful!
+2015-11-03 15:09:19   INFO UrlPool:69 -38#scfinance:add 5 urls successful!
+2015-11-03 15:09:19   INFO UrlPool:69 -39#shangducaijing:add 5 urls successful!
+2015-11-03 15:09:19   INFO UrlPool:69 -40#2542675512:add 5 urls successful!
+2015-11-03 15:09:19   INFO UrlPool:69 -41#xiaoyansqe:add 5 urls successful!
+2015-11-03 15:09:19   INFO UrlPool:69 -42#nengjianpai:add 5 urls successful!
+2015-11-03 15:09:19   INFO UrlPool:69 -43#takungmoney:add 5 urls successful!
+2015-11-03 15:09:19   INFO UrlPool:69 -44#caijingwangcompany:add 5 urls successful!
+2015-11-03 15:09:19   INFO UrlPool:69 -45#44697898:add 5 urls successful!
+2015-11-03 15:09:19   INFO UrlPool:69 -46#qidane:add 5 urls successful!
+2015-11-03 15:09:19   INFO UrlPool:69 -47#1443935474:add 5 urls successful!
+2015-11-03 15:09:19   INFO UrlPool:69 -48#224624519:add 5 urls successful!
+2015-11-03 15:09:19   INFO UrlPool:69 -49#2926190472:add 5 urls successful!
+2015-11-03 15:09:19   INFO UrlPool:69 -50#carglobal:add 5 urls successful!
+2015-11-03 15:09:19   INFO UrlPool:69 -51#caijingnewmedia:add 5 urls successful!
+2015-11-03 15:09:19   INFO UrlPool:69 -52#yamafinance:add 5 urls successful!
+2015-11-03 15:09:19   INFO UrlPool:69 -53#xjrgc:add 5 urls successful!
+2015-11-03 15:09:19   INFO UrlPool:69 -54#xintuoquaner:add 5 urls successful!
+2015-11-03 15:09:19   INFO UrlPool:69 -55#2606391594:add 5 urls successful!
+2015-11-03 15:09:19   INFO UrlPool:69 -56#xiaoleikanshi:add 5 urls successful!
+2015-11-03 15:09:19   INFO UrlPool:69 -57#jinriguancha:add 5 urls successful!
+2015-11-03 15:09:19   INFO UrlPool:69 -58#niusongrui:add 5 urls successful!
+2015-11-03 15:09:19   INFO UrlPool:69 -59#2074033667:add 5 urls successful!
+2015-11-03 15:09:19   INFO UrlPool:69 -60#financeinfo:add 5 urls successful!
+2015-11-03 15:09:19   INFO UrlPool:69 -61#1661677461:add 5 urls successful!
+2015-11-03 15:09:19   INFO UrlPool:69 -62#1686982000:add 5 urls successful!
+2015-11-03 15:09:19   INFO UrlPool:69 -63#2014348100:add 5 urls successful!
+2015-11-03 15:09:19   INFO UrlPool:69 -64#1662579485:add 5 urls successful!
+2015-11-03 15:09:19   INFO UrlPool:69 -65#635249345:add 5 urls successful!
+2015-11-03 15:09:19   INFO UrlPool:69 -66#1653400800:add 5 urls successful!
+2015-11-03 15:09:19   INFO UrlPool:69 -67#cninfocomcn:add 5 urls successful!
+2015-11-03 15:09:19   INFO UrlPool:69 -68#1850625441:add 5 urls successful!
+2015-11-03 15:09:19   INFO UrlPool:69 -69#cnforex8:add 5 urls successful!
+2015-11-03 15:09:19   INFO UrlPool:69 -70#prnafin:add 5 urls successful!
+2015-11-03 15:09:19   INFO UrlPool:69 -71#xinlangshanxicaijing:add 5 urls successful!
+2015-11-03 15:09:19   INFO UrlPool:69 -72#pincj:add 5 urls successful!
+2015-11-03 15:09:19   INFO UrlPool:69 -73#jfinfo:add 5 urls successful!
+2015-11-03 15:09:19   INFO UrlPool:69 -74#cbnweekly:add 5 urls successful!
+2015-11-03 15:09:19   INFO UrlPool:69 -75#caijing19980418:add 5 urls successful!
+2015-11-03 15:09:19   INFO UrlPool:69 -76#lanjingcaijing:add 5 urls successful!
+2015-11-03 15:09:19   INFO UrlPool:69 -77#diyicaijing:add 5 urls successful!
+2015-11-03 15:09:19   INFO UrlPool:69 -78#cjzgcn:add 5 urls successful!
+2015-11-03 15:09:19   INFO UrlPool:69 -79#goldenacca:add 5 urls successful!
+2015-11-03 15:09:19   INFO UrlPool:69 -80#caijingguojiazhoukan:add 5 urls successful!
+2015-11-03 15:09:19   INFO UrlPool:69 -81#caijinglangyan:add 5 urls successful!
+2015-11-03 15:09:19   INFO UrlPool:69 -82#huagumobile:add 5 urls successful!
+2015-11-03 15:09:19   INFO UrlPool:69 -83#2560432091:add 5 urls successful!
+2015-11-03 15:09:19   INFO UrlPool:69 -84#investodaysz:add 5 urls successful!
+2015-11-03 15:09:19   INFO UrlPool:69 -85#591hx:add 5 urls successful!
+2015-11-03 15:09:19   INFO UrlPool:69 -86#caijingtianxia:add 5 urls successful!
+2015-11-03 15:09:19   INFO UrlPool:69 -87#fnlady:add 5 urls successful!
+2015-11-03 15:09:19   INFO UrlPool:69 -88#dzhnews:add 5 urls successful!
+2015-11-03 15:09:19   INFO UrlPool:69 -89#cctvzqt:add 5 urls successful!
+2015-11-03 15:09:19   INFO UrlPool:69 -90#secutimes:add 5 urls successful!
+2015-11-03 15:09:19   INFO UrlPool:69 -91#zqsczk:add 5 urls successful!
+2015-11-03 15:09:19   INFO UrlPool:69 -92#hzkstock:add 5 urls successful!
+2015-11-03 15:09:19   INFO UrlPool:69 -93#cnstock:add 5 urls successful!
+2015-11-03 15:09:19   INFO UrlPool:69 -94#stock666666:add 5 urls successful!
+2015-11-03 15:09:19   INFO UrlPool:69 -95#hexunwang:add 5 urls successful!
+2015-11-03 15:09:19   INFO UrlPool:69 -96#tonghuashun:add 5 urls successful!
+2015-11-03 15:09:19   INFO UrlPool:69 -97#fund123:add 5 urls successful!
+2015-11-03 15:09:19   INFO UrlPool:69 -98#chinadailybiz:add 5 urls successful!
+2015-11-03 15:09:19   INFO UrlPool:69 -99#1280149673:add 5 urls successful!
+2015-11-03 15:09:19   INFO UrlPool:69 -100#cfcxinhua08:add 5 urls successful!
+2015-11-03 15:09:19   INFO UrlPool:69 -101#iyicai:add 5 urls successful!
+2015-11-03 15:09:19   INFO UrlPool:69 -102#591hx:add 5 urls successful!
+2015-11-03 15:09:19   INFO UrlPool:69 -103#cbnew:add 5 urls successful!
+2015-11-03 15:09:19   INFO UrlPool:69 -104#szse:add 5 urls successful!
+2015-11-03 15:09:19   INFO UrlPool:69 -105#chinasse:add 5 urls successful!
+2015-11-03 15:09:19   INFO UrlPool:69 -106#gzsecurities:add 5 urls successful!
+2015-11-03 15:09:19   INFO UrlPool:69 -107#cifco00996:add 5 urls successful!
+2015-11-03 15:09:19   INFO UrlPool:69 -108#1736305611:add 5 urls successful!
+2015-11-03 15:09:19   INFO UrlPool:69 -109#hkcdCN:add 5 urls successful!
+2015-11-03 15:09:19   INFO UrlPool:69 -110#csrcfabu:add 5 urls successful!
+2015-11-03 15:09:19   INFO UrlPool:69 -111#cninfocomcn:add 5 urls successful!
+2015-11-03 15:09:19   INFO UrlPool:69 -112#amoney:add 5 urls successful!
+2015-11-03 15:09:19   INFO UrlPool:69 -113#moneyweekly:add 5 urls successful!
+2015-11-03 15:09:19   INFO UrlPool:69 -114#caixincn:add 5 urls successful!
+2015-11-03 15:09:19   INFO UrlPool:69 -115#afinance:add 5 urls successful!
+2015-11-03 15:09:19   INFO UrlPool:69 -116#ccstock:add 5 urls successful!
+2015-11-03 15:09:19   INFO UrlPool:69 -117#newmarketing:add 5 urls successful!
+2015-11-03 15:09:19   INFO UrlPool:69 -118#bankofchina:add 5 urls successful!
+2015-11-03 15:09:19   INFO UrlPool:69 -119#forbeschina:add 5 urls successful!
+2015-11-03 15:09:19   INFO UrlPool:69 -120#zgjrxww:add 5 urls successful!
+2015-11-03 15:09:19   INFO UrlPool:69 -121#1865425867:add 5 urls successful!
+2015-11-03 15:09:19   INFO UrlPool:69 -122#qhrb:add 5 urls successful!
+2015-11-03 15:09:19   INFO UrlPool:69 -123#usstockroll:add 5 urls successful!
+2015-11-03 15:09:19   INFO UrlPool:69 -124#chinesewsj:add 5 urls successful!
+2015-11-03 15:09:19   INFO UrlPool:69 -125#newfortune:add 5 urls successful!
+2015-11-03 15:09:19   INFO UrlPool:69 -126#xcfyqjk:add 5 urls successful!
+2015-11-03 15:09:19   INFO UrlPool:69 -127#577440293:add 5 urls successful!
+2015-11-03 15:09:19   INFO UrlPool:69 -128#qianjing:add 5 urls successful!
+2015-11-03 15:09:19   INFO UrlPool:69 -129#tremedy:add 5 urls successful!
+2015-11-03 15:09:19   INFO UrlPool:69 -130#dzhnews:add 5 urls successful!
+2015-11-03 15:09:19   INFO UrlPool:69 -131#caixuncom:add 5 urls successful!
+2015-11-03 15:09:19   INFO UrlPool:69 -132#financedaily:add 5 urls successful!
+2015-11-03 15:09:19   INFO UrlPool:69 -133#theweekfortune:add 5 urls successful!
+2015-11-03 15:09:19   INFO UrlPool:69 -134#2649363891:add 5 urls successful!
+2015-11-03 15:09:19   INFO UrlPool:69 -135#hket:add 5 urls successful!
+2015-11-03 15:09:19   INFO UrlPool:69 -136#/shjrb:add 5 urls successful!
+2015-11-03 15:09:19   INFO UrlPool:69 -137#cjzgcn:add 5 urls successful!
+2015-11-03 15:09:19   INFO UrlPool:69 -138#chncaijing:add 5 urls successful!
+2015-11-03 15:09:19   INFO UrlPool:69 -139#jiangnanstockstar:add 5 urls successful!
+2015-11-03 15:09:19   INFO UrlPool:69 -140#chinesefunds:add 5 urls successful!
+2015-11-03 15:09:19   INFO UrlPool:69 -141#1469584602:add 5 urls successful!
+2015-11-03 15:09:19   INFO UrlPool:69 -142#cnr2:add 5 urls successful!
+2015-11-03 15:09:19   INFO UrlPool:69 -143#langxianpinghk:add 5 urls successful!
+2015-11-03 15:09:19   INFO UrlPool:69 -144#cecn:add 5 urls successful!
+2015-11-03 15:09:19   INFO UrlPool:69 -145#jjckb:add 5 urls successful!
+2015-11-03 15:09:19   INFO UrlPool:69 -146#ceweekly:add 5 urls successful!
+2015-11-03 15:09:19   INFO UrlPool:69 -147#/cetwb:add 5 urls successful!
+2015-11-03 15:09:19   INFO UrlPool:69 -148#1846217753:add 5 urls successful!
+2015-11-03 15:09:19   INFO UrlPool:69 -149#mypension:add 5 urls successful!
+2015-11-03 15:09:20   INFO HttpUtil:25 -***************AntiCrawler detected***************
+2015-11-03 15:09:20   INFO HttpUtil:57 -***************new cookie is:PHPSESSID=5c2457fcb085871c484df8ad4c669c17;SUB=_2A257PC3ODeThGeNN7lEW8yrLwjmIHXVWaCYGrDV6PUJbrdANLULWkWo9oa5czgv5sXz9znS38BR-95snNA..;_T_WM=98fa5de7197b46262da7c993f445da6d;gsid_CTandWM=4ulX57061aYaxe9OPWaXbmsKycP;
+2015-11-03 15:09:20   INFO UrlPool:69 -150#gaoyuanyuan:add 115 urls successful!
+2015-11-03 15:09:20   INFO UrlPool:71 -本次待爬取URL总数为：865
+2015-11-03 15:09:20   INFO UrlPool:33 -****************urlPool线程finish！****************
+2015-11-03 15:09:28   WARN JDBCExceptionReporter:233 -SQL Error: 1366, SQLState: HY000
+2015-11-03 15:09:28  ERROR JDBCExceptionReporter:234 -Incorrect string value: '\xF0\x9F\x98\xB8 \xE6...' for column 'text' at row 1
+2015-11-03 15:09:28  ERROR WeiboDataDao:28 -saveWeibo failed!
+org.hibernate.exception.GenericJDBCException: could not insert: [nju.iip.dto.WeiboData]
+	at org.hibernate.exception.SQLStateConverter.handledNonSpecificException(SQLStateConverter.java:140)
+	at org.hibernate.exception.SQLStateConverter.convert(SQLStateConverter.java:128)
+	at org.hibernate.exception.JDBCExceptionHelper.convert(JDBCExceptionHelper.java:66)
+	at org.hibernate.id.insert.AbstractReturningDelegate.performInsert(AbstractReturningDelegate.java:64)
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:2345)
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:2852)
+	at org.hibernate.action.EntityIdentityInsertAction.execute(EntityIdentityInsertAction.java:71)
+	at org.hibernate.engine.ActionQueue.execute(ActionQueue.java:273)
+	at org.hibernate.event.def.AbstractSaveEventListener.performSaveOrReplicate(AbstractSaveEventListener.java:320)
+	at org.hibernate.event.def.AbstractSaveEventListener.performSave(AbstractSaveEventListener.java:203)
+	at org.hibernate.event.def.AbstractSaveEventListener.saveWithGeneratedId(AbstractSaveEventListener.java:129)
+	at org.hibernate.event.def.DefaultSaveOrUpdateEventListener.saveWithGeneratedOrRequestedId(DefaultSaveOrUpdateEventListener.java:210)
+	at org.hibernate.event.def.DefaultSaveEventListener.saveWithGeneratedOrRequestedId(DefaultSaveEventListener.java:56)
+	at org.hibernate.event.def.DefaultSaveOrUpdateEventListener.entityIsTransient(DefaultSaveOrUpdateEventListener.java:195)
+	at org.hibernate.event.def.DefaultSaveEventListener.performSaveOrUpdate(DefaultSaveEventListener.java:50)
+	at org.hibernate.event.def.DefaultSaveOrUpdateEventListener.onSaveOrUpdate(DefaultSaveOrUpdateEventListener.java:93)
+	at org.hibernate.impl.SessionImpl.fireSave(SessionImpl.java:713)
+	at org.hibernate.impl.SessionImpl.save(SessionImpl.java:701)
+	at org.hibernate.impl.SessionImpl.save(SessionImpl.java:697)
+	at nju.iip.dao.WeiboDataDao.saveWeibo(WeiboDataDao.java:21)
+	at nju.iip.spider.WeiboSpider.run(WeiboSpider.java:65)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.sql.SQLException: Incorrect string value: '\xF0\x9F\x98\xB8 \xE6...' for column 'text' at row 1
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:946)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:2985)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:1631)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:1723)
+	at com.mysql.jdbc.Connection.execSQL(Connection.java:3283)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1332)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:1604)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:1519)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:1504)
+	at org.hibernate.id.IdentityGenerator$GetGeneratedKeysDelegate.executeAndExtract(IdentityGenerator.java:94)
+	at org.hibernate.id.insert.AbstractReturningDelegate.performInsert(AbstractReturningDelegate.java:57)
+	... 20 more

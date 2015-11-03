@@ -32,7 +32,7 @@ public class UrlPool implements Runnable{
 			getSpiderURL();
 			logger.info("****************urlPool线程finish！****************");
 			try{
-				Thread.sleep(12*60*60*1000);
+				Thread.sleep(60*60*1000);
 			}catch(Exception e) {
 				logger.info("UrlPool run error!",e);
 			}
@@ -56,6 +56,7 @@ public class UrlPool implements Runnable{
 			//全部爬取
 			if(history==0) {
 				sumPages = HttpUtil.getPageNum(url);
+				wad.updateHistory(accountUrl);//标记为已全部爬取
 			}
 			//增量爬取
 			else {
