@@ -27,6 +27,7 @@ public class CookiePool implements Runnable{
 	
 	@Override
 	public void run() {
+		logger.info("****************cookiePool线程start！****************");
 		while(true) {
 			initializeCookiePool();
 			try{
@@ -35,8 +36,6 @@ public class CookiePool implements Runnable{
 				logger.error("cookiePool sleep error",e);
 			}
 		}
-		
-		
 	}
 
 	/**

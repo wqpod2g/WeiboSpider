@@ -7,7 +7,6 @@ import nju.iip.util.Config;
 
 public class BloomFactory {
 	private static BloomFilter<String> bf; 
-	private static String synth = "";
 	private static BloomFactory bloomFactory; 
 	private String path;
 
@@ -22,7 +21,7 @@ public class BloomFactory {
 	}
 
 	public static BloomFactory getInstance() {
-			synchronized (synth) {
+			synchronized (BloomFactory.class) {
 				if (bloomFactory == null) {
 					bloomFactory = new BloomFactory();
 				}
@@ -36,9 +35,7 @@ public class BloomFactory {
 	 * @return
 	 */
 	public synchronized void saveBloomFilter() {
-		synchronized (bf) {
-			bf.save(path);
-		}
+		bf.save(path);
 	}
 
 	/**
@@ -49,10 +46,8 @@ public class BloomFactory {
 	 * @param type
 	 * @return
 	 */
-	public void add(String url) {
-		synchronized (bf) {
-			bf.add(url);
-		}
+	public synchronized void add(String url) {
+		bf.add(url);
 	}
 
 	/**
@@ -73,9 +68,9 @@ public class BloomFactory {
 	
 	public static void main(String[] args) {
 		BloomFactory bf = BloomFactory.getInstance();
-		bf.add("wq");
-		bf.saveBloomFilter();
-		System.out.println(bf.contains("w")+bf.path);
+		//bf.add("午间分享】这...双十一前工作量应该不低吧....http://t.cn/RUpPWw6");
+		//bf.saveBloomFilter();
+		System.out.println(bf.contains("午间分享】这...双十一前工作量应该不低吧....http://t.cn/RUpPWw6")+bf.path);
 	}
 	
 }

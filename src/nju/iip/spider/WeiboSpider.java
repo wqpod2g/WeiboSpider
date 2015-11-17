@@ -48,6 +48,7 @@ public class WeiboSpider implements Runnable {
 
 	@Override
 	public void run() {
+		logger.info("****************WeiboSpider线程start！****************");
 		try {
 			while (true) {
 				String url = urlQueue.take();
@@ -55,9 +56,8 @@ public class WeiboSpider implements Runnable {
 					String html = HttpUtil.getHTML(url);
 					List<WeiboData> weibo_list = parserWeibo(html,url);
 					count+= weibo_list.size();
-					if(count>10000) {
+					if(count>100) {
 						sum = sum+count;
-						bf.saveBloomFilter();//持久化boolm过滤器
 						logger.info("already crawler weibo numbers:" + sum);
 						count = 0;
 					}
@@ -102,6 +102,7 @@ public class WeiboSpider implements Runnable {
 				}
 				else {
 					bf.add(key);
+					bf.saveBloomFilter();//持久化boolm过滤器
 				}
 				String reg = "转发理由";
 				Elements cmtEle = weibo.select("div:contains(" + reg + ")");

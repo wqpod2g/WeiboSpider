@@ -46,7 +46,6 @@ public class UrlPool implements Runnable{
 	public void getSpiderURL() {
 		WeiboAccountDao wad = new WeiboAccountDao();
 		List<WeiboAccount> list = wad.getAccountlist();
-		int n = 0;
 		int url_sum = 0;//待爬取url计数器
 		for(WeiboAccount wa:list) {
 			String accountUrl = wa.getAccountUrl().trim();
@@ -66,7 +65,6 @@ public class UrlPool implements Runnable{
 			for(int i=1;i<=sumPages;i++) {
 				urlQueue.offer(url+"?page="+i);//插入队列
 			}
-			logger.info((n++)+"#"+accountUrl+":add "+sumPages+" urls successful!");
 		}
 		logger.info("本次待爬取URL总数为："+url_sum);
 	}
