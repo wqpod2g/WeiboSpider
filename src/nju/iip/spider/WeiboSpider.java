@@ -31,47 +31,53 @@ import org.slf4j.LoggerFactory;
  */
 public class WeiboSpider implements Runnable {
 
-	private static final Logger logger = LoggerFactory
-			.getLogger(WeiboSpider.class);
+	private static final Logger logger = LoggerFactory.getLogger(WeiboSpider.class);
 
 	private BlockingQueue<String> urlQueue;
 	
 	private WeiboDataDao wdd = new WeiboDataDao();
+	
+	private int spiderID;
 
-	public WeiboSpider(BlockingQueue<String> urlQueue) {
+	public WeiboSpider(BlockingQueue<String> urlQueue,int spiderID) {
 		this.urlQueue = urlQueue;
+		this.spiderID = spiderID;
 	}
 	
 	private BloomFactory bf = BloomFactory.getInstance();
 	
-	private static int sum = 0;//已爬取的微博数
+	private static int sum = 0;//所有爬虫已爬取的微博数
 	
-	private static int count = 0;
+	private int count = 0;
 
 	@Override
 	public void run() {
-		logger.info("****************WeiboSpider线程start！****************");
+		logger.info("****************Spider线程start！****************");
 		try {
 			while (true) {
+				if(urlQueue.size()==0) {
+					logger.info("urlPool is Empty...");
+				}
 				String url = urlQueue.take();
 				if (url != null) {
 					String html = HttpUtil.getHTML(url);
 					List<WeiboData> weibo_list = parserWeibo(html,url);
 					count+= weibo_list.size();
 					if(count>100) {
-						sum = sum+count;
+						synchronized(WeiboSpider.class) {
+							sum = sum+count;
+						}
 						logger.info("already crawler weibo numbers:" + sum);
 						count = 0;
+						bf.saveBloomFilter();//持久化boolm过滤器
 					}
 					wdd.saveWeibo(weibo_list);
-					bf.saveBloomFilter();//持久化boolm过滤器
 				}
 			}
 		} catch (Exception e) {
 			logger.error("WeiboSpider error", e);
-			Thread.currentThread().interrupt();
 		}
-		logger.info("****************WeiboSpider线程stop！****************");
+		logger.info("****************"+spiderID+"号Spider线程stop！****************");
 	}
 
 	/**
@@ -179,9 +185,10 @@ public class WeiboSpider implements Runnable {
 	public static void main(String[] args) {
 		BlockingQueue<String> UrlQueue = new LinkedBlockingQueue<String>();
 		CookiePool cookiePool = new CookiePool();//cookie池
-		WeiboSpider spider1 = new WeiboSpider(UrlQueue);//爬虫任务1
-		WeiboSpider spider2 = new WeiboSpider(UrlQueue);//爬虫任务2
-		WeiboSpider spider3 = new WeiboSpider(UrlQueue);//爬虫任务3
+		WeiboSpider spider1 = new WeiboSpider(UrlQueue,1);//爬虫任务1
+		WeiboSpider spider2 = new WeiboSpider(UrlQueue,2);//爬虫任务2
+		WeiboSpider spider3 = new WeiboSpider(UrlQueue,3);//爬虫任务3
+		WeiboSpider spider4 = new WeiboSpider(UrlQueue,4);//爬虫任务4
 		UrlPool urlPool = new UrlPool(UrlQueue);//url池
 		ExecutorService service = Executors.newCachedThreadPool();
 		service.execute(cookiePool);
@@ -189,6 +196,7 @@ public class WeiboSpider implements Runnable {
 		service.execute(spider1);
 		service.execute(spider2);
 		service.execute(spider3);
+		service.execute(spider4);
 	}
 
 }

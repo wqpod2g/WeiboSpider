@@ -21,11 +21,13 @@ public class BloomFactory {
 	}
 
 	public static BloomFactory getInstance() {
+		if(bloomFactory==null) {
 			synchronized (BloomFactory.class) {
 				if (bloomFactory == null) {
 					bloomFactory = new BloomFactory();
 				}
 		    }
+		}
 		return bloomFactory;
 	}
 
@@ -51,7 +53,7 @@ public class BloomFactory {
 	}
 
 	/**
-	 * 是否已经存在URL
+	 * 是否已经存在URL
 	 * 
 	 * @param url
 	 * @param Class_type
