@@ -3764,3 +3764,1721 @@ java.lang.IllegalArgumentException: Cookie value must not be null
 2015-12-14 19:53:55   INFO HttpUtil:52 -***************begin sleep!!!!***************
 2015-12-14 19:53:57   INFO HttpUtil:25 -***************AntiCrawler detected***************
 2015-12-14 19:53:57   INFO HttpUtil:57 -***************new cookie is:PHPSESSID=03506d672f7ff2652fded3abcb37e3e3;SUB=_2A257at2DDeThGeNN7lEW8yrLwjmIHXVWPlZLrDV6PUJbrdANLVrEkWp3zw6JaZlGESHgJWaAKFt05sntsw..;_T_WM=0905dca124f180fa15eb978d96c795a4;gsid_CTandWM=4ulX57061aYaxe9OPWaXbmsKycP;
+2015-12-14 20:40:40   INFO Version:37 -Hibernate Commons Annotations 3.2.0.Final
+2015-12-14 20:40:40   INFO Environment:603 -Hibernate 3.6.4.Final
+2015-12-14 20:40:40   INFO Environment:636 -hibernate.properties not found
+2015-12-14 20:40:40   INFO Environment:814 -Bytecode provider name : javassist
+2015-12-14 20:40:40   INFO Environment:695 -using JDK 1.4 java.sql.Timestamp handling
+2015-12-14 20:40:40   INFO Configuration:2156 -configuring from resource: /hibernate.cfg.xml
+2015-12-14 20:40:40   INFO Configuration:2175 -Configuration resource: /hibernate.cfg.xml
+2015-12-14 20:40:40   INFO Configuration:789 -Reading mappings from resource : nju/iip/dto/WeiboAccount.hbm.xml
+2015-12-14 20:40:40   INFO Configuration:789 -Reading mappings from resource : nju/iip/dto/WeiboData.hbm.xml
+2015-12-14 20:40:41   INFO Configuration:2297 -Configured SessionFactory: null
+2015-12-14 20:40:41   INFO HbmBinder:353 -Mapping class: nju.iip.dto.WeiboAccount -> WeiboAccount
+2015-12-14 20:40:41   INFO HbmBinder:353 -Mapping class: nju.iip.dto.WeiboData -> WeiboData
+2015-12-14 20:40:41   INFO Configuration:1676 -Hibernate Validator not found: ignoring
+2015-12-14 20:40:41   INFO HibernateSearchEventListenerRegister:75 -Unable to find org.hibernate.search.event.FullTextIndexEventListener on the classpath. Hibernate Search is not enabled.
+2015-12-14 20:40:41   INFO ConnectionProviderFactory:173 -Initializing connection provider: org.hibernate.connection.C3P0ConnectionProvider
+2015-12-14 20:40:41   INFO C3P0ConnectionProvider:103 -C3P0 using driver: com.mysql.jdbc.Driver at URL: jdbc:mysql://114.212.86.23/weibo
+2015-12-14 20:40:41   INFO C3P0ConnectionProvider:104 -Connection properties: {user=root, password=****}
+2015-12-14 20:40:41   INFO C3P0ConnectionProvider:107 -autocommit mode: false
+2015-12-14 20:40:41   WARN C3P0ConnectionProvider:232 -Both hibernate-style property 'hibernate.c3p0.max_statement' and c3p0-style property 'c3p0.max_statement' have been set in hibernate.properties. Hibernate-style property 'hibernate.c3p0.max_statement' will be used and c3p0-style property 'c3p0.max_statement' will be ignored!
+2015-12-14 20:40:41   WARN C3P0ConnectionProvider:232 -Both hibernate-style property 'hibernate.c3p0.time_out' and c3p0-style property 'c3p0.time_out' have been set in hibernate.properties. Hibernate-style property 'hibernate.c3p0.time_out' will be used and c3p0-style property 'c3p0.time_out' will be ignored!
+2015-12-14 20:40:41   WARN C3P0ConnectionProvider:232 -Both hibernate-style property 'hibernate.c3p0.min_size' and c3p0-style property 'c3p0.min_size' have been set in hibernate.properties. Hibernate-style property 'hibernate.c3p0.min_size' will be used and c3p0-style property 'c3p0.min_size' will be ignored!
+2015-12-14 20:40:41   WARN C3P0ConnectionProvider:232 -Both hibernate-style property 'hibernate.c3p0.max_size' and c3p0-style property 'c3p0.max_size' have been set in hibernate.properties. Hibernate-style property 'hibernate.c3p0.max_size' will be used and c3p0-style property 'c3p0.max_size' will be ignored!
+2015-12-14 20:40:41   INFO MLog:80 -MLog clients using log4j logging.
+2015-12-14 20:40:45   INFO C3P0Registry:204 -Initializing c3p0-0.9.1 [built 16-January-2007 14:46:42; debug? true; trace: 10]
+2015-12-14 20:40:45   INFO AbstractPoolBackedDataSource:462 -Initializing c3p0 pool... com.mchange.v2.c3p0.PoolBackedDataSource@3754a201 [ connectionPoolDataSource -> com.mchange.v2.c3p0.WrapperConnectionPoolDataSource@b5278c54 [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, debugUnreturnedConnectionStackTraces -> false, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge73s9d18j9eio8asmyo|345965f2, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 30, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, nestedDataSource -> com.mchange.v2.c3p0.DriverManagerDataSource@70a710ab [ description -> null, driverClass -> null, factoryClassLocation -> null, identityToken -> 1hge73s9d18j9eio8asmyo|21a947fe, jdbcUrl -> jdbc:mysql://114.212.86.23/weibo, properties -> {user=******, password=******} ], preferredTestQuery -> null, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false; userOverrides: {} ], dataSourceName -> null, factoryClassLocation -> null, identityToken -> 1hge73s9d18j9eio8asmyo|51b7e5df, numHelperThreads -> 3 ]
+2015-12-14 20:40:46   INFO Dialect:135 -Using dialect: org.hibernate.dialect.MySQLDialect
+2015-12-14 20:40:46   INFO JdbcSupportLoader:79 -Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2015-12-14 20:40:46   INFO SettingsFactory:126 -Database ->
+       name : MySQL
+    version : 5.7.10-log
+      major : 5
+      minor : 7
+2015-12-14 20:40:46   INFO SettingsFactory:132 -Driver ->
+       name : MySQL-AB JDBC Driver
+    version : mysql-connector-java-5.0.8 ( Revision: ${svn.Revision} )
+      major : 5
+      minor : 0
+2015-12-14 20:40:46   INFO TransactionFactoryFactory:62 -Using default transaction strategy (direct JDBC transactions)
+2015-12-14 20:40:46   INFO TransactionManagerLookupFactory:83 -No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+2015-12-14 20:40:46   INFO SettingsFactory:179 -Automatic flush during beforeCompletion(): disabled
+2015-12-14 20:40:46   INFO SettingsFactory:183 -Automatic session close at end of transaction: disabled
+2015-12-14 20:40:46   INFO SettingsFactory:190 -JDBC batch size: 15
+2015-12-14 20:40:46   INFO SettingsFactory:193 -JDBC batch updates for versioned data: disabled
+2015-12-14 20:40:46   INFO SettingsFactory:198 -Scrollable result sets: enabled
+2015-12-14 20:40:46   INFO SettingsFactory:206 -JDBC3 getGeneratedKeys(): enabled
+2015-12-14 20:40:46   INFO SettingsFactory:214 -Connection release mode: auto
+2015-12-14 20:40:46   INFO SettingsFactory:238 -Maximum outer join fetch depth: 2
+2015-12-14 20:40:46   INFO SettingsFactory:241 -Default batch fetch size: 1
+2015-12-14 20:40:46   INFO SettingsFactory:245 -Generate SQL with comments: disabled
+2015-12-14 20:40:46   INFO SettingsFactory:249 -Order SQL updates by primary key: disabled
+2015-12-14 20:40:46   INFO SettingsFactory:253 -Order SQL inserts for batching: disabled
+2015-12-14 20:40:46   INFO SettingsFactory:431 -Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+2015-12-14 20:40:46   INFO ASTQueryTranslatorFactory:47 -Using ASTQueryTranslatorFactory
+2015-12-14 20:40:46   INFO SettingsFactory:261 -Query language substitutions: {}
+2015-12-14 20:40:46   INFO SettingsFactory:266 -JPA-QL strict compliance: disabled
+2015-12-14 20:40:46   INFO SettingsFactory:271 -Second-level cache: enabled
+2015-12-14 20:40:46   INFO SettingsFactory:275 -Query cache: disabled
+2015-12-14 20:40:46   INFO SettingsFactory:406 -Cache region factory : org.hibernate.cache.impl.NoCachingRegionFactory
+2015-12-14 20:40:46   INFO SettingsFactory:285 -Optimize cache for minimal puts: disabled
+2015-12-14 20:40:46   INFO SettingsFactory:294 -Structured second-level cache entries: disabled
+2015-12-14 20:40:46   INFO SettingsFactory:323 -Statistics: disabled
+2015-12-14 20:40:46   INFO SettingsFactory:327 -Deleted entity synthetic identifier rollback: disabled
+2015-12-14 20:40:46   INFO SettingsFactory:343 -Default entity-mode: pojo
+2015-12-14 20:40:46   INFO SettingsFactory:347 -Named query checking : enabled
+2015-12-14 20:40:46   INFO SettingsFactory:351 -Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+2015-12-14 20:40:46   INFO SessionFactoryImpl:202 -building session factory
+2015-12-14 20:40:46   INFO BasicTypeRegistry:150 -Type registration [blob] overrides previous : org.hibernate.type.BlobType@7c0c77c7
+2015-12-14 20:40:46   INFO BasicTypeRegistry:150 -Type registration [java.sql.Blob] overrides previous : org.hibernate.type.BlobType@7c0c77c7
+2015-12-14 20:40:46   INFO BasicTypeRegistry:150 -Type registration [clob] overrides previous : org.hibernate.type.ClobType@7adda9cc
+2015-12-14 20:40:46   INFO BasicTypeRegistry:150 -Type registration [java.sql.Clob] overrides previous : org.hibernate.type.ClobType@7adda9cc
+2015-12-14 20:40:46   INFO BasicTypeRegistry:150 -Type registration [wrapper_characters_clob] overrides previous : org.hibernate.type.CharacterArrayClobType@5cee5251
+2015-12-14 20:40:46   INFO BasicTypeRegistry:150 -Type registration [characters_clob] overrides previous : org.hibernate.type.PrimitiveCharacterArrayClobType@433d61fb
+2015-12-14 20:40:46   INFO BasicTypeRegistry:150 -Type registration [wrapper_materialized_blob] overrides previous : org.hibernate.type.WrappedMaterializedBlobType@5c909414
+2015-12-14 20:40:46   INFO BasicTypeRegistry:150 -Type registration [materialized_blob] overrides previous : org.hibernate.type.MaterializedBlobType@4b14c583
+2015-12-14 20:40:46   INFO BasicTypeRegistry:150 -Type registration [materialized_clob] overrides previous : org.hibernate.type.MaterializedClobType@65466a6a
+2015-12-14 20:40:46   INFO SessionFactoryObjectFactory:105 -Not binding factory to JNDI, no JNDI name configured
+2015-12-14 20:40:47   INFO UrlPool:31 -****************urlPool线程start！****************
+2015-12-14 20:40:47   INFO CookiePool:30 -****************cookiePool线程start！****************
+2015-12-14 20:40:47   INFO WeiboSpider:55 -****************Spider线程start！****************
+2015-12-14 20:40:47   INFO WeiboSpider:59 -urlPool is Empty...
+2015-12-14 20:40:47   INFO WeiboSpider:55 -****************Spider线程start！****************
+2015-12-14 20:40:47   INFO WeiboSpider:59 -urlPool is Empty...
+2015-12-14 20:40:47   INFO WeiboSpider:55 -****************Spider线程start！****************
+2015-12-14 20:40:47   INFO WeiboSpider:59 -urlPool is Empty...
+2015-12-14 20:40:47   INFO WeiboSpider:55 -****************Spider线程start！****************
+2015-12-14 20:40:47   INFO WeiboSpider:59 -urlPool is Empty...
+2015-12-14 20:40:48   INFO UrlPool:71 -本次待爬取URL总数为：760
+2015-12-14 20:40:48   INFO UrlPool:33 -****************urlPool线程finish！****************
+2015-12-14 20:40:50   INFO CookiePool:85 -add 3 cookies successful!
+2015-12-14 20:40:50   INFO HttpUtil:25 -***************AntiCrawler detected***************
+2015-12-14 20:40:50   INFO HttpUtil:57 -***************new cookie is:PHPSESSID=1a27dfbfdd2aee94c44a0d1d4488c4b7;SUB=_2A257asiCDeThGeNN7lEW8yrLwjmIHXVWPltKrDV6PUJbrdAKLUuskWpLfTcueyR1Te2dN3k7YWn_c5LppA..;_T_WM=c7d0415290836a985eea599b83b9da52;gsid_CTandWM=4ulX57061aYaxe9OPWaXbmsKycP;
+2015-12-14 20:40:50   INFO HttpUtil:25 -***************AntiCrawler detected***************
+2015-12-14 20:40:50   INFO HttpUtil:57 -***************new cookie is:PHPSESSID=2680048770a7e939c86addf5b691e9ec;SUB=_2A257asiCDeRhGedH6FAR9y3MzjmIHXVWPltKrDV6PUJbrdAKLVSjkWpIgkgEfHaGMMCoGm4YRZq6J7kT7g..;_T_WM=ab849adbb12d779d7b9cdbb5755a5f8d;gsid_CTandWM=4u5v57061iVdJ7cTFsEo086Ct0T;
+2015-12-14 20:40:51   INFO HttpUtil:25 -***************AntiCrawler detected***************
+2015-12-14 20:40:51   INFO HttpUtil:57 -***************new cookie is:PHPSESSID=123158dd93a97b5ae7e6274aedec2814;SUB=_2A257asiCDeRhGeRN71YU9SfMzT6IHXVWPltKrDV6PUJbrdANLWXbkWp0Hya2JPRA76YUGSVDSgzB85CIlA..;_T_WM=06590edadfa7fceb3817d34e7334c908;gsid_CTandWM=4uB157061tOFWvV3zIGIy9PVt10;
+2015-12-14 20:40:51   INFO HttpUtil:25 -***************AntiCrawler detected***************
+2015-12-14 20:40:51   INFO HttpUtil:51 -the sum of cookies are:3
+2015-12-14 20:40:51   INFO HttpUtil:52 -***************begin sleep!!!!***************
+2015-12-14 20:40:52   INFO HttpUtil:25 -***************AntiCrawler detected***************
+2015-12-14 20:40:52   INFO HttpUtil:57 -***************new cookie is:PHPSESSID=1a27dfbfdd2aee94c44a0d1d4488c4b7;SUB=_2A257asiCDeThGeNN7lEW8yrLwjmIHXVWPltKrDV6PUJbrdAKLUuskWpLfTcueyR1Te2dN3k7YWn_c5LppA..;_T_WM=c7d0415290836a985eea599b83b9da52;gsid_CTandWM=4ulX57061aYaxe9OPWaXbmsKycP;
+2015-12-14 20:40:52   INFO HttpUtil:25 -***************AntiCrawler detected***************
+2015-12-14 20:40:52   INFO HttpUtil:57 -***************new cookie is:PHPSESSID=2680048770a7e939c86addf5b691e9ec;SUB=_2A257asiCDeRhGedH6FAR9y3MzjmIHXVWPltKrDV6PUJbrdAKLVSjkWpIgkgEfHaGMMCoGm4YRZq6J7kT7g..;_T_WM=ab849adbb12d779d7b9cdbb5755a5f8d;gsid_CTandWM=4u5v57061iVdJ7cTFsEo086Ct0T;
+2015-12-14 20:40:55   WARN JDBCExceptionReporter:233 -SQL Error: 1366, SQLState: HY000
+2015-12-14 20:40:55  ERROR JDBCExceptionReporter:234 -Incorrect string value: '\xF0\x9F\x98\xB8 \xE6...' for column 'text' at row 1
+2015-12-14 20:40:55  ERROR WeiboDataDao:28 -saveWeibo failed!
+org.hibernate.exception.GenericJDBCException: could not insert: [nju.iip.dto.WeiboData]
+	at org.hibernate.exception.SQLStateConverter.handledNonSpecificException(SQLStateConverter.java:140)
+	at org.hibernate.exception.SQLStateConverter.convert(SQLStateConverter.java:128)
+	at org.hibernate.exception.JDBCExceptionHelper.convert(JDBCExceptionHelper.java:66)
+	at org.hibernate.id.insert.AbstractReturningDelegate.performInsert(AbstractReturningDelegate.java:64)
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:2345)
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:2852)
+	at org.hibernate.action.EntityIdentityInsertAction.execute(EntityIdentityInsertAction.java:71)
+	at org.hibernate.engine.ActionQueue.execute(ActionQueue.java:273)
+	at org.hibernate.event.def.AbstractSaveEventListener.performSaveOrReplicate(AbstractSaveEventListener.java:320)
+	at org.hibernate.event.def.AbstractSaveEventListener.performSave(AbstractSaveEventListener.java:203)
+	at org.hibernate.event.def.AbstractSaveEventListener.saveWithGeneratedId(AbstractSaveEventListener.java:129)
+	at org.hibernate.event.def.DefaultSaveOrUpdateEventListener.saveWithGeneratedOrRequestedId(DefaultSaveOrUpdateEventListener.java:210)
+	at org.hibernate.event.def.DefaultSaveEventListener.saveWithGeneratedOrRequestedId(DefaultSaveEventListener.java:56)
+	at org.hibernate.event.def.DefaultSaveOrUpdateEventListener.entityIsTransient(DefaultSaveOrUpdateEventListener.java:195)
+	at org.hibernate.event.def.DefaultSaveEventListener.performSaveOrUpdate(DefaultSaveEventListener.java:50)
+	at org.hibernate.event.def.DefaultSaveOrUpdateEventListener.onSaveOrUpdate(DefaultSaveOrUpdateEventListener.java:93)
+	at org.hibernate.impl.SessionImpl.fireSave(SessionImpl.java:713)
+	at org.hibernate.impl.SessionImpl.save(SessionImpl.java:701)
+	at org.hibernate.impl.SessionImpl.save(SessionImpl.java:697)
+	at nju.iip.dao.WeiboDataDao.saveWeibo(WeiboDataDao.java:23)
+	at nju.iip.spider.WeiboSpider.run(WeiboSpider.java:74)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.sql.SQLException: Incorrect string value: '\xF0\x9F\x98\xB8 \xE6...' for column 'text' at row 1
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:946)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:2985)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:1631)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:1723)
+	at com.mysql.jdbc.Connection.execSQL(Connection.java:3283)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1332)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:1604)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:1519)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:1504)
+	at com.mchange.v2.c3p0.impl.NewProxyPreparedStatement.executeUpdate(NewProxyPreparedStatement.java:105)
+	at org.hibernate.id.IdentityGenerator$GetGeneratedKeysDelegate.executeAndExtract(IdentityGenerator.java:94)
+	at org.hibernate.id.insert.AbstractReturningDelegate.performInsert(AbstractReturningDelegate.java:57)
+	... 20 more
+2015-12-14 20:40:58   INFO WeiboSpider:70 -already crawler weibo numbers:107
+2015-12-14 20:41:05   INFO WeiboSpider:70 -already crawler weibo numbers:215
+2015-12-14 20:41:10   INFO WeiboSpider:70 -already crawler weibo numbers:321
+2015-12-14 20:41:20   INFO WeiboSpider:70 -already crawler weibo numbers:425
+2015-12-14 20:41:26   INFO WeiboSpider:70 -already crawler weibo numbers:531
+2015-12-14 20:41:33   INFO WeiboSpider:70 -already crawler weibo numbers:637
+2015-12-14 20:41:41   INFO WeiboSpider:70 -already crawler weibo numbers:739
+2015-12-14 20:41:46   INFO WeiboSpider:70 -already crawler weibo numbers:841
+2015-12-14 20:41:54   INFO WeiboSpider:70 -already crawler weibo numbers:949
+2015-12-14 20:41:59   WARN JDBCExceptionReporter:233 -SQL Error: 1366, SQLState: HY000
+2015-12-14 20:41:59  ERROR JDBCExceptionReporter:234 -Incorrect string value: '\xF0\x9F\x92\xA5\xE3\x80...' for column 'text' at row 1
+2015-12-14 20:41:59  ERROR WeiboDataDao:28 -saveWeibo failed!
+org.hibernate.exception.GenericJDBCException: could not insert: [nju.iip.dto.WeiboData]
+	at org.hibernate.exception.SQLStateConverter.handledNonSpecificException(SQLStateConverter.java:140)
+	at org.hibernate.exception.SQLStateConverter.convert(SQLStateConverter.java:128)
+	at org.hibernate.exception.JDBCExceptionHelper.convert(JDBCExceptionHelper.java:66)
+	at org.hibernate.id.insert.AbstractReturningDelegate.performInsert(AbstractReturningDelegate.java:64)
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:2345)
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:2852)
+	at org.hibernate.action.EntityIdentityInsertAction.execute(EntityIdentityInsertAction.java:71)
+	at org.hibernate.engine.ActionQueue.execute(ActionQueue.java:273)
+	at org.hibernate.event.def.AbstractSaveEventListener.performSaveOrReplicate(AbstractSaveEventListener.java:320)
+	at org.hibernate.event.def.AbstractSaveEventListener.performSave(AbstractSaveEventListener.java:203)
+	at org.hibernate.event.def.AbstractSaveEventListener.saveWithGeneratedId(AbstractSaveEventListener.java:129)
+	at org.hibernate.event.def.DefaultSaveOrUpdateEventListener.saveWithGeneratedOrRequestedId(DefaultSaveOrUpdateEventListener.java:210)
+	at org.hibernate.event.def.DefaultSaveEventListener.saveWithGeneratedOrRequestedId(DefaultSaveEventListener.java:56)
+	at org.hibernate.event.def.DefaultSaveOrUpdateEventListener.entityIsTransient(DefaultSaveOrUpdateEventListener.java:195)
+	at org.hibernate.event.def.DefaultSaveEventListener.performSaveOrUpdate(DefaultSaveEventListener.java:50)
+	at org.hibernate.event.def.DefaultSaveOrUpdateEventListener.onSaveOrUpdate(DefaultSaveOrUpdateEventListener.java:93)
+	at org.hibernate.impl.SessionImpl.fireSave(SessionImpl.java:713)
+	at org.hibernate.impl.SessionImpl.save(SessionImpl.java:701)
+	at org.hibernate.impl.SessionImpl.save(SessionImpl.java:697)
+	at nju.iip.dao.WeiboDataDao.saveWeibo(WeiboDataDao.java:23)
+	at nju.iip.spider.WeiboSpider.run(WeiboSpider.java:74)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.sql.SQLException: Incorrect string value: '\xF0\x9F\x92\xA5\xE3\x80...' for column 'text' at row 1
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:946)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:2985)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:1631)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:1723)
+	at com.mysql.jdbc.Connection.execSQL(Connection.java:3283)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1332)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:1604)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:1519)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:1504)
+	at com.mchange.v2.c3p0.impl.NewProxyPreparedStatement.executeUpdate(NewProxyPreparedStatement.java:105)
+	at org.hibernate.id.IdentityGenerator$GetGeneratedKeysDelegate.executeAndExtract(IdentityGenerator.java:94)
+	at org.hibernate.id.insert.AbstractReturningDelegate.performInsert(AbstractReturningDelegate.java:57)
+	... 20 more
+2015-12-14 20:42:01   INFO WeiboSpider:70 -already crawler weibo numbers:1050
+2015-12-14 20:42:07   INFO WeiboSpider:70 -already crawler weibo numbers:1159
+2015-12-14 20:42:11   INFO WeiboSpider:70 -already crawler weibo numbers:1260
+2015-12-14 20:42:22   INFO WeiboSpider:70 -already crawler weibo numbers:1370
+2015-12-14 20:42:29   INFO WeiboSpider:70 -already crawler weibo numbers:1474
+2015-12-14 20:42:38   INFO WeiboSpider:70 -already crawler weibo numbers:1579
+2015-12-14 20:42:47   INFO WeiboSpider:70 -already crawler weibo numbers:1688
+2015-12-14 20:42:56   INFO WeiboSpider:70 -already crawler weibo numbers:1795
+2015-12-14 20:43:00   INFO WeiboSpider:70 -already crawler weibo numbers:1901
+2015-12-14 20:43:11   INFO WeiboSpider:70 -already crawler weibo numbers:2008
+2015-12-14 20:43:14   INFO WeiboSpider:70 -already crawler weibo numbers:2113
+2015-12-14 20:43:18   INFO WeiboSpider:70 -already crawler weibo numbers:2221
+2015-12-14 20:43:26   INFO WeiboSpider:70 -already crawler weibo numbers:2329
+2015-12-14 20:43:29   INFO WeiboSpider:70 -already crawler weibo numbers:2434
+2015-12-14 20:43:33   INFO WeiboSpider:70 -already crawler weibo numbers:2542
+2015-12-14 20:43:39   INFO WeiboSpider:70 -already crawler weibo numbers:2644
+2015-12-14 20:43:42   INFO WeiboSpider:70 -already crawler weibo numbers:2752
+2015-12-14 20:48:49   INFO Version:37 -Hibernate Commons Annotations 3.2.0.Final
+2015-12-14 20:48:49   INFO Environment:603 -Hibernate 3.6.4.Final
+2015-12-14 20:48:49   INFO Environment:636 -hibernate.properties not found
+2015-12-14 20:48:49   INFO Environment:814 -Bytecode provider name : javassist
+2015-12-14 20:48:49   INFO Environment:695 -using JDK 1.4 java.sql.Timestamp handling
+2015-12-14 20:48:50   INFO Configuration:2156 -configuring from resource: /hibernate.cfg.xml
+2015-12-14 20:48:50   INFO Configuration:2175 -Configuration resource: /hibernate.cfg.xml
+2015-12-14 20:48:50   INFO Configuration:789 -Reading mappings from resource : nju/iip/dto/WeiboAccount.hbm.xml
+2015-12-14 20:48:50   INFO Configuration:789 -Reading mappings from resource : nju/iip/dto/WeiboData.hbm.xml
+2015-12-14 20:48:50   INFO Configuration:2297 -Configured SessionFactory: null
+2015-12-14 20:48:50   INFO HbmBinder:353 -Mapping class: nju.iip.dto.WeiboAccount -> WeiboAccount
+2015-12-14 20:48:50   INFO HbmBinder:353 -Mapping class: nju.iip.dto.WeiboData -> WeiboData
+2015-12-14 20:48:50   INFO Configuration:1676 -Hibernate Validator not found: ignoring
+2015-12-14 20:48:50   INFO HibernateSearchEventListenerRegister:75 -Unable to find org.hibernate.search.event.FullTextIndexEventListener on the classpath. Hibernate Search is not enabled.
+2015-12-14 20:48:51   INFO ConnectionProviderFactory:173 -Initializing connection provider: org.hibernate.connection.C3P0ConnectionProvider
+2015-12-14 20:48:51   INFO C3P0ConnectionProvider:103 -C3P0 using driver: com.mysql.jdbc.Driver at URL: jdbc:mysql://114.212.86.23/weibo
+2015-12-14 20:48:51   INFO C3P0ConnectionProvider:104 -Connection properties: {user=root, password=****}
+2015-12-14 20:48:51   INFO C3P0ConnectionProvider:107 -autocommit mode: false
+2015-12-14 20:48:51   WARN C3P0ConnectionProvider:232 -Both hibernate-style property 'hibernate.c3p0.max_statement' and c3p0-style property 'c3p0.max_statement' have been set in hibernate.properties. Hibernate-style property 'hibernate.c3p0.max_statement' will be used and c3p0-style property 'c3p0.max_statement' will be ignored!
+2015-12-14 20:48:51   WARN C3P0ConnectionProvider:232 -Both hibernate-style property 'hibernate.c3p0.time_out' and c3p0-style property 'c3p0.time_out' have been set in hibernate.properties. Hibernate-style property 'hibernate.c3p0.time_out' will be used and c3p0-style property 'c3p0.time_out' will be ignored!
+2015-12-14 20:48:51   WARN C3P0ConnectionProvider:232 -Both hibernate-style property 'hibernate.c3p0.min_size' and c3p0-style property 'c3p0.min_size' have been set in hibernate.properties. Hibernate-style property 'hibernate.c3p0.min_size' will be used and c3p0-style property 'c3p0.min_size' will be ignored!
+2015-12-14 20:48:51   WARN C3P0ConnectionProvider:232 -Both hibernate-style property 'hibernate.c3p0.max_size' and c3p0-style property 'c3p0.max_size' have been set in hibernate.properties. Hibernate-style property 'hibernate.c3p0.max_size' will be used and c3p0-style property 'c3p0.max_size' will be ignored!
+2015-12-14 20:48:51   INFO MLog:80 -MLog clients using log4j logging.
+2015-12-14 20:48:51   INFO C3P0Registry:204 -Initializing c3p0-0.9.1 [built 16-January-2007 14:46:42; debug? true; trace: 10]
+2015-12-14 20:48:51   INFO AbstractPoolBackedDataSource:462 -Initializing c3p0 pool... com.mchange.v2.c3p0.PoolBackedDataSource@f39c22cd [ connectionPoolDataSource -> com.mchange.v2.c3p0.WrapperConnectionPoolDataSource@716f0d20 [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, debugUnreturnedConnectionStackTraces -> false, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge73s9d18jjw9i1pn8omg|345965f2, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 30, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, nestedDataSource -> com.mchange.v2.c3p0.DriverManagerDataSource@2cee9177 [ description -> null, driverClass -> null, factoryClassLocation -> null, identityToken -> 1hge73s9d18jjw9i1pn8omg|21a947fe, jdbcUrl -> jdbc:mysql://114.212.86.23/weibo, properties -> {user=******, password=******} ], preferredTestQuery -> null, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false; userOverrides: {} ], dataSourceName -> null, factoryClassLocation -> null, identityToken -> 1hge73s9d18jjw9i1pn8omg|51b7e5df, numHelperThreads -> 3 ]
+2015-12-14 20:48:52   INFO Dialect:135 -Using dialect: org.hibernate.dialect.MySQLDialect
+2015-12-14 20:48:52   INFO JdbcSupportLoader:79 -Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2015-12-14 20:48:52   INFO SettingsFactory:126 -Database ->
+       name : MySQL
+    version : 5.7.10-log
+      major : 5
+      minor : 7
+2015-12-14 20:48:52   INFO SettingsFactory:132 -Driver ->
+       name : MySQL-AB JDBC Driver
+    version : mysql-connector-java-5.0.8 ( Revision: ${svn.Revision} )
+      major : 5
+      minor : 0
+2015-12-14 20:48:52   INFO TransactionFactoryFactory:62 -Using default transaction strategy (direct JDBC transactions)
+2015-12-14 20:48:52   INFO TransactionManagerLookupFactory:83 -No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+2015-12-14 20:48:52   INFO SettingsFactory:179 -Automatic flush during beforeCompletion(): disabled
+2015-12-14 20:48:52   INFO SettingsFactory:183 -Automatic session close at end of transaction: disabled
+2015-12-14 20:48:52   INFO SettingsFactory:190 -JDBC batch size: 15
+2015-12-14 20:48:52   INFO SettingsFactory:193 -JDBC batch updates for versioned data: disabled
+2015-12-14 20:48:52   INFO SettingsFactory:198 -Scrollable result sets: enabled
+2015-12-14 20:48:52   INFO SettingsFactory:206 -JDBC3 getGeneratedKeys(): enabled
+2015-12-14 20:48:52   INFO SettingsFactory:214 -Connection release mode: auto
+2015-12-14 20:48:52   INFO SettingsFactory:238 -Maximum outer join fetch depth: 2
+2015-12-14 20:48:52   INFO SettingsFactory:241 -Default batch fetch size: 1
+2015-12-14 20:48:52   INFO SettingsFactory:245 -Generate SQL with comments: disabled
+2015-12-14 20:48:52   INFO SettingsFactory:249 -Order SQL updates by primary key: disabled
+2015-12-14 20:48:52   INFO SettingsFactory:253 -Order SQL inserts for batching: disabled
+2015-12-14 20:48:52   INFO SettingsFactory:431 -Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+2015-12-14 20:48:52   INFO ASTQueryTranslatorFactory:47 -Using ASTQueryTranslatorFactory
+2015-12-14 20:48:52   INFO SettingsFactory:261 -Query language substitutions: {}
+2015-12-14 20:48:52   INFO SettingsFactory:266 -JPA-QL strict compliance: disabled
+2015-12-14 20:48:52   INFO SettingsFactory:271 -Second-level cache: enabled
+2015-12-14 20:48:52   INFO SettingsFactory:275 -Query cache: disabled
+2015-12-14 20:48:52   INFO SettingsFactory:406 -Cache region factory : org.hibernate.cache.impl.NoCachingRegionFactory
+2015-12-14 20:48:52   INFO SettingsFactory:285 -Optimize cache for minimal puts: disabled
+2015-12-14 20:48:52   INFO SettingsFactory:294 -Structured second-level cache entries: disabled
+2015-12-14 20:48:52   INFO SettingsFactory:323 -Statistics: disabled
+2015-12-14 20:48:52   INFO SettingsFactory:327 -Deleted entity synthetic identifier rollback: disabled
+2015-12-14 20:48:52   INFO SettingsFactory:343 -Default entity-mode: pojo
+2015-12-14 20:48:52   INFO SettingsFactory:347 -Named query checking : enabled
+2015-12-14 20:48:52   INFO SettingsFactory:351 -Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+2015-12-14 20:48:52   INFO SessionFactoryImpl:202 -building session factory
+2015-12-14 20:48:52   INFO BasicTypeRegistry:150 -Type registration [blob] overrides previous : org.hibernate.type.BlobType@7c0c77c7
+2015-12-14 20:48:52   INFO BasicTypeRegistry:150 -Type registration [java.sql.Blob] overrides previous : org.hibernate.type.BlobType@7c0c77c7
+2015-12-14 20:48:52   INFO BasicTypeRegistry:150 -Type registration [clob] overrides previous : org.hibernate.type.ClobType@7adda9cc
+2015-12-14 20:48:52   INFO BasicTypeRegistry:150 -Type registration [java.sql.Clob] overrides previous : org.hibernate.type.ClobType@7adda9cc
+2015-12-14 20:48:52   INFO BasicTypeRegistry:150 -Type registration [wrapper_characters_clob] overrides previous : org.hibernate.type.CharacterArrayClobType@5cee5251
+2015-12-14 20:48:52   INFO BasicTypeRegistry:150 -Type registration [characters_clob] overrides previous : org.hibernate.type.PrimitiveCharacterArrayClobType@433d61fb
+2015-12-14 20:48:52   INFO BasicTypeRegistry:150 -Type registration [wrapper_materialized_blob] overrides previous : org.hibernate.type.WrappedMaterializedBlobType@5c909414
+2015-12-14 20:48:52   INFO BasicTypeRegistry:150 -Type registration [materialized_blob] overrides previous : org.hibernate.type.MaterializedBlobType@4b14c583
+2015-12-14 20:48:52   INFO BasicTypeRegistry:150 -Type registration [materialized_clob] overrides previous : org.hibernate.type.MaterializedClobType@65466a6a
+2015-12-14 20:48:53   INFO SessionFactoryObjectFactory:105 -Not binding factory to JNDI, no JNDI name configured
+2015-12-14 20:48:54   INFO CookiePool:30 -****************cookiePool线程start！****************
+2015-12-14 20:48:54   INFO UrlPool:31 -****************urlPool线程start！****************
+2015-12-14 20:48:54   INFO WeiboSpider:55 -****************Spider线程start！****************
+2015-12-14 20:48:54   INFO WeiboSpider:59 -urlPool is Empty...
+2015-12-14 20:48:54   INFO WeiboSpider:55 -****************Spider线程start！****************
+2015-12-14 20:48:54   INFO WeiboSpider:59 -urlPool is Empty...
+2015-12-14 20:48:54   INFO WeiboSpider:55 -****************Spider线程start！****************
+2015-12-14 20:48:54   INFO WeiboSpider:59 -urlPool is Empty...
+2015-12-14 20:48:54   INFO WeiboSpider:55 -****************Spider线程start！****************
+2015-12-14 20:48:54   INFO WeiboSpider:59 -urlPool is Empty...
+2015-12-14 20:48:55   INFO UrlPool:71 -本次待爬取URL总数为：760
+2015-12-14 20:48:55   INFO UrlPool:33 -****************urlPool线程finish！****************
+2015-12-14 20:48:57   INFO HttpUtil:25 -***************AntiCrawler detected***************
+2015-12-14 20:48:57   INFO HttpUtil:57 -***************new cookie is:PHPSESSID=092a9456bc8c0ed7490d9287523ef0b9;SUB=_2A257asrpDeThGeNN7lEW8yrLwjmIHXVWPlkhrDV6PUJbrdAKLWvtkWp-5D0T3Ca70WDA71VcHc5kV-RKzg..;_T_WM=3726dffeca2db3923100178235be5106;gsid_CTandWM=4ulX57061aYaxe9OPWaXbmsKycP;
+2015-12-14 20:48:57   INFO HttpUtil:25 -***************AntiCrawler detected***************
+2015-12-14 20:48:57   INFO HttpUtil:57 -***************new cookie is:PHPSESSID=26f4ae16ac13bed5a25475ca25ac46f2;SUB=_2A257asroDeRhGeRN71YU9SfMzT6IHXVWPlkgrDV6PUJbrdANLVnxkWp5PbAix-z3RRPDdsESl3ecSGt4rw..;_T_WM=1c62ee0065fbcd94df8df19dbfb9cda4;gsid_CTandWM=4uB157061tOFWvV3zIGIy9PVt10;
+2015-12-14 20:48:57   INFO HttpUtil:25 -***************AntiCrawler detected***************
+2015-12-14 20:48:57   INFO HttpUtil:51 -the sum of cookies are:2
+2015-12-14 20:48:57   INFO HttpUtil:52 -***************begin sleep!!!!***************
+2015-12-14 20:48:57   INFO HttpUtil:25 -***************AntiCrawler detected***************
+2015-12-14 20:48:57   INFO HttpUtil:51 -the sum of cookies are:2
+2015-12-14 20:48:57   INFO HttpUtil:52 -***************begin sleep!!!!***************
+2015-12-14 20:48:57   INFO CookiePool:85 -add 3 cookies successful!
+2015-12-14 20:48:57   INFO HttpUtil:25 -***************AntiCrawler detected***************
+2015-12-14 20:48:57   INFO HttpUtil:51 -the sum of cookies are:3
+2015-12-14 20:48:57   INFO HttpUtil:52 -***************begin sleep!!!!***************
+2015-12-14 20:48:58   INFO HttpUtil:25 -***************AntiCrawler detected***************
+2015-12-14 20:48:58   INFO HttpUtil:57 -***************new cookie is:PHPSESSID=092a9456bc8c0ed7490d9287523ef0b9;SUB=_2A257asrpDeThGeNN7lEW8yrLwjmIHXVWPlkhrDV6PUJbrdAKLWvtkWp-5D0T3Ca70WDA71VcHc5kV-RKzg..;_T_WM=3726dffeca2db3923100178235be5106;gsid_CTandWM=4ulX57061aYaxe9OPWaXbmsKycP;
+2015-12-14 20:49:04   WARN JDBCExceptionReporter:233 -SQL Error: 1366, SQLState: HY000
+2015-12-14 20:49:04  ERROR JDBCExceptionReporter:234 -Incorrect string value: '\xF0\x9F\x98\xB8 \xE6...' for column 'text' at row 1
+2015-12-14 20:49:04  ERROR WeiboDataDao:28 -saveWeibo failed!
+org.hibernate.exception.GenericJDBCException: could not insert: [nju.iip.dto.WeiboData]
+	at org.hibernate.exception.SQLStateConverter.handledNonSpecificException(SQLStateConverter.java:140)
+	at org.hibernate.exception.SQLStateConverter.convert(SQLStateConverter.java:128)
+	at org.hibernate.exception.JDBCExceptionHelper.convert(JDBCExceptionHelper.java:66)
+	at org.hibernate.id.insert.AbstractReturningDelegate.performInsert(AbstractReturningDelegate.java:64)
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:2345)
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:2852)
+	at org.hibernate.action.EntityIdentityInsertAction.execute(EntityIdentityInsertAction.java:71)
+	at org.hibernate.engine.ActionQueue.execute(ActionQueue.java:273)
+	at org.hibernate.event.def.AbstractSaveEventListener.performSaveOrReplicate(AbstractSaveEventListener.java:320)
+	at org.hibernate.event.def.AbstractSaveEventListener.performSave(AbstractSaveEventListener.java:203)
+	at org.hibernate.event.def.AbstractSaveEventListener.saveWithGeneratedId(AbstractSaveEventListener.java:129)
+	at org.hibernate.event.def.DefaultSaveOrUpdateEventListener.saveWithGeneratedOrRequestedId(DefaultSaveOrUpdateEventListener.java:210)
+	at org.hibernate.event.def.DefaultSaveEventListener.saveWithGeneratedOrRequestedId(DefaultSaveEventListener.java:56)
+	at org.hibernate.event.def.DefaultSaveOrUpdateEventListener.entityIsTransient(DefaultSaveOrUpdateEventListener.java:195)
+	at org.hibernate.event.def.DefaultSaveEventListener.performSaveOrUpdate(DefaultSaveEventListener.java:50)
+	at org.hibernate.event.def.DefaultSaveOrUpdateEventListener.onSaveOrUpdate(DefaultSaveOrUpdateEventListener.java:93)
+	at org.hibernate.impl.SessionImpl.fireSave(SessionImpl.java:713)
+	at org.hibernate.impl.SessionImpl.save(SessionImpl.java:701)
+	at org.hibernate.impl.SessionImpl.save(SessionImpl.java:697)
+	at nju.iip.dao.WeiboDataDao.saveWeibo(WeiboDataDao.java:23)
+	at nju.iip.spider.WeiboSpider.run(WeiboSpider.java:74)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.sql.SQLException: Incorrect string value: '\xF0\x9F\x98\xB8 \xE6...' for column 'text' at row 1
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:946)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:2985)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:1631)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:1723)
+	at com.mysql.jdbc.Connection.execSQL(Connection.java:3283)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1332)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:1604)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:1519)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:1504)
+	at com.mchange.v2.c3p0.impl.NewProxyPreparedStatement.executeUpdate(NewProxyPreparedStatement.java:105)
+	at org.hibernate.id.IdentityGenerator$GetGeneratedKeysDelegate.executeAndExtract(IdentityGenerator.java:94)
+	at org.hibernate.id.insert.AbstractReturningDelegate.performInsert(AbstractReturningDelegate.java:57)
+	... 20 more
+2015-12-14 20:49:05   INFO WeiboSpider:70 -already crawler weibo numbers:104
+2015-12-14 20:49:15   INFO WeiboSpider:70 -already crawler weibo numbers:210
+2015-12-14 20:51:42   INFO Version:37 -Hibernate Commons Annotations 3.2.0.Final
+2015-12-14 20:51:42   INFO Environment:603 -Hibernate 3.6.4.Final
+2015-12-14 20:51:42   INFO Environment:636 -hibernate.properties not found
+2015-12-14 20:51:42   INFO Environment:814 -Bytecode provider name : javassist
+2015-12-14 20:51:42   INFO Environment:695 -using JDK 1.4 java.sql.Timestamp handling
+2015-12-14 20:51:43   INFO Configuration:2156 -configuring from resource: /hibernate.cfg.xml
+2015-12-14 20:51:43   INFO Configuration:2175 -Configuration resource: /hibernate.cfg.xml
+2015-12-14 20:51:43   INFO Configuration:789 -Reading mappings from resource : nju/iip/dto/WeiboAccount.hbm.xml
+2015-12-14 20:51:43   INFO Configuration:789 -Reading mappings from resource : nju/iip/dto/WeiboData.hbm.xml
+2015-12-14 20:51:43   INFO Configuration:2297 -Configured SessionFactory: null
+2015-12-14 20:51:43   INFO HbmBinder:353 -Mapping class: nju.iip.dto.WeiboAccount -> WeiboAccount
+2015-12-14 20:51:43   INFO HbmBinder:353 -Mapping class: nju.iip.dto.WeiboData -> WeiboData
+2015-12-14 20:51:43   INFO Configuration:1676 -Hibernate Validator not found: ignoring
+2015-12-14 20:51:43   INFO HibernateSearchEventListenerRegister:75 -Unable to find org.hibernate.search.event.FullTextIndexEventListener on the classpath. Hibernate Search is not enabled.
+2015-12-14 20:51:43   INFO ConnectionProviderFactory:173 -Initializing connection provider: org.hibernate.connection.C3P0ConnectionProvider
+2015-12-14 20:51:43   INFO C3P0ConnectionProvider:103 -C3P0 using driver: com.mysql.jdbc.Driver at URL: jdbc:mysql://114.212.86.23/weibo
+2015-12-14 20:51:43   INFO C3P0ConnectionProvider:104 -Connection properties: {user=root, password=****}
+2015-12-14 20:51:43   INFO C3P0ConnectionProvider:107 -autocommit mode: false
+2015-12-14 20:51:43   WARN C3P0ConnectionProvider:232 -Both hibernate-style property 'hibernate.c3p0.max_statement' and c3p0-style property 'c3p0.max_statement' have been set in hibernate.properties. Hibernate-style property 'hibernate.c3p0.max_statement' will be used and c3p0-style property 'c3p0.max_statement' will be ignored!
+2015-12-14 20:51:43   WARN C3P0ConnectionProvider:232 -Both hibernate-style property 'hibernate.c3p0.time_out' and c3p0-style property 'c3p0.time_out' have been set in hibernate.properties. Hibernate-style property 'hibernate.c3p0.time_out' will be used and c3p0-style property 'c3p0.time_out' will be ignored!
+2015-12-14 20:51:43   WARN C3P0ConnectionProvider:232 -Both hibernate-style property 'hibernate.c3p0.min_size' and c3p0-style property 'c3p0.min_size' have been set in hibernate.properties. Hibernate-style property 'hibernate.c3p0.min_size' will be used and c3p0-style property 'c3p0.min_size' will be ignored!
+2015-12-14 20:51:43   WARN C3P0ConnectionProvider:232 -Both hibernate-style property 'hibernate.c3p0.max_size' and c3p0-style property 'c3p0.max_size' have been set in hibernate.properties. Hibernate-style property 'hibernate.c3p0.max_size' will be used and c3p0-style property 'c3p0.max_size' will be ignored!
+2015-12-14 20:51:43   INFO MLog:80 -MLog clients using log4j logging.
+2015-12-14 20:51:44   INFO C3P0Registry:204 -Initializing c3p0-0.9.1 [built 16-January-2007 14:46:42; debug? true; trace: 10]
+2015-12-14 20:51:44   INFO AbstractPoolBackedDataSource:462 -Initializing c3p0 pool... com.mchange.v2.c3p0.PoolBackedDataSource@b3b2bc7a [ connectionPoolDataSource -> com.mchange.v2.c3p0.WrapperConnectionPoolDataSource@3185a6cd [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, debugUnreturnedConnectionStackTraces -> false, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge73s9d18jnlcm1x9uyqs|345965f2, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 30, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, nestedDataSource -> com.mchange.v2.c3p0.DriverManagerDataSource@ed052b24 [ description -> null, driverClass -> null, factoryClassLocation -> null, identityToken -> 1hge73s9d18jnlcm1x9uyqs|21a947fe, jdbcUrl -> jdbc:mysql://114.212.86.23/weibo, properties -> {user=******, password=******} ], preferredTestQuery -> null, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false; userOverrides: {} ], dataSourceName -> null, factoryClassLocation -> null, identityToken -> 1hge73s9d18jnlcm1x9uyqs|51b7e5df, numHelperThreads -> 3 ]
+2015-12-14 20:51:44   INFO Dialect:135 -Using dialect: org.hibernate.dialect.MySQLDialect
+2015-12-14 20:51:44   INFO JdbcSupportLoader:79 -Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2015-12-14 20:51:44   INFO SettingsFactory:126 -Database ->
+       name : MySQL
+    version : 5.7.10-log
+      major : 5
+      minor : 7
+2015-12-14 20:51:44   INFO SettingsFactory:132 -Driver ->
+       name : MySQL-AB JDBC Driver
+    version : mysql-connector-java-5.0.8 ( Revision: ${svn.Revision} )
+      major : 5
+      minor : 0
+2015-12-14 20:51:44   INFO TransactionFactoryFactory:62 -Using default transaction strategy (direct JDBC transactions)
+2015-12-14 20:51:44   INFO TransactionManagerLookupFactory:83 -No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+2015-12-14 20:51:44   INFO SettingsFactory:179 -Automatic flush during beforeCompletion(): disabled
+2015-12-14 20:51:44   INFO SettingsFactory:183 -Automatic session close at end of transaction: disabled
+2015-12-14 20:51:44   INFO SettingsFactory:190 -JDBC batch size: 15
+2015-12-14 20:51:44   INFO SettingsFactory:193 -JDBC batch updates for versioned data: disabled
+2015-12-14 20:51:44   INFO SettingsFactory:198 -Scrollable result sets: enabled
+2015-12-14 20:51:44   INFO SettingsFactory:206 -JDBC3 getGeneratedKeys(): enabled
+2015-12-14 20:51:44   INFO SettingsFactory:214 -Connection release mode: auto
+2015-12-14 20:51:44   INFO SettingsFactory:238 -Maximum outer join fetch depth: 2
+2015-12-14 20:51:44   INFO SettingsFactory:241 -Default batch fetch size: 1
+2015-12-14 20:51:44   INFO SettingsFactory:245 -Generate SQL with comments: disabled
+2015-12-14 20:51:44   INFO SettingsFactory:249 -Order SQL updates by primary key: disabled
+2015-12-14 20:51:44   INFO SettingsFactory:253 -Order SQL inserts for batching: disabled
+2015-12-14 20:51:44   INFO SettingsFactory:431 -Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+2015-12-14 20:51:44   INFO ASTQueryTranslatorFactory:47 -Using ASTQueryTranslatorFactory
+2015-12-14 20:51:44   INFO SettingsFactory:261 -Query language substitutions: {}
+2015-12-14 20:51:44   INFO SettingsFactory:266 -JPA-QL strict compliance: disabled
+2015-12-14 20:51:44   INFO SettingsFactory:271 -Second-level cache: enabled
+2015-12-14 20:51:44   INFO SettingsFactory:275 -Query cache: disabled
+2015-12-14 20:51:44   INFO SettingsFactory:406 -Cache region factory : org.hibernate.cache.impl.NoCachingRegionFactory
+2015-12-14 20:51:44   INFO SettingsFactory:285 -Optimize cache for minimal puts: disabled
+2015-12-14 20:51:44   INFO SettingsFactory:294 -Structured second-level cache entries: disabled
+2015-12-14 20:51:44   INFO SettingsFactory:323 -Statistics: disabled
+2015-12-14 20:51:44   INFO SettingsFactory:327 -Deleted entity synthetic identifier rollback: disabled
+2015-12-14 20:51:44   INFO SettingsFactory:343 -Default entity-mode: pojo
+2015-12-14 20:51:44   INFO SettingsFactory:347 -Named query checking : enabled
+2015-12-14 20:51:44   INFO SettingsFactory:351 -Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+2015-12-14 20:51:44   INFO SessionFactoryImpl:202 -building session factory
+2015-12-14 20:51:44   INFO BasicTypeRegistry:150 -Type registration [blob] overrides previous : org.hibernate.type.BlobType@7c0c77c7
+2015-12-14 20:51:44   INFO BasicTypeRegistry:150 -Type registration [java.sql.Blob] overrides previous : org.hibernate.type.BlobType@7c0c77c7
+2015-12-14 20:51:44   INFO BasicTypeRegistry:150 -Type registration [clob] overrides previous : org.hibernate.type.ClobType@7adda9cc
+2015-12-14 20:51:44   INFO BasicTypeRegistry:150 -Type registration [java.sql.Clob] overrides previous : org.hibernate.type.ClobType@7adda9cc
+2015-12-14 20:51:44   INFO BasicTypeRegistry:150 -Type registration [wrapper_characters_clob] overrides previous : org.hibernate.type.CharacterArrayClobType@5cee5251
+2015-12-14 20:51:44   INFO BasicTypeRegistry:150 -Type registration [characters_clob] overrides previous : org.hibernate.type.PrimitiveCharacterArrayClobType@433d61fb
+2015-12-14 20:51:44   INFO BasicTypeRegistry:150 -Type registration [wrapper_materialized_blob] overrides previous : org.hibernate.type.WrappedMaterializedBlobType@5c909414
+2015-12-14 20:51:44   INFO BasicTypeRegistry:150 -Type registration [materialized_blob] overrides previous : org.hibernate.type.MaterializedBlobType@4b14c583
+2015-12-14 20:51:44   INFO BasicTypeRegistry:150 -Type registration [materialized_clob] overrides previous : org.hibernate.type.MaterializedClobType@65466a6a
+2015-12-14 20:51:45   INFO SessionFactoryObjectFactory:105 -Not binding factory to JNDI, no JNDI name configured
+2015-12-14 20:51:46   INFO CookiePool:30 -****************cookiePool线程start！****************
+2015-12-14 20:51:46   INFO WeiboSpider:55 -****************Spider线程start！****************
+2015-12-14 20:51:46   INFO WeiboSpider:59 -urlPool is Empty...
+2015-12-14 20:51:46   INFO WeiboSpider:55 -****************Spider线程start！****************
+2015-12-14 20:51:46   INFO WeiboSpider:59 -urlPool is Empty...
+2015-12-14 20:51:46   INFO UrlPool:31 -****************urlPool线程start！****************
+2015-12-14 20:51:46   INFO WeiboSpider:55 -****************Spider线程start！****************
+2015-12-14 20:51:46   INFO WeiboSpider:59 -urlPool is Empty...
+2015-12-14 20:51:46   INFO WeiboSpider:55 -****************Spider线程start！****************
+2015-12-14 20:51:46   INFO WeiboSpider:59 -urlPool is Empty...
+2015-12-14 20:51:47   INFO UrlPool:71 -本次待爬取URL总数为：760
+2015-12-14 20:51:47   INFO UrlPool:33 -****************urlPool线程finish！****************
+2015-12-14 20:52:22  ERROR HttpUtil:65 -getHTML error
+java.lang.IllegalArgumentException: Cookie value must not be null
+	at org.jsoup.helper.Validate.notNull(Validate.java:26)
+	at org.jsoup.helper.HttpConnection$Base.cookie(HttpConnection.java:292)
+	at org.jsoup.helper.HttpConnection.cookie(HttpConnection.java:148)
+	at nju.iip.util.HttpUtil.getHTML(HttpUtil.java:44)
+	at nju.iip.spider.WeiboSpider.run(WeiboSpider.java:63)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+2015-12-14 20:52:23   INFO CookiePool:85 -add 3 cookies successful!
+2015-12-14 20:52:24   INFO HttpUtil:25 -***************AntiCrawler detected***************
+2015-12-14 20:52:24   INFO HttpUtil:57 -***************new cookie is:PHPSESSID=0621bf51c01e94611e7e88d1da2a6a85;SUB=_2A257asvWDeThGeNN7lEW8yrLwjmIHXVWPlgerDV6PUJbrdANLUvzkWofvgl8-d3fMPEmzNc4HzsUF0I71g..;_T_WM=aaa09c8dcfd676c500ce8bb95d4cd1eb;gsid_CTandWM=4ulX57061aYaxe9OPWaXbmsKycP;
+2015-12-14 20:52:24   INFO HttpUtil:25 -***************AntiCrawler detected***************
+2015-12-14 20:52:25   INFO HttpUtil:57 -***************new cookie is:PHPSESSID=5fc0ce9c3816ace0604089be08c89e4e;SUB=_2A257asvWDeRhGedH6FAR9y3MzjmIHXVWPlgerDV6PUJbrdANLUbMkWo2lBKaupD59CzskvnWn4AECUDMVQ..;_T_WM=1576538a00260e296d819921eef2bb6a;gsid_CTandWM=4u5v57061iVdJ7cTFsEo086Ct0T;
+2015-12-14 20:52:25   INFO HttpUtil:25 -***************AntiCrawler detected***************
+2015-12-14 20:52:25   INFO HttpUtil:57 -***************new cookie is:PHPSESSID=c6533fe6eb4add860dbb5e2d1a6472a2;SUB=_2A257asvWDeRhGeRN71YU9SfMzT6IHXVWPlgerDV6PUJbrdANLWLckWpM9ekfWeyfbVNNDvRVKja3ivGRBg..;_T_WM=a34e2bc03975f5fc6877132e215c3ee6;gsid_CTandWM=4uB157061tOFWvV3zIGIy9PVt10;
+2015-12-14 20:52:25   INFO HttpUtil:25 -***************AntiCrawler detected***************
+2015-12-14 20:52:25   INFO HttpUtil:51 -the sum of cookies are:3
+2015-12-14 20:52:25   INFO HttpUtil:52 -***************begin sleep!!!!***************
+2015-12-14 20:52:27   INFO HttpUtil:25 -***************AntiCrawler detected***************
+2015-12-14 20:52:27   INFO HttpUtil:57 -***************new cookie is:PHPSESSID=0621bf51c01e94611e7e88d1da2a6a85;SUB=_2A257asvWDeThGeNN7lEW8yrLwjmIHXVWPlgerDV6PUJbrdANLUvzkWofvgl8-d3fMPEmzNc4HzsUF0I71g..;_T_WM=aaa09c8dcfd676c500ce8bb95d4cd1eb;gsid_CTandWM=4ulX57061aYaxe9OPWaXbmsKycP;
+2015-12-14 20:52:27   INFO HttpUtil:25 -***************AntiCrawler detected***************
+2015-12-14 20:52:27   INFO HttpUtil:57 -***************new cookie is:PHPSESSID=5fc0ce9c3816ace0604089be08c89e4e;SUB=_2A257asvWDeRhGedH6FAR9y3MzjmIHXVWPlgerDV6PUJbrdANLUbMkWo2lBKaupD59CzskvnWn4AECUDMVQ..;_T_WM=1576538a00260e296d819921eef2bb6a;gsid_CTandWM=4u5v57061iVdJ7cTFsEo086Ct0T;
+2015-12-14 20:52:28   INFO HttpUtil:25 -***************AntiCrawler detected***************
+2015-12-14 20:52:28   INFO HttpUtil:57 -***************new cookie is:PHPSESSID=c6533fe6eb4add860dbb5e2d1a6472a2;SUB=_2A257asvWDeRhGeRN71YU9SfMzT6IHXVWPlgerDV6PUJbrdANLWLckWpM9ekfWeyfbVNNDvRVKja3ivGRBg..;_T_WM=a34e2bc03975f5fc6877132e215c3ee6;gsid_CTandWM=4uB157061tOFWvV3zIGIy9PVt10;
+2015-12-14 20:52:28   INFO HttpUtil:25 -***************AntiCrawler detected***************
+2015-12-14 20:52:28   INFO HttpUtil:57 -***************new cookie is:PHPSESSID=0621bf51c01e94611e7e88d1da2a6a85;SUB=_2A257asvWDeThGeNN7lEW8yrLwjmIHXVWPlgerDV6PUJbrdANLUvzkWofvgl8-d3fMPEmzNc4HzsUF0I71g..;_T_WM=aaa09c8dcfd676c500ce8bb95d4cd1eb;gsid_CTandWM=4ulX57061aYaxe9OPWaXbmsKycP;
+2015-12-14 20:52:34   INFO WeiboSpider:70 -already crawler weibo numbers:107
+2015-12-14 20:52:37   INFO WeiboSpider:70 -already crawler weibo numbers:211
+2015-12-14 20:52:40   INFO WeiboSpider:70 -already crawler weibo numbers:317
+2015-12-14 20:52:46   INFO WeiboSpider:70 -already crawler weibo numbers:418
+2015-12-14 20:52:49   INFO WeiboSpider:70 -already crawler weibo numbers:525
+2015-12-14 20:52:53   INFO WeiboSpider:70 -already crawler weibo numbers:633
+2015-12-14 20:54:51   INFO Version:37 -Hibernate Commons Annotations 3.2.0.Final
+2015-12-14 20:54:51   INFO Environment:603 -Hibernate 3.6.4.Final
+2015-12-14 20:54:51   INFO Environment:636 -hibernate.properties not found
+2015-12-14 20:54:51   INFO Environment:814 -Bytecode provider name : javassist
+2015-12-14 20:54:51   INFO Environment:695 -using JDK 1.4 java.sql.Timestamp handling
+2015-12-14 20:54:51   INFO Configuration:2156 -configuring from resource: /hibernate.cfg.xml
+2015-12-14 20:54:51   INFO Configuration:2175 -Configuration resource: /hibernate.cfg.xml
+2015-12-14 20:54:51   INFO Configuration:789 -Reading mappings from resource : nju/iip/dto/WeiboAccount.hbm.xml
+2015-12-14 20:54:51   INFO Configuration:789 -Reading mappings from resource : nju/iip/dto/WeiboData.hbm.xml
+2015-12-14 20:54:51   INFO Configuration:2297 -Configured SessionFactory: null
+2015-12-14 20:54:51   INFO HbmBinder:353 -Mapping class: nju.iip.dto.WeiboAccount -> WeiboAccount
+2015-12-14 20:54:52   INFO HbmBinder:353 -Mapping class: nju.iip.dto.WeiboData -> WeiboData
+2015-12-14 20:54:52   INFO Configuration:1676 -Hibernate Validator not found: ignoring
+2015-12-14 20:54:52   INFO HibernateSearchEventListenerRegister:75 -Unable to find org.hibernate.search.event.FullTextIndexEventListener on the classpath. Hibernate Search is not enabled.
+2015-12-14 20:54:52   INFO ConnectionProviderFactory:173 -Initializing connection provider: org.hibernate.connection.C3P0ConnectionProvider
+2015-12-14 20:54:52   INFO C3P0ConnectionProvider:103 -C3P0 using driver: com.mysql.jdbc.Driver at URL: jdbc:mysql://114.212.86.23/weibo
+2015-12-14 20:54:52   INFO C3P0ConnectionProvider:104 -Connection properties: {user=root, password=****}
+2015-12-14 20:54:52   INFO C3P0ConnectionProvider:107 -autocommit mode: false
+2015-12-14 20:54:52   WARN C3P0ConnectionProvider:232 -Both hibernate-style property 'hibernate.c3p0.max_statement' and c3p0-style property 'c3p0.max_statement' have been set in hibernate.properties. Hibernate-style property 'hibernate.c3p0.max_statement' will be used and c3p0-style property 'c3p0.max_statement' will be ignored!
+2015-12-14 20:54:52   WARN C3P0ConnectionProvider:232 -Both hibernate-style property 'hibernate.c3p0.time_out' and c3p0-style property 'c3p0.time_out' have been set in hibernate.properties. Hibernate-style property 'hibernate.c3p0.time_out' will be used and c3p0-style property 'c3p0.time_out' will be ignored!
+2015-12-14 20:54:52   WARN C3P0ConnectionProvider:232 -Both hibernate-style property 'hibernate.c3p0.min_size' and c3p0-style property 'c3p0.min_size' have been set in hibernate.properties. Hibernate-style property 'hibernate.c3p0.min_size' will be used and c3p0-style property 'c3p0.min_size' will be ignored!
+2015-12-14 20:54:52   WARN C3P0ConnectionProvider:232 -Both hibernate-style property 'hibernate.c3p0.max_size' and c3p0-style property 'c3p0.max_size' have been set in hibernate.properties. Hibernate-style property 'hibernate.c3p0.max_size' will be used and c3p0-style property 'c3p0.max_size' will be ignored!
+2015-12-14 20:54:52   INFO MLog:80 -MLog clients using log4j logging.
+2015-12-14 20:54:53   INFO C3P0Registry:204 -Initializing c3p0-0.9.1 [built 16-January-2007 14:46:42; debug? true; trace: 10]
+2015-12-14 20:54:53   INFO AbstractPoolBackedDataSource:462 -Initializing c3p0 pool... com.mchange.v2.c3p0.PoolBackedDataSource@9edd4352 [ connectionPoolDataSource -> com.mchange.v2.c3p0.WrapperConnectionPoolDataSource@1cb02da5 [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, debugUnreturnedConnectionStackTraces -> false, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge73s9d18jrn2m3dpfxv|345965f2, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 30, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, nestedDataSource -> com.mchange.v2.c3p0.DriverManagerDataSource@d82fb1fc [ description -> null, driverClass -> null, factoryClassLocation -> null, identityToken -> 1hge73s9d18jrn2m3dpfxv|21a947fe, jdbcUrl -> jdbc:mysql://114.212.86.23/weibo, properties -> {user=******, password=******} ], preferredTestQuery -> null, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false; userOverrides: {} ], dataSourceName -> null, factoryClassLocation -> null, identityToken -> 1hge73s9d18jrn2m3dpfxv|51b7e5df, numHelperThreads -> 3 ]
+2015-12-14 20:54:54   INFO Dialect:135 -Using dialect: org.hibernate.dialect.MySQLDialect
+2015-12-14 20:54:54   INFO JdbcSupportLoader:79 -Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2015-12-14 20:54:54   INFO SettingsFactory:126 -Database ->
+       name : MySQL
+    version : 5.7.10-log
+      major : 5
+      minor : 7
+2015-12-14 20:54:54   INFO SettingsFactory:132 -Driver ->
+       name : MySQL-AB JDBC Driver
+    version : mysql-connector-java-5.0.8 ( Revision: ${svn.Revision} )
+      major : 5
+      minor : 0
+2015-12-14 20:54:54   INFO TransactionFactoryFactory:62 -Using default transaction strategy (direct JDBC transactions)
+2015-12-14 20:54:54   INFO TransactionManagerLookupFactory:83 -No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+2015-12-14 20:54:54   INFO SettingsFactory:179 -Automatic flush during beforeCompletion(): disabled
+2015-12-14 20:54:54   INFO SettingsFactory:183 -Automatic session close at end of transaction: disabled
+2015-12-14 20:54:54   INFO SettingsFactory:190 -JDBC batch size: 15
+2015-12-14 20:54:54   INFO SettingsFactory:193 -JDBC batch updates for versioned data: disabled
+2015-12-14 20:54:54   INFO SettingsFactory:198 -Scrollable result sets: enabled
+2015-12-14 20:54:54   INFO SettingsFactory:206 -JDBC3 getGeneratedKeys(): enabled
+2015-12-14 20:54:54   INFO SettingsFactory:214 -Connection release mode: auto
+2015-12-14 20:54:54   INFO SettingsFactory:238 -Maximum outer join fetch depth: 2
+2015-12-14 20:54:54   INFO SettingsFactory:241 -Default batch fetch size: 1
+2015-12-14 20:54:54   INFO SettingsFactory:245 -Generate SQL with comments: disabled
+2015-12-14 20:54:54   INFO SettingsFactory:249 -Order SQL updates by primary key: disabled
+2015-12-14 20:54:54   INFO SettingsFactory:253 -Order SQL inserts for batching: disabled
+2015-12-14 20:54:54   INFO SettingsFactory:431 -Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+2015-12-14 20:54:54   INFO ASTQueryTranslatorFactory:47 -Using ASTQueryTranslatorFactory
+2015-12-14 20:54:54   INFO SettingsFactory:261 -Query language substitutions: {}
+2015-12-14 20:54:54   INFO SettingsFactory:266 -JPA-QL strict compliance: disabled
+2015-12-14 20:54:54   INFO SettingsFactory:271 -Second-level cache: enabled
+2015-12-14 20:54:54   INFO SettingsFactory:275 -Query cache: disabled
+2015-12-14 20:54:54   INFO SettingsFactory:406 -Cache region factory : org.hibernate.cache.impl.NoCachingRegionFactory
+2015-12-14 20:54:54   INFO SettingsFactory:285 -Optimize cache for minimal puts: disabled
+2015-12-14 20:54:54   INFO SettingsFactory:294 -Structured second-level cache entries: disabled
+2015-12-14 20:54:54   INFO SettingsFactory:323 -Statistics: disabled
+2015-12-14 20:54:54   INFO SettingsFactory:327 -Deleted entity synthetic identifier rollback: disabled
+2015-12-14 20:54:54   INFO SettingsFactory:343 -Default entity-mode: pojo
+2015-12-14 20:54:54   INFO SettingsFactory:347 -Named query checking : enabled
+2015-12-14 20:54:54   INFO SettingsFactory:351 -Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+2015-12-14 20:54:54   INFO SessionFactoryImpl:202 -building session factory
+2015-12-14 20:54:54   INFO BasicTypeRegistry:150 -Type registration [blob] overrides previous : org.hibernate.type.BlobType@7c0c77c7
+2015-12-14 20:54:54   INFO BasicTypeRegistry:150 -Type registration [java.sql.Blob] overrides previous : org.hibernate.type.BlobType@7c0c77c7
+2015-12-14 20:54:54   INFO BasicTypeRegistry:150 -Type registration [clob] overrides previous : org.hibernate.type.ClobType@7adda9cc
+2015-12-14 20:54:54   INFO BasicTypeRegistry:150 -Type registration [java.sql.Clob] overrides previous : org.hibernate.type.ClobType@7adda9cc
+2015-12-14 20:54:54   INFO BasicTypeRegistry:150 -Type registration [wrapper_characters_clob] overrides previous : org.hibernate.type.CharacterArrayClobType@5cee5251
+2015-12-14 20:54:54   INFO BasicTypeRegistry:150 -Type registration [characters_clob] overrides previous : org.hibernate.type.PrimitiveCharacterArrayClobType@433d61fb
+2015-12-14 20:54:54   INFO BasicTypeRegistry:150 -Type registration [wrapper_materialized_blob] overrides previous : org.hibernate.type.WrappedMaterializedBlobType@5c909414
+2015-12-14 20:54:54   INFO BasicTypeRegistry:150 -Type registration [materialized_blob] overrides previous : org.hibernate.type.MaterializedBlobType@4b14c583
+2015-12-14 20:54:54   INFO BasicTypeRegistry:150 -Type registration [materialized_clob] overrides previous : org.hibernate.type.MaterializedClobType@65466a6a
+2015-12-14 20:54:54   INFO SessionFactoryObjectFactory:105 -Not binding factory to JNDI, no JNDI name configured
+2015-12-14 20:54:57   INFO CookiePool:30 -****************cookiePool线程start！****************
+2015-12-14 20:54:57   INFO WeiboSpider:55 -****************Spider线程start！****************
+2015-12-14 20:54:57   INFO WeiboSpider:59 -urlPool is Empty...
+2015-12-14 20:54:57   INFO WeiboSpider:55 -****************Spider线程start！****************
+2015-12-14 20:54:57   INFO WeiboSpider:59 -urlPool is Empty...
+2015-12-14 20:54:57   INFO UrlPool:31 -****************urlPool线程start！****************
+2015-12-14 20:54:57   INFO WeiboSpider:55 -****************Spider线程start！****************
+2015-12-14 20:54:57   INFO WeiboSpider:59 -urlPool is Empty...
+2015-12-14 20:54:57   INFO WeiboSpider:55 -****************Spider线程start！****************
+2015-12-14 20:54:57   INFO WeiboSpider:59 -urlPool is Empty...
+2015-12-14 20:54:58   INFO UrlPool:71 -本次待爬取URL总数为：760
+2015-12-14 20:54:58   INFO UrlPool:33 -****************urlPool线程finish！****************
+2015-12-14 20:55:00   INFO HttpUtil:25 -***************AntiCrawler detected***************
+2015-12-14 20:55:00   INFO HttpUtil:57 -***************new cookie is:PHPSESSID=43779d53246601e5dad134c7cfa83c07;SUB=_2A257asx0DeThGeNN7lEW8yrLwjmIHXVWPli8rDV6PUJbrdAKLWn8kWoNgYLvOq7BA3X9jNxoPwK1bGPoRw..;_T_WM=6840f8d123a55fc458a72fdc7d34ce1e;gsid_CTandWM=4ulX57061aYaxe9OPWaXbmsKycP;
+2015-12-14 20:55:00   INFO HttpUtil:25 -***************AntiCrawler detected***************
+2015-12-14 20:55:00   INFO HttpUtil:57 -***************new cookie is:PHPSESSID=bb9662a15c123e93d2b75196970ff5f9;SUB=_2A257asx0DeRhGeRN71YU9SfMzT6IHXVWPli8rDV6PUJbrdAKLRXHkWo5owYeV81zzJl24PIR51kl9tqvmA..;_T_WM=5432ac1686a9e40e2248506f59722629;gsid_CTandWM=4uB157061tOFWvV3zIGIy9PVt10;
+2015-12-14 20:55:00   INFO HttpUtil:25 -***************AntiCrawler detected***************
+2015-12-14 20:55:01   INFO HttpUtil:51 -the sum of cookies are:2
+2015-12-14 20:55:01   INFO HttpUtil:52 -***************begin sleep!!!!***************
+2015-12-14 20:55:00   INFO HttpUtil:25 -***************AntiCrawler detected***************
+2015-12-14 20:55:01   INFO HttpUtil:51 -the sum of cookies are:2
+2015-12-14 20:55:01   INFO HttpUtil:52 -***************begin sleep!!!!***************
+2015-12-14 20:55:01   INFO HttpUtil:25 -***************AntiCrawler detected***************
+2015-12-14 20:55:01   INFO HttpUtil:51 -the sum of cookies are:2
+2015-12-14 20:55:01   INFO HttpUtil:52 -***************begin sleep!!!!***************
+2015-12-14 20:55:01   INFO HttpUtil:25 -***************AntiCrawler detected***************
+2015-12-14 20:55:01   INFO HttpUtil:57 -***************new cookie is:PHPSESSID=43779d53246601e5dad134c7cfa83c07;SUB=_2A257asx0DeThGeNN7lEW8yrLwjmIHXVWPli8rDV6PUJbrdAKLWn8kWoNgYLvOq7BA3X9jNxoPwK1bGPoRw..;_T_WM=6840f8d123a55fc458a72fdc7d34ce1e;gsid_CTandWM=4ulX57061aYaxe9OPWaXbmsKycP;
+2015-12-14 20:55:02   INFO CookiePool:85 -add 3 cookies successful!
+2015-12-14 20:55:48   INFO WeiboSpider:70 -already crawler weibo numbers:103
+2015-12-14 20:55:59   INFO WeiboSpider:70 -already crawler weibo numbers:206
+2015-12-14 20:56:09   INFO WeiboSpider:70 -already crawler weibo numbers:307
+2015-12-14 20:56:14   WARN JDBCExceptionReporter:233 -SQL Error: 1366, SQLState: HY000
+2015-12-14 20:56:14  ERROR JDBCExceptionReporter:234 -Incorrect string value: '\xF0\x9F\x92\xA5\xE3\x80...' for column 'text' at row 1
+2015-12-14 20:56:14  ERROR WeiboDataDao:28 -saveWeibo failed!
+org.hibernate.exception.GenericJDBCException: could not insert: [nju.iip.dto.WeiboData]
+	at org.hibernate.exception.SQLStateConverter.handledNonSpecificException(SQLStateConverter.java:140)
+	at org.hibernate.exception.SQLStateConverter.convert(SQLStateConverter.java:128)
+	at org.hibernate.exception.JDBCExceptionHelper.convert(JDBCExceptionHelper.java:66)
+	at org.hibernate.id.insert.AbstractReturningDelegate.performInsert(AbstractReturningDelegate.java:64)
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:2345)
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:2852)
+	at org.hibernate.action.EntityIdentityInsertAction.execute(EntityIdentityInsertAction.java:71)
+	at org.hibernate.engine.ActionQueue.execute(ActionQueue.java:273)
+	at org.hibernate.event.def.AbstractSaveEventListener.performSaveOrReplicate(AbstractSaveEventListener.java:320)
+	at org.hibernate.event.def.AbstractSaveEventListener.performSave(AbstractSaveEventListener.java:203)
+	at org.hibernate.event.def.AbstractSaveEventListener.saveWithGeneratedId(AbstractSaveEventListener.java:129)
+	at org.hibernate.event.def.DefaultSaveOrUpdateEventListener.saveWithGeneratedOrRequestedId(DefaultSaveOrUpdateEventListener.java:210)
+	at org.hibernate.event.def.DefaultSaveEventListener.saveWithGeneratedOrRequestedId(DefaultSaveEventListener.java:56)
+	at org.hibernate.event.def.DefaultSaveOrUpdateEventListener.entityIsTransient(DefaultSaveOrUpdateEventListener.java:195)
+	at org.hibernate.event.def.DefaultSaveEventListener.performSaveOrUpdate(DefaultSaveEventListener.java:50)
+	at org.hibernate.event.def.DefaultSaveOrUpdateEventListener.onSaveOrUpdate(DefaultSaveOrUpdateEventListener.java:93)
+	at org.hibernate.impl.SessionImpl.fireSave(SessionImpl.java:713)
+	at org.hibernate.impl.SessionImpl.save(SessionImpl.java:701)
+	at org.hibernate.impl.SessionImpl.save(SessionImpl.java:697)
+	at nju.iip.dao.WeiboDataDao.saveWeibo(WeiboDataDao.java:23)
+	at nju.iip.spider.WeiboSpider.run(WeiboSpider.java:74)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.sql.SQLException: Incorrect string value: '\xF0\x9F\x92\xA5\xE3\x80...' for column 'text' at row 1
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:946)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:2985)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:1631)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:1723)
+	at com.mysql.jdbc.Connection.execSQL(Connection.java:3283)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1332)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:1604)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:1519)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:1504)
+	at com.mchange.v2.c3p0.impl.NewProxyPreparedStatement.executeUpdate(NewProxyPreparedStatement.java:105)
+	at org.hibernate.id.IdentityGenerator$GetGeneratedKeysDelegate.executeAndExtract(IdentityGenerator.java:94)
+	at org.hibernate.id.insert.AbstractReturningDelegate.performInsert(AbstractReturningDelegate.java:57)
+	... 20 more
+2015-12-14 20:56:19   INFO WeiboSpider:70 -already crawler weibo numbers:415
+2015-12-14 20:56:27   INFO WeiboSpider:70 -already crawler weibo numbers:518
+2015-12-14 20:56:36   INFO WeiboSpider:70 -already crawler weibo numbers:619
+2015-12-14 21:02:42   INFO Version:37 -Hibernate Commons Annotations 3.2.0.Final
+2015-12-14 21:02:42   INFO Environment:603 -Hibernate 3.6.4.Final
+2015-12-14 21:02:42   INFO Environment:636 -hibernate.properties not found
+2015-12-14 21:02:42   INFO Environment:814 -Bytecode provider name : javassist
+2015-12-14 21:02:42   INFO Environment:695 -using JDK 1.4 java.sql.Timestamp handling
+2015-12-14 21:02:42   INFO Configuration:2156 -configuring from resource: /hibernate.cfg.xml
+2015-12-14 21:02:42   INFO Configuration:2175 -Configuration resource: /hibernate.cfg.xml
+2015-12-14 21:02:42   INFO Configuration:789 -Reading mappings from resource : nju/iip/dto/WeiboAccount.hbm.xml
+2015-12-14 21:02:42   INFO Configuration:789 -Reading mappings from resource : nju/iip/dto/WeiboData.hbm.xml
+2015-12-14 21:02:43   INFO Configuration:2297 -Configured SessionFactory: null
+2015-12-14 21:02:43   INFO HbmBinder:353 -Mapping class: nju.iip.dto.WeiboAccount -> WeiboAccount
+2015-12-14 21:02:43   INFO HbmBinder:353 -Mapping class: nju.iip.dto.WeiboData -> WeiboData
+2015-12-14 21:02:43   INFO Configuration:1676 -Hibernate Validator not found: ignoring
+2015-12-14 21:02:43   INFO HibernateSearchEventListenerRegister:75 -Unable to find org.hibernate.search.event.FullTextIndexEventListener on the classpath. Hibernate Search is not enabled.
+2015-12-14 21:02:43   INFO ConnectionProviderFactory:173 -Initializing connection provider: org.hibernate.connection.C3P0ConnectionProvider
+2015-12-14 21:02:43   INFO C3P0ConnectionProvider:103 -C3P0 using driver: com.mysql.jdbc.Driver at URL: jdbc:mysql://114.212.86.23/weibo
+2015-12-14 21:02:43   INFO C3P0ConnectionProvider:104 -Connection properties: {user=root, password=****}
+2015-12-14 21:02:43   INFO C3P0ConnectionProvider:107 -autocommit mode: false
+2015-12-14 21:02:43   WARN C3P0ConnectionProvider:232 -Both hibernate-style property 'hibernate.c3p0.max_statement' and c3p0-style property 'c3p0.max_statement' have been set in hibernate.properties. Hibernate-style property 'hibernate.c3p0.max_statement' will be used and c3p0-style property 'c3p0.max_statement' will be ignored!
+2015-12-14 21:02:43   WARN C3P0ConnectionProvider:232 -Both hibernate-style property 'hibernate.c3p0.time_out' and c3p0-style property 'c3p0.time_out' have been set in hibernate.properties. Hibernate-style property 'hibernate.c3p0.time_out' will be used and c3p0-style property 'c3p0.time_out' will be ignored!
+2015-12-14 21:02:43   WARN C3P0ConnectionProvider:232 -Both hibernate-style property 'hibernate.c3p0.min_size' and c3p0-style property 'c3p0.min_size' have been set in hibernate.properties. Hibernate-style property 'hibernate.c3p0.min_size' will be used and c3p0-style property 'c3p0.min_size' will be ignored!
+2015-12-14 21:02:43   WARN C3P0ConnectionProvider:232 -Both hibernate-style property 'hibernate.c3p0.max_size' and c3p0-style property 'c3p0.max_size' have been set in hibernate.properties. Hibernate-style property 'hibernate.c3p0.max_size' will be used and c3p0-style property 'c3p0.max_size' will be ignored!
+2015-12-14 21:02:43   INFO MLog:80 -MLog clients using log4j logging.
+2015-12-14 21:02:44   INFO C3P0Registry:204 -Initializing c3p0-0.9.1 [built 16-January-2007 14:46:42; debug? true; trace: 10]
+2015-12-14 21:02:44   INFO AbstractPoolBackedDataSource:462 -Initializing c3p0 pool... com.mchange.v2.c3p0.PoolBackedDataSource@53abc262 [ connectionPoolDataSource -> com.mchange.v2.c3p0.WrapperConnectionPoolDataSource@d17eacb5 [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, debugUnreturnedConnectionStackTraces -> false, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge73s9d18k1qcyyqsxnf|345965f2, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 30, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, nestedDataSource -> com.mchange.v2.c3p0.DriverManagerDataSource@8cfe310c [ description -> null, driverClass -> null, factoryClassLocation -> null, identityToken -> 1hge73s9d18k1qcyyqsxnf|21a947fe, jdbcUrl -> jdbc:mysql://114.212.86.23/weibo, properties -> {user=******, password=******} ], preferredTestQuery -> null, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false; userOverrides: {} ], dataSourceName -> null, factoryClassLocation -> null, identityToken -> 1hge73s9d18k1qcyyqsxnf|51b7e5df, numHelperThreads -> 3 ]
+2015-12-14 21:02:44   INFO Dialect:135 -Using dialect: org.hibernate.dialect.MySQLDialect
+2015-12-14 21:02:44   INFO JdbcSupportLoader:79 -Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2015-12-14 21:02:44   INFO SettingsFactory:126 -Database ->
+       name : MySQL
+    version : 5.7.10-log
+      major : 5
+      minor : 7
+2015-12-14 21:02:44   INFO SettingsFactory:132 -Driver ->
+       name : MySQL-AB JDBC Driver
+    version : mysql-connector-java-5.0.8 ( Revision: ${svn.Revision} )
+      major : 5
+      minor : 0
+2015-12-14 21:02:44   INFO TransactionFactoryFactory:62 -Using default transaction strategy (direct JDBC transactions)
+2015-12-14 21:02:44   INFO TransactionManagerLookupFactory:83 -No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+2015-12-14 21:02:44   INFO SettingsFactory:179 -Automatic flush during beforeCompletion(): disabled
+2015-12-14 21:02:44   INFO SettingsFactory:183 -Automatic session close at end of transaction: disabled
+2015-12-14 21:02:44   INFO SettingsFactory:190 -JDBC batch size: 15
+2015-12-14 21:02:44   INFO SettingsFactory:193 -JDBC batch updates for versioned data: disabled
+2015-12-14 21:02:44   INFO SettingsFactory:198 -Scrollable result sets: enabled
+2015-12-14 21:02:44   INFO SettingsFactory:206 -JDBC3 getGeneratedKeys(): enabled
+2015-12-14 21:02:44   INFO SettingsFactory:214 -Connection release mode: auto
+2015-12-14 21:02:44   INFO SettingsFactory:238 -Maximum outer join fetch depth: 2
+2015-12-14 21:02:44   INFO SettingsFactory:241 -Default batch fetch size: 1
+2015-12-14 21:02:44   INFO SettingsFactory:245 -Generate SQL with comments: disabled
+2015-12-14 21:02:44   INFO SettingsFactory:249 -Order SQL updates by primary key: disabled
+2015-12-14 21:02:44   INFO SettingsFactory:253 -Order SQL inserts for batching: disabled
+2015-12-14 21:02:44   INFO SettingsFactory:431 -Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+2015-12-14 21:02:44   INFO ASTQueryTranslatorFactory:47 -Using ASTQueryTranslatorFactory
+2015-12-14 21:02:44   INFO SettingsFactory:261 -Query language substitutions: {}
+2015-12-14 21:02:44   INFO SettingsFactory:266 -JPA-QL strict compliance: disabled
+2015-12-14 21:02:44   INFO SettingsFactory:271 -Second-level cache: enabled
+2015-12-14 21:02:44   INFO SettingsFactory:275 -Query cache: disabled
+2015-12-14 21:02:44   INFO SettingsFactory:406 -Cache region factory : org.hibernate.cache.impl.NoCachingRegionFactory
+2015-12-14 21:02:44   INFO SettingsFactory:285 -Optimize cache for minimal puts: disabled
+2015-12-14 21:02:44   INFO SettingsFactory:294 -Structured second-level cache entries: disabled
+2015-12-14 21:02:44   INFO SettingsFactory:323 -Statistics: disabled
+2015-12-14 21:02:44   INFO SettingsFactory:327 -Deleted entity synthetic identifier rollback: disabled
+2015-12-14 21:02:44   INFO SettingsFactory:343 -Default entity-mode: pojo
+2015-12-14 21:02:44   INFO SettingsFactory:347 -Named query checking : enabled
+2015-12-14 21:02:44   INFO SettingsFactory:351 -Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+2015-12-14 21:02:44   INFO SessionFactoryImpl:202 -building session factory
+2015-12-14 21:02:44   INFO BasicTypeRegistry:150 -Type registration [blob] overrides previous : org.hibernate.type.BlobType@7c0c77c7
+2015-12-14 21:02:44   INFO BasicTypeRegistry:150 -Type registration [java.sql.Blob] overrides previous : org.hibernate.type.BlobType@7c0c77c7
+2015-12-14 21:02:44   INFO BasicTypeRegistry:150 -Type registration [clob] overrides previous : org.hibernate.type.ClobType@7adda9cc
+2015-12-14 21:02:44   INFO BasicTypeRegistry:150 -Type registration [java.sql.Clob] overrides previous : org.hibernate.type.ClobType@7adda9cc
+2015-12-14 21:02:44   INFO BasicTypeRegistry:150 -Type registration [wrapper_characters_clob] overrides previous : org.hibernate.type.CharacterArrayClobType@5cee5251
+2015-12-14 21:02:44   INFO BasicTypeRegistry:150 -Type registration [characters_clob] overrides previous : org.hibernate.type.PrimitiveCharacterArrayClobType@433d61fb
+2015-12-14 21:02:44   INFO BasicTypeRegistry:150 -Type registration [wrapper_materialized_blob] overrides previous : org.hibernate.type.WrappedMaterializedBlobType@5c909414
+2015-12-14 21:02:44   INFO BasicTypeRegistry:150 -Type registration [materialized_blob] overrides previous : org.hibernate.type.MaterializedBlobType@4b14c583
+2015-12-14 21:02:44   INFO BasicTypeRegistry:150 -Type registration [materialized_clob] overrides previous : org.hibernate.type.MaterializedClobType@65466a6a
+2015-12-14 21:02:45   INFO SessionFactoryObjectFactory:105 -Not binding factory to JNDI, no JNDI name configured
+2015-12-14 21:02:46   INFO UrlPool:31 -****************urlPool线程start！****************
+2015-12-14 21:02:46   INFO CookiePool:30 -****************cookiePool线程start！****************
+2015-12-14 21:02:46   INFO WeiboSpider:55 -****************Spider线程start！****************
+2015-12-14 21:02:46   INFO WeiboSpider:59 -urlPool is Empty...
+2015-12-14 21:02:46   INFO WeiboSpider:55 -****************Spider线程start！****************
+2015-12-14 21:02:46   INFO WeiboSpider:59 -urlPool is Empty...
+2015-12-14 21:02:46   INFO WeiboSpider:55 -****************Spider线程start！****************
+2015-12-14 21:02:46   INFO WeiboSpider:59 -urlPool is Empty...
+2015-12-14 21:02:46   INFO WeiboSpider:55 -****************Spider线程start！****************
+2015-12-14 21:02:46   INFO WeiboSpider:59 -urlPool is Empty...
+2015-12-14 21:02:47   INFO UrlPool:71 -本次待爬取URL总数为：760
+2015-12-14 21:02:47   INFO UrlPool:33 -****************urlPool线程finish！****************
+2015-12-14 21:02:50   INFO HttpUtil:25 -***************AntiCrawler detected***************
+2015-12-14 21:02:50   INFO HttpUtil:57 -***************new cookie is:PHPSESSID=1f1a83b9690ad1c1673e8e47bba56f21;SUB=_2A257as2pDeThGeNN7lEW8yrLwjmIHXVWPkZhrDV6PUJbrdAKLW_6kWoBo5-HTVKpreIuVMm6m1uykgQsUQ..;_T_WM=aae716c3e7283a628cbee9b1502347de;gsid_CTandWM=4ulX57061aYaxe9OPWaXbmsKycP;
+2015-12-14 21:02:50   INFO CookiePool:85 -add 3 cookies successful!
+2015-12-14 21:02:50   INFO HttpUtil:25 -***************AntiCrawler detected***************
+2015-12-14 21:02:50   INFO HttpUtil:57 -***************new cookie is:PHPSESSID=d3e4ae6822a345195265c36fb4f5ce26;SUB=_2A257as2pDeRhGeRN71YU9SfMzT6IHXVWPkZhrDV6PUJbrdAKLVmmkWqE9_Xpd0MY4YgktvpIp16jl0jNnQ..;_T_WM=b4e7f32f58d71c2242d2d9e21687a456;gsid_CTandWM=4uB157061tOFWvV3zIGIy9PVt10;
+2015-12-14 21:02:50   INFO HttpUtil:25 -***************AntiCrawler detected***************
+2015-12-14 21:02:50   INFO HttpUtil:57 -***************new cookie is:PHPSESSID=2b946c56d39d5775f4d15371c0519abb;SUB=_2A257as2pDeRhGedH6FAR9y3MzjmIHXVWPkZhrDV6PUJbrdANLWelkWoOBDxpM9i4Uh4wHm2yMHrXeJYrAw..;_T_WM=3fccaa77aa65c0e361f63575eaacc360;gsid_CTandWM=4u5v57061iVdJ7cTFsEo086Ct0T;
+2015-12-14 21:02:50   INFO HttpUtil:25 -***************AntiCrawler detected***************
+2015-12-14 21:02:50   INFO HttpUtil:51 -the sum of cookies are:3
+2015-12-14 21:02:50   INFO HttpUtil:52 -***************begin sleep!!!!***************
+2015-12-14 21:02:52   INFO HttpUtil:25 -***************AntiCrawler detected***************
+2015-12-14 21:02:52   INFO HttpUtil:57 -***************new cookie is:PHPSESSID=1f1a83b9690ad1c1673e8e47bba56f21;SUB=_2A257as2pDeThGeNN7lEW8yrLwjmIHXVWPkZhrDV6PUJbrdAKLW_6kWoBo5-HTVKpreIuVMm6m1uykgQsUQ..;_T_WM=aae716c3e7283a628cbee9b1502347de;gsid_CTandWM=4ulX57061aYaxe9OPWaXbmsKycP;
+2015-12-14 21:02:53   WARN JDBCExceptionReporter:233 -SQL Error: 1366, SQLState: HY000
+2015-12-14 21:02:53  ERROR JDBCExceptionReporter:234 -Incorrect string value: '\xF0\x9F\x98\xB8 \xE6...' for column 'text' at row 1
+2015-12-14 21:02:53  ERROR WeiboDataDao:28 -saveWeibo failed!
+org.hibernate.exception.GenericJDBCException: could not insert: [nju.iip.dto.WeiboData]
+	at org.hibernate.exception.SQLStateConverter.handledNonSpecificException(SQLStateConverter.java:140)
+	at org.hibernate.exception.SQLStateConverter.convert(SQLStateConverter.java:128)
+	at org.hibernate.exception.JDBCExceptionHelper.convert(JDBCExceptionHelper.java:66)
+	at org.hibernate.id.insert.AbstractReturningDelegate.performInsert(AbstractReturningDelegate.java:64)
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:2345)
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:2852)
+	at org.hibernate.action.EntityIdentityInsertAction.execute(EntityIdentityInsertAction.java:71)
+	at org.hibernate.engine.ActionQueue.execute(ActionQueue.java:273)
+	at org.hibernate.event.def.AbstractSaveEventListener.performSaveOrReplicate(AbstractSaveEventListener.java:320)
+	at org.hibernate.event.def.AbstractSaveEventListener.performSave(AbstractSaveEventListener.java:203)
+	at org.hibernate.event.def.AbstractSaveEventListener.saveWithGeneratedId(AbstractSaveEventListener.java:129)
+	at org.hibernate.event.def.DefaultSaveOrUpdateEventListener.saveWithGeneratedOrRequestedId(DefaultSaveOrUpdateEventListener.java:210)
+	at org.hibernate.event.def.DefaultSaveEventListener.saveWithGeneratedOrRequestedId(DefaultSaveEventListener.java:56)
+	at org.hibernate.event.def.DefaultSaveOrUpdateEventListener.entityIsTransient(DefaultSaveOrUpdateEventListener.java:195)
+	at org.hibernate.event.def.DefaultSaveEventListener.performSaveOrUpdate(DefaultSaveEventListener.java:50)
+	at org.hibernate.event.def.DefaultSaveOrUpdateEventListener.onSaveOrUpdate(DefaultSaveOrUpdateEventListener.java:93)
+	at org.hibernate.impl.SessionImpl.fireSave(SessionImpl.java:713)
+	at org.hibernate.impl.SessionImpl.save(SessionImpl.java:701)
+	at org.hibernate.impl.SessionImpl.save(SessionImpl.java:697)
+	at nju.iip.dao.WeiboDataDao.saveWeibo(WeiboDataDao.java:23)
+	at nju.iip.spider.WeiboSpider.run(WeiboSpider.java:74)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.sql.SQLException: Incorrect string value: '\xF0\x9F\x98\xB8 \xE6...' for column 'text' at row 1
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:946)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:2985)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:1631)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:1723)
+	at com.mysql.jdbc.Connection.execSQL(Connection.java:3283)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1332)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:1604)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:1519)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:1504)
+	at com.mchange.v2.c3p0.impl.NewProxyPreparedStatement.executeUpdate(NewProxyPreparedStatement.java:105)
+	at org.hibernate.id.IdentityGenerator$GetGeneratedKeysDelegate.executeAndExtract(IdentityGenerator.java:94)
+	at org.hibernate.id.insert.AbstractReturningDelegate.performInsert(AbstractReturningDelegate.java:57)
+	... 20 more
+2015-12-14 21:02:56   INFO WeiboSpider:70 -already crawler weibo numbers:105
+2015-12-14 21:03:00   INFO WeiboSpider:70 -already crawler weibo numbers:210
+2015-12-14 21:24:53   INFO Version:37 -Hibernate Commons Annotations 3.2.0.Final
+2015-12-14 21:24:53   INFO Environment:603 -Hibernate 3.6.4.Final
+2015-12-14 21:24:53   INFO Environment:636 -hibernate.properties not found
+2015-12-14 21:24:53   INFO Environment:814 -Bytecode provider name : javassist
+2015-12-14 21:24:53   INFO Environment:695 -using JDK 1.4 java.sql.Timestamp handling
+2015-12-14 21:24:53   INFO Configuration:2156 -configuring from resource: /hibernate.cfg.xml
+2015-12-14 21:24:53   INFO Configuration:2175 -Configuration resource: /hibernate.cfg.xml
+2015-12-14 21:24:53   INFO Configuration:789 -Reading mappings from resource : nju/iip/dto/WeiboAccount.hbm.xml
+2015-12-14 21:24:53   INFO Configuration:789 -Reading mappings from resource : nju/iip/dto/WeiboData.hbm.xml
+2015-12-14 21:24:53   INFO Configuration:2297 -Configured SessionFactory: null
+2015-12-14 21:24:53   INFO HbmBinder:353 -Mapping class: nju.iip.dto.WeiboAccount -> WeiboAccount
+2015-12-14 21:24:53   INFO HbmBinder:353 -Mapping class: nju.iip.dto.WeiboData -> WeiboData
+2015-12-14 21:24:54   INFO Configuration:1676 -Hibernate Validator not found: ignoring
+2015-12-14 21:24:54   INFO HibernateSearchEventListenerRegister:75 -Unable to find org.hibernate.search.event.FullTextIndexEventListener on the classpath. Hibernate Search is not enabled.
+2015-12-14 21:24:54   INFO ConnectionProviderFactory:173 -Initializing connection provider: org.hibernate.connection.C3P0ConnectionProvider
+2015-12-14 21:24:54   INFO C3P0ConnectionProvider:103 -C3P0 using driver: com.mysql.jdbc.Driver at URL: jdbc:mysql://114.212.86.23/weibo
+2015-12-14 21:24:54   INFO C3P0ConnectionProvider:104 -Connection properties: {user=root, password=****}
+2015-12-14 21:24:54   INFO C3P0ConnectionProvider:107 -autocommit mode: false
+2015-12-14 21:24:54   WARN C3P0ConnectionProvider:232 -Both hibernate-style property 'hibernate.c3p0.max_statement' and c3p0-style property 'c3p0.max_statement' have been set in hibernate.properties. Hibernate-style property 'hibernate.c3p0.max_statement' will be used and c3p0-style property 'c3p0.max_statement' will be ignored!
+2015-12-14 21:24:54   WARN C3P0ConnectionProvider:232 -Both hibernate-style property 'hibernate.c3p0.time_out' and c3p0-style property 'c3p0.time_out' have been set in hibernate.properties. Hibernate-style property 'hibernate.c3p0.time_out' will be used and c3p0-style property 'c3p0.time_out' will be ignored!
+2015-12-14 21:24:54   WARN C3P0ConnectionProvider:232 -Both hibernate-style property 'hibernate.c3p0.min_size' and c3p0-style property 'c3p0.min_size' have been set in hibernate.properties. Hibernate-style property 'hibernate.c3p0.min_size' will be used and c3p0-style property 'c3p0.min_size' will be ignored!
+2015-12-14 21:24:54   WARN C3P0ConnectionProvider:232 -Both hibernate-style property 'hibernate.c3p0.max_size' and c3p0-style property 'c3p0.max_size' have been set in hibernate.properties. Hibernate-style property 'hibernate.c3p0.max_size' will be used and c3p0-style property 'c3p0.max_size' will be ignored!
+2015-12-14 21:24:54   INFO MLog:80 -MLog clients using log4j logging.
+2015-12-14 21:24:54   INFO C3P0Registry:204 -Initializing c3p0-0.9.1 [built 16-January-2007 14:46:42; debug? true; trace: 10]
+2015-12-14 21:24:54   INFO AbstractPoolBackedDataSource:462 -Initializing c3p0 pool... com.mchange.v2.c3p0.PoolBackedDataSource@a1498019 [ connectionPoolDataSource -> com.mchange.v2.c3p0.WrapperConnectionPoolDataSource@1f1c6a6c [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, debugUnreturnedConnectionStackTraces -> false, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge73s9d18ku97z1xhg4lu|345965f2, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 30, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, nestedDataSource -> com.mchange.v2.c3p0.DriverManagerDataSource@da9beec3 [ description -> null, driverClass -> null, factoryClassLocation -> null, identityToken -> 1hge73s9d18ku97z1xhg4lu|21a947fe, jdbcUrl -> jdbc:mysql://114.212.86.23/weibo, properties -> {user=******, password=******} ], preferredTestQuery -> null, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false; userOverrides: {} ], dataSourceName -> null, factoryClassLocation -> null, identityToken -> 1hge73s9d18ku97z1xhg4lu|51b7e5df, numHelperThreads -> 3 ]
+2015-12-14 21:24:55   INFO Dialect:135 -Using dialect: org.hibernate.dialect.MySQLDialect
+2015-12-14 21:24:55   INFO JdbcSupportLoader:79 -Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2015-12-14 21:24:55   INFO SettingsFactory:126 -Database ->
+       name : MySQL
+    version : 5.7.10-log
+      major : 5
+      minor : 7
+2015-12-14 21:24:55   INFO SettingsFactory:132 -Driver ->
+       name : MySQL-AB JDBC Driver
+    version : mysql-connector-java-5.0.8 ( Revision: ${svn.Revision} )
+      major : 5
+      minor : 0
+2015-12-14 21:24:55   INFO TransactionFactoryFactory:62 -Using default transaction strategy (direct JDBC transactions)
+2015-12-14 21:24:55   INFO TransactionManagerLookupFactory:83 -No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+2015-12-14 21:24:55   INFO SettingsFactory:179 -Automatic flush during beforeCompletion(): disabled
+2015-12-14 21:24:55   INFO SettingsFactory:183 -Automatic session close at end of transaction: disabled
+2015-12-14 21:24:55   INFO SettingsFactory:190 -JDBC batch size: 15
+2015-12-14 21:24:55   INFO SettingsFactory:193 -JDBC batch updates for versioned data: disabled
+2015-12-14 21:24:55   INFO SettingsFactory:198 -Scrollable result sets: enabled
+2015-12-14 21:24:55   INFO SettingsFactory:206 -JDBC3 getGeneratedKeys(): enabled
+2015-12-14 21:24:55   INFO SettingsFactory:214 -Connection release mode: auto
+2015-12-14 21:24:55   INFO SettingsFactory:238 -Maximum outer join fetch depth: 2
+2015-12-14 21:24:55   INFO SettingsFactory:241 -Default batch fetch size: 1
+2015-12-14 21:24:55   INFO SettingsFactory:245 -Generate SQL with comments: disabled
+2015-12-14 21:24:55   INFO SettingsFactory:249 -Order SQL updates by primary key: disabled
+2015-12-14 21:24:55   INFO SettingsFactory:253 -Order SQL inserts for batching: disabled
+2015-12-14 21:24:55   INFO SettingsFactory:431 -Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+2015-12-14 21:24:55   INFO ASTQueryTranslatorFactory:47 -Using ASTQueryTranslatorFactory
+2015-12-14 21:24:55   INFO SettingsFactory:261 -Query language substitutions: {}
+2015-12-14 21:24:55   INFO SettingsFactory:266 -JPA-QL strict compliance: disabled
+2015-12-14 21:24:55   INFO SettingsFactory:271 -Second-level cache: enabled
+2015-12-14 21:24:55   INFO SettingsFactory:275 -Query cache: disabled
+2015-12-14 21:24:55   INFO SettingsFactory:406 -Cache region factory : org.hibernate.cache.impl.NoCachingRegionFactory
+2015-12-14 21:24:55   INFO SettingsFactory:285 -Optimize cache for minimal puts: disabled
+2015-12-14 21:24:55   INFO SettingsFactory:294 -Structured second-level cache entries: disabled
+2015-12-14 21:24:55   INFO SettingsFactory:323 -Statistics: disabled
+2015-12-14 21:24:55   INFO SettingsFactory:327 -Deleted entity synthetic identifier rollback: disabled
+2015-12-14 21:24:55   INFO SettingsFactory:343 -Default entity-mode: pojo
+2015-12-14 21:24:55   INFO SettingsFactory:347 -Named query checking : enabled
+2015-12-14 21:24:55   INFO SettingsFactory:351 -Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+2015-12-14 21:24:55   INFO SessionFactoryImpl:202 -building session factory
+2015-12-14 21:24:55   INFO BasicTypeRegistry:150 -Type registration [blob] overrides previous : org.hibernate.type.BlobType@7c0c77c7
+2015-12-14 21:24:55   INFO BasicTypeRegistry:150 -Type registration [java.sql.Blob] overrides previous : org.hibernate.type.BlobType@7c0c77c7
+2015-12-14 21:24:55   INFO BasicTypeRegistry:150 -Type registration [clob] overrides previous : org.hibernate.type.ClobType@7adda9cc
+2015-12-14 21:24:55   INFO BasicTypeRegistry:150 -Type registration [java.sql.Clob] overrides previous : org.hibernate.type.ClobType@7adda9cc
+2015-12-14 21:24:55   INFO BasicTypeRegistry:150 -Type registration [wrapper_characters_clob] overrides previous : org.hibernate.type.CharacterArrayClobType@5cee5251
+2015-12-14 21:24:55   INFO BasicTypeRegistry:150 -Type registration [characters_clob] overrides previous : org.hibernate.type.PrimitiveCharacterArrayClobType@433d61fb
+2015-12-14 21:24:55   INFO BasicTypeRegistry:150 -Type registration [wrapper_materialized_blob] overrides previous : org.hibernate.type.WrappedMaterializedBlobType@5c909414
+2015-12-14 21:24:55   INFO BasicTypeRegistry:150 -Type registration [materialized_blob] overrides previous : org.hibernate.type.MaterializedBlobType@4b14c583
+2015-12-14 21:24:55   INFO BasicTypeRegistry:150 -Type registration [materialized_clob] overrides previous : org.hibernate.type.MaterializedClobType@65466a6a
+2015-12-14 21:24:55   INFO SessionFactoryObjectFactory:105 -Not binding factory to JNDI, no JNDI name configured
+2015-12-14 21:24:55   INFO CookiePool:30 -****************cookiePool线程start！****************
+2015-12-14 21:24:55   INFO WeiboSpider:55 -****************Spider线程start！****************
+2015-12-14 21:24:55   INFO WeiboSpider:59 -urlPool is Empty...
+2015-12-14 21:24:55   INFO WeiboSpider:55 -****************Spider线程start！****************
+2015-12-14 21:24:55   INFO WeiboSpider:59 -urlPool is Empty...
+2015-12-14 21:24:55   INFO WeiboSpider:55 -****************Spider线程start！****************
+2015-12-14 21:24:55   INFO WeiboSpider:59 -urlPool is Empty...
+2015-12-14 21:24:55   INFO WeiboSpider:55 -****************Spider线程start！****************
+2015-12-14 21:24:55   INFO WeiboSpider:59 -urlPool is Empty...
+2015-12-14 21:24:55   INFO UrlPool:31 -****************urlPool线程start！****************
+2015-12-14 21:24:56   INFO UrlPool:71 -本次待爬取URL总数为：760
+2015-12-14 21:24:56   INFO UrlPool:33 -****************urlPool线程finish！****************
+2015-12-14 21:24:59   INFO HttpUtil:25 -***************AntiCrawler detected***************
+2015-12-14 21:24:59   INFO HttpUtil:57 -***************new cookie is:PHPSESSID=145e992919409e77524d4ecfa0f5c5a1;SUB=_2A257arN6DeThGeNN7lEW8yrLwjmIHXVWPkGyrDV6PUJbrdAKLWvRkWpP3HrecniikxlkcKx2RqkRCrTtmw..;_T_WM=b650ff699cfcd03f3133cad7a643aaf0;gsid_CTandWM=4ulX57061aYaxe9OPWaXbmsKycP;
+2015-12-14 21:24:59   INFO CookiePool:85 -add 3 cookies successful!
+2015-12-14 21:24:59   INFO HttpUtil:25 -***************AntiCrawler detected***************
+2015-12-14 21:24:59   INFO HttpUtil:57 -***************new cookie is:PHPSESSID=8427719be8b30144fc11adedb2d8b2d9;SUB=_2A257arN6DeRhGeRN71YU9SfMzT6IHXVWPkGyrDV6PUJbrdAKLUvMkWqdoR6N6BGt0WqtEMzOGAMXMPiKzA..;_T_WM=af45e59b8bc79fbc5ee918c354afa6bd;gsid_CTandWM=4uB157061tOFWvV3zIGIy9PVt10;
+2015-12-14 21:24:59   INFO HttpUtil:25 -***************AntiCrawler detected***************
+2015-12-14 21:24:59   INFO HttpUtil:57 -***************new cookie is:PHPSESSID=b9fb666755a743a48de00029d6ba658c;SUB=_2A257arN7DeRhGedH6FAR9y3MzjmIHXVWPkGzrDV6PUJbrdANLVnukWonTeqgv0cunZzMJZJYHnzhktS21g..;_T_WM=fdf32278538971a8927233bf4f124e67;gsid_CTandWM=4u5v57061iVdJ7cTFsEo086Ct0T;
+2015-12-14 21:25:00   INFO HttpUtil:25 -***************AntiCrawler detected***************
+2015-12-14 21:25:00   INFO HttpUtil:51 -the sum of cookies are:3
+2015-12-14 21:25:00   INFO HttpUtil:52 -***************begin sleep!!!!***************
+2015-12-14 21:25:00   INFO HttpUtil:25 -***************AntiCrawler detected***************
+2015-12-14 21:25:00   INFO HttpUtil:51 -the sum of cookies are:3
+2015-12-14 21:25:00   INFO HttpUtil:52 -***************begin sleep!!!!***************
+2015-12-14 21:25:13   INFO WeiboSpider:70 -already crawler weibo numbers:103
+2015-12-14 21:25:16   INFO WeiboSpider:70 -already crawler weibo numbers:206
+2015-12-14 21:28:26   INFO Version:37 -Hibernate Commons Annotations 3.2.0.Final
+2015-12-14 21:28:26   INFO Environment:603 -Hibernate 3.6.4.Final
+2015-12-14 21:28:26   INFO Environment:636 -hibernate.properties not found
+2015-12-14 21:28:26   INFO Environment:814 -Bytecode provider name : javassist
+2015-12-14 21:28:26   INFO Environment:695 -using JDK 1.4 java.sql.Timestamp handling
+2015-12-14 21:28:26   INFO Configuration:2156 -configuring from resource: /hibernate.cfg.xml
+2015-12-14 21:28:26   INFO Configuration:2175 -Configuration resource: /hibernate.cfg.xml
+2015-12-14 21:28:26   INFO Configuration:789 -Reading mappings from resource : nju/iip/dto/WeiboAccount.hbm.xml
+2015-12-14 21:28:26   INFO Configuration:789 -Reading mappings from resource : nju/iip/dto/WeiboData.hbm.xml
+2015-12-14 21:28:26   INFO Configuration:2297 -Configured SessionFactory: null
+2015-12-14 21:28:26   INFO HbmBinder:353 -Mapping class: nju.iip.dto.WeiboAccount -> WeiboAccount
+2015-12-14 21:28:26   INFO HbmBinder:353 -Mapping class: nju.iip.dto.WeiboData -> WeiboData
+2015-12-14 21:28:26   INFO Configuration:1676 -Hibernate Validator not found: ignoring
+2015-12-14 21:28:26   INFO HibernateSearchEventListenerRegister:75 -Unable to find org.hibernate.search.event.FullTextIndexEventListener on the classpath. Hibernate Search is not enabled.
+2015-12-14 21:28:26   INFO ConnectionProviderFactory:173 -Initializing connection provider: org.hibernate.connection.C3P0ConnectionProvider
+2015-12-14 21:28:26   INFO C3P0ConnectionProvider:103 -C3P0 using driver: com.mysql.jdbc.Driver at URL: jdbc:mysql://114.212.86.23/weibo
+2015-12-14 21:28:26   INFO C3P0ConnectionProvider:104 -Connection properties: {user=root, password=****}
+2015-12-14 21:28:26   INFO C3P0ConnectionProvider:107 -autocommit mode: false
+2015-12-14 21:28:27   WARN C3P0ConnectionProvider:232 -Both hibernate-style property 'hibernate.c3p0.max_statement' and c3p0-style property 'c3p0.max_statement' have been set in hibernate.properties. Hibernate-style property 'hibernate.c3p0.max_statement' will be used and c3p0-style property 'c3p0.max_statement' will be ignored!
+2015-12-14 21:28:27   WARN C3P0ConnectionProvider:232 -Both hibernate-style property 'hibernate.c3p0.time_out' and c3p0-style property 'c3p0.time_out' have been set in hibernate.properties. Hibernate-style property 'hibernate.c3p0.time_out' will be used and c3p0-style property 'c3p0.time_out' will be ignored!
+2015-12-14 21:28:27   WARN C3P0ConnectionProvider:232 -Both hibernate-style property 'hibernate.c3p0.min_size' and c3p0-style property 'c3p0.min_size' have been set in hibernate.properties. Hibernate-style property 'hibernate.c3p0.min_size' will be used and c3p0-style property 'c3p0.min_size' will be ignored!
+2015-12-14 21:28:27   WARN C3P0ConnectionProvider:232 -Both hibernate-style property 'hibernate.c3p0.max_size' and c3p0-style property 'c3p0.max_size' have been set in hibernate.properties. Hibernate-style property 'hibernate.c3p0.max_size' will be used and c3p0-style property 'c3p0.max_size' will be ignored!
+2015-12-14 21:28:27   INFO MLog:80 -MLog clients using log4j logging.
+2015-12-14 21:28:27   INFO C3P0Registry:204 -Initializing c3p0-0.9.1 [built 16-January-2007 14:46:42; debug? true; trace: 10]
+2015-12-14 21:28:27   INFO AbstractPoolBackedDataSource:462 -Initializing c3p0 pool... com.mchange.v2.c3p0.PoolBackedDataSource@d04f0e70 [ connectionPoolDataSource -> com.mchange.v2.c3p0.WrapperConnectionPoolDataSource@4e21f8c3 [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, debugUnreturnedConnectionStackTraces -> false, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge73s9d18kyti0qrdu1v|345965f2, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 30, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, nestedDataSource -> com.mchange.v2.c3p0.DriverManagerDataSource@9a17d1a [ description -> null, driverClass -> null, factoryClassLocation -> null, identityToken -> 1hge73s9d18kyti0qrdu1v|21a947fe, jdbcUrl -> jdbc:mysql://114.212.86.23/weibo, properties -> {user=******, password=******} ], preferredTestQuery -> null, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false; userOverrides: {} ], dataSourceName -> null, factoryClassLocation -> null, identityToken -> 1hge73s9d18kyti0qrdu1v|51b7e5df, numHelperThreads -> 3 ]
+2015-12-14 21:28:47   WARN ThreadPoolAsynchronousRunner$DeadlockDetector:608 -com.mchange.v2.async.ThreadPoolAsynchronousRunner$DeadlockDetector@419464ac -- APPARENT DEADLOCK!!! Creating emergency threads for unassigned pending tasks!
+2015-12-14 21:28:47   WARN ThreadPoolAsynchronousRunner$DeadlockDetector:624 -com.mchange.v2.async.ThreadPoolAsynchronousRunner$DeadlockDetector@419464ac -- APPARENT DEADLOCK!!! Complete Status: 
+	Managed Threads: 3
+	Active Threads: 3
+	Active Tasks: 
+		com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@e6e98d5 (com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2)
+		com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@6c3d3cb0 (com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0)
+		com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@3faa173b (com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1)
+	Pending Tasks: 
+		com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@1413edfd
+		com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@6e41679a
+		com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@6b1c0e5e
+		com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@460cfc9
+		com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@f17a6bd
+		com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@6a0f7d72
+		com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@616af093
+Pool thread stack traces:
+	Thread[com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2,5,main]
+		java.lang.Thread.sleep(Native Method)
+		com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask.run(BasicResourcePool.java:1805)
+		com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:547)
+	Thread[com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1,5,main]
+		java.lang.Thread.sleep(Native Method)
+		com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask.run(BasicResourcePool.java:1805)
+		com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:547)
+	Thread[com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0,5,main]
+		java.lang.Thread.sleep(Native Method)
+		com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask.run(BasicResourcePool.java:1805)
+		com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:547)
+
+
+2015-12-14 21:29:32   INFO Version:37 -Hibernate Commons Annotations 3.2.0.Final
+2015-12-14 21:29:32   INFO Environment:603 -Hibernate 3.6.4.Final
+2015-12-14 21:29:32   INFO Environment:636 -hibernate.properties not found
+2015-12-14 21:29:32   INFO Environment:814 -Bytecode provider name : javassist
+2015-12-14 21:29:32   INFO Environment:695 -using JDK 1.4 java.sql.Timestamp handling
+2015-12-14 21:29:32   INFO Configuration:2156 -configuring from resource: /hibernate.cfg.xml
+2015-12-14 21:29:32   INFO Configuration:2175 -Configuration resource: /hibernate.cfg.xml
+2015-12-14 21:29:32   INFO Configuration:789 -Reading mappings from resource : nju/iip/dto/WeiboAccount.hbm.xml
+2015-12-14 21:29:33   INFO Configuration:789 -Reading mappings from resource : nju/iip/dto/WeiboData.hbm.xml
+2015-12-14 21:29:33   INFO Configuration:2297 -Configured SessionFactory: null
+2015-12-14 21:29:33   INFO HbmBinder:353 -Mapping class: nju.iip.dto.WeiboAccount -> WeiboAccount
+2015-12-14 21:29:33   INFO HbmBinder:353 -Mapping class: nju.iip.dto.WeiboData -> WeiboData
+2015-12-14 21:29:33   INFO Configuration:1676 -Hibernate Validator not found: ignoring
+2015-12-14 21:29:33   INFO HibernateSearchEventListenerRegister:75 -Unable to find org.hibernate.search.event.FullTextIndexEventListener on the classpath. Hibernate Search is not enabled.
+2015-12-14 21:29:33   INFO ConnectionProviderFactory:173 -Initializing connection provider: org.hibernate.connection.C3P0ConnectionProvider
+2015-12-14 21:29:33   INFO C3P0ConnectionProvider:103 -C3P0 using driver: com.mysql.jdbc.Driver at URL: jdbc:mysql://114.212.86.23/weibo
+2015-12-14 21:29:33   INFO C3P0ConnectionProvider:104 -Connection properties: {user=root, password=****}
+2015-12-14 21:29:33   INFO C3P0ConnectionProvider:107 -autocommit mode: false
+2015-12-14 21:29:33   WARN C3P0ConnectionProvider:232 -Both hibernate-style property 'hibernate.c3p0.max_statement' and c3p0-style property 'c3p0.max_statement' have been set in hibernate.properties. Hibernate-style property 'hibernate.c3p0.max_statement' will be used and c3p0-style property 'c3p0.max_statement' will be ignored!
+2015-12-14 21:29:33   WARN C3P0ConnectionProvider:232 -Both hibernate-style property 'hibernate.c3p0.time_out' and c3p0-style property 'c3p0.time_out' have been set in hibernate.properties. Hibernate-style property 'hibernate.c3p0.time_out' will be used and c3p0-style property 'c3p0.time_out' will be ignored!
+2015-12-14 21:29:33   WARN C3P0ConnectionProvider:232 -Both hibernate-style property 'hibernate.c3p0.min_size' and c3p0-style property 'c3p0.min_size' have been set in hibernate.properties. Hibernate-style property 'hibernate.c3p0.min_size' will be used and c3p0-style property 'c3p0.min_size' will be ignored!
+2015-12-14 21:29:33   WARN C3P0ConnectionProvider:232 -Both hibernate-style property 'hibernate.c3p0.max_size' and c3p0-style property 'c3p0.max_size' have been set in hibernate.properties. Hibernate-style property 'hibernate.c3p0.max_size' will be used and c3p0-style property 'c3p0.max_size' will be ignored!
+2015-12-14 21:29:33   INFO MLog:80 -MLog clients using log4j logging.
+2015-12-14 21:29:34   INFO C3P0Registry:204 -Initializing c3p0-0.9.1 [built 16-January-2007 14:46:42; debug? true; trace: 10]
+2015-12-14 21:29:34   INFO AbstractPoolBackedDataSource:462 -Initializing c3p0 pool... com.mchange.v2.c3p0.PoolBackedDataSource@7b08a209 [ connectionPoolDataSource -> com.mchange.v2.c3p0.WrapperConnectionPoolDataSource@f8db8c5c [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, debugUnreturnedConnectionStackTraces -> false, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge73s9d18l08p812gwv5a|345965f2, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 30, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, nestedDataSource -> com.mchange.v2.c3p0.DriverManagerDataSource@b45b10b3 [ description -> null, driverClass -> null, factoryClassLocation -> null, identityToken -> 1hge73s9d18l08p812gwv5a|21a947fe, jdbcUrl -> jdbc:mysql://114.212.86.23/weibo, properties -> {user=******, password=******} ], preferredTestQuery -> null, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false; userOverrides: {} ], dataSourceName -> null, factoryClassLocation -> null, identityToken -> 1hge73s9d18l08p812gwv5a|51b7e5df, numHelperThreads -> 3 ]
+2015-12-14 21:29:54   WARN ThreadPoolAsynchronousRunner$DeadlockDetector:608 -com.mchange.v2.async.ThreadPoolAsynchronousRunner$DeadlockDetector@41644948 -- APPARENT DEADLOCK!!! Creating emergency threads for unassigned pending tasks!
+2015-12-14 21:29:54   WARN ThreadPoolAsynchronousRunner$DeadlockDetector:624 -com.mchange.v2.async.ThreadPoolAsynchronousRunner$DeadlockDetector@41644948 -- APPARENT DEADLOCK!!! Complete Status: 
+	Managed Threads: 3
+	Active Threads: 3
+	Active Tasks: 
+		com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@e9ea52f (com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2)
+		com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@6d5383bd (com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0)
+		com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@3fda4a0c (com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1)
+	Pending Tasks: 
+		com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@15fd322d
+		com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@6eb15a60
+		com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@1f8e6260
+		com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@7269d1b7
+		com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@ef9f98d
+		com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@6affc068
+		com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@68e3235
+Pool thread stack traces:
+	Thread[com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2,5,main]
+		java.lang.Thread.sleep(Native Method)
+		com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask.run(BasicResourcePool.java:1805)
+		com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:547)
+	Thread[com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1,5,main]
+		java.lang.Thread.sleep(Native Method)
+		com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask.run(BasicResourcePool.java:1805)
+		com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:547)
+	Thread[com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0,5,main]
+		java.lang.Thread.sleep(Native Method)
+		com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask.run(BasicResourcePool.java:1805)
+		com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:547)
+
+
+2015-12-14 21:30:03   WARN BasicResourcePool$AcquireTask:1841 -com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@6d5383bd -- Acquisition Attempt Failed!!! Clearing pending acquires. While trying to acquire a needed new resource, we failed to succeed more than the maximum number of allowed acquisition attempts (30). Last acquisition attempt exception: 
+java.sql.SQLException: Unknown character set index for field '224' received from server.
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:910)
+	at com.mysql.jdbc.Connection.getCharsetNameForIndex(Connection.java:3556)
+	at com.mysql.jdbc.Field.<init>(Field.java:192)
+	at com.mysql.jdbc.MysqlIO.unpackField(MysqlIO.java:731)
+	at com.mysql.jdbc.MysqlIO.getResultSet(MysqlIO.java:387)
+	at com.mysql.jdbc.MysqlIO.readResultsForQueryOrUpdate(MysqlIO.java:2076)
+	at com.mysql.jdbc.MysqlIO.readAllResults(MysqlIO.java:1451)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:1787)
+	at com.mysql.jdbc.Connection.execSQL(Connection.java:3277)
+	at com.mysql.jdbc.Connection.execSQL(Connection.java:3206)
+	at com.mysql.jdbc.Statement.executeQuery(Statement.java:1232)
+	at com.mysql.jdbc.Connection.loadServerVariables(Connection.java:4478)
+	at com.mysql.jdbc.Connection.initializePropsFromServer(Connection.java:4062)
+	at com.mysql.jdbc.Connection.createNewIO(Connection.java:2789)
+	at com.mysql.jdbc.Connection.<init>(Connection.java:1555)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:285)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:135)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:182)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:171)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:137)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1014)
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$800(BasicResourcePool.java:32)
+	at com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask.run(BasicResourcePool.java:1810)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:547)
+2015-12-14 21:30:03   WARN BasicResourcePool$AcquireTask:1841 -com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@e9ea52f -- Acquisition Attempt Failed!!! Clearing pending acquires. While trying to acquire a needed new resource, we failed to succeed more than the maximum number of allowed acquisition attempts (30). Last acquisition attempt exception: 
+java.sql.SQLException: Unknown character set index for field '224' received from server.
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:910)
+	at com.mysql.jdbc.Connection.getCharsetNameForIndex(Connection.java:3556)
+	at com.mysql.jdbc.Field.<init>(Field.java:192)
+	at com.mysql.jdbc.MysqlIO.unpackField(MysqlIO.java:731)
+	at com.mysql.jdbc.MysqlIO.getResultSet(MysqlIO.java:387)
+	at com.mysql.jdbc.MysqlIO.readResultsForQueryOrUpdate(MysqlIO.java:2076)
+	at com.mysql.jdbc.MysqlIO.readAllResults(MysqlIO.java:1451)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:1787)
+	at com.mysql.jdbc.Connection.execSQL(Connection.java:3277)
+	at com.mysql.jdbc.Connection.execSQL(Connection.java:3206)
+	at com.mysql.jdbc.Statement.executeQuery(Statement.java:1232)
+	at com.mysql.jdbc.Connection.loadServerVariables(Connection.java:4478)
+	at com.mysql.jdbc.Connection.initializePropsFromServer(Connection.java:4062)
+	at com.mysql.jdbc.Connection.createNewIO(Connection.java:2789)
+	at com.mysql.jdbc.Connection.<init>(Connection.java:1555)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:285)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:135)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:182)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:171)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:137)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1014)
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$800(BasicResourcePool.java:32)
+	at com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask.run(BasicResourcePool.java:1810)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:547)
+2015-12-14 21:30:03   WARN SettingsFactory:147 -Could not obtain connection to query metadata
+java.sql.SQLException: Connections could not be acquired from the underlying database!
+	at com.mchange.v2.sql.SqlUtils.toSQLException(SqlUtils.java:106)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool.checkoutPooledConnection(C3P0PooledConnectionPool.java:529)
+	at com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource.getConnection(AbstractPoolBackedDataSource.java:128)
+	at org.hibernate.connection.C3P0ConnectionProvider.getConnection(C3P0ConnectionProvider.java:78)
+	at org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:113)
+	at org.hibernate.cfg.Configuration.buildSettingsInternal(Configuration.java:2863)
+	at org.hibernate.cfg.Configuration.buildSettings(Configuration.java:2859)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1870)
+	at nju.iip.dao.DAO.<clinit>(DAO.java:19)
+	at nju.iip.spider.WeiboSpider.<init>(WeiboSpider.java:38)
+	at nju.iip.spider.WeiboSpider.main(WeiboSpider.java:188)
+Caused by: com.mchange.v2.resourcepool.CannotAcquireResourceException: A ResourcePool could not acquire a resource from its primary factory or source.
+	at com.mchange.v2.resourcepool.BasicResourcePool.awaitAvailable(BasicResourcePool.java:1319)
+	at com.mchange.v2.resourcepool.BasicResourcePool.prelimCheckoutResource(BasicResourcePool.java:557)
+	at com.mchange.v2.resourcepool.BasicResourcePool.checkoutResource(BasicResourcePool.java:477)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool.checkoutPooledConnection(C3P0PooledConnectionPool.java:525)
+	... 9 more
+2015-12-14 21:30:03   WARN BasicResourcePool$AcquireTask:1841 -com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@3fda4a0c -- Acquisition Attempt Failed!!! Clearing pending acquires. While trying to acquire a needed new resource, we failed to succeed more than the maximum number of allowed acquisition attempts (30). Last acquisition attempt exception: 
+java.sql.SQLException: Unknown character set index for field '224' received from server.
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:910)
+	at com.mysql.jdbc.Connection.getCharsetNameForIndex(Connection.java:3556)
+	at com.mysql.jdbc.Field.<init>(Field.java:192)
+	at com.mysql.jdbc.MysqlIO.unpackField(MysqlIO.java:731)
+	at com.mysql.jdbc.MysqlIO.getResultSet(MysqlIO.java:387)
+	at com.mysql.jdbc.MysqlIO.readResultsForQueryOrUpdate(MysqlIO.java:2076)
+	at com.mysql.jdbc.MysqlIO.readAllResults(MysqlIO.java:1451)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:1787)
+	at com.mysql.jdbc.Connection.execSQL(Connection.java:3277)
+	at com.mysql.jdbc.Connection.execSQL(Connection.java:3206)
+	at com.mysql.jdbc.Statement.executeQuery(Statement.java:1232)
+	at com.mysql.jdbc.Connection.loadServerVariables(Connection.java:4478)
+	at com.mysql.jdbc.Connection.initializePropsFromServer(Connection.java:4062)
+	at com.mysql.jdbc.Connection.createNewIO(Connection.java:2789)
+	at com.mysql.jdbc.Connection.<init>(Connection.java:1555)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:285)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:135)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:182)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:171)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:137)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1014)
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$800(BasicResourcePool.java:32)
+	at com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask.run(BasicResourcePool.java:1810)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:547)
+2015-12-14 21:30:03   INFO Dialect:135 -Using dialect: org.hibernate.dialect.MySQLDialect
+2015-12-14 21:30:03   INFO JdbcSupportLoader:70 -Disabling contextual LOB creation as connection was null
+2015-12-14 21:30:03   INFO TransactionFactoryFactory:62 -Using default transaction strategy (direct JDBC transactions)
+2015-12-14 21:30:03   INFO TransactionManagerLookupFactory:83 -No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+2015-12-14 21:30:03   INFO SettingsFactory:179 -Automatic flush during beforeCompletion(): disabled
+2015-12-14 21:30:03   INFO SettingsFactory:183 -Automatic session close at end of transaction: disabled
+2015-12-14 21:30:03   INFO SettingsFactory:198 -Scrollable result sets: disabled
+2015-12-14 21:30:03   INFO SettingsFactory:206 -JDBC3 getGeneratedKeys(): disabled
+2015-12-14 21:30:03   INFO SettingsFactory:214 -Connection release mode: auto
+2015-12-14 21:30:03   INFO SettingsFactory:238 -Maximum outer join fetch depth: 2
+2015-12-14 21:30:03   INFO SettingsFactory:241 -Default batch fetch size: 1
+2015-12-14 21:30:03   INFO SettingsFactory:245 -Generate SQL with comments: disabled
+2015-12-14 21:30:03   INFO SettingsFactory:249 -Order SQL updates by primary key: disabled
+2015-12-14 21:30:03   INFO SettingsFactory:253 -Order SQL inserts for batching: disabled
+2015-12-14 21:30:03   INFO SettingsFactory:431 -Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+2015-12-14 21:30:03   INFO ASTQueryTranslatorFactory:47 -Using ASTQueryTranslatorFactory
+2015-12-14 21:30:03   INFO SettingsFactory:261 -Query language substitutions: {}
+2015-12-14 21:30:03   INFO SettingsFactory:266 -JPA-QL strict compliance: disabled
+2015-12-14 21:30:03   INFO SettingsFactory:271 -Second-level cache: enabled
+2015-12-14 21:30:03   INFO SettingsFactory:275 -Query cache: disabled
+2015-12-14 21:30:03   INFO SettingsFactory:406 -Cache region factory : org.hibernate.cache.impl.NoCachingRegionFactory
+2015-12-14 21:30:03   INFO SettingsFactory:285 -Optimize cache for minimal puts: disabled
+2015-12-14 21:30:03   INFO SettingsFactory:294 -Structured second-level cache entries: disabled
+2015-12-14 21:30:03   INFO SettingsFactory:323 -Statistics: disabled
+2015-12-14 21:30:03   INFO SettingsFactory:327 -Deleted entity synthetic identifier rollback: disabled
+2015-12-14 21:30:03   INFO SettingsFactory:343 -Default entity-mode: pojo
+2015-12-14 21:30:03   INFO SettingsFactory:347 -Named query checking : enabled
+2015-12-14 21:30:03   INFO SettingsFactory:351 -Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+2015-12-14 21:30:03   INFO SessionFactoryImpl:202 -building session factory
+2015-12-14 21:30:04   INFO BasicTypeRegistry:150 -Type registration [blob] overrides previous : org.hibernate.type.BlobType@60d8c9b7
+2015-12-14 21:30:04   INFO BasicTypeRegistry:150 -Type registration [java.sql.Blob] overrides previous : org.hibernate.type.BlobType@60d8c9b7
+2015-12-14 21:30:04   INFO BasicTypeRegistry:150 -Type registration [clob] overrides previous : org.hibernate.type.ClobType@48aaecc3
+2015-12-14 21:30:04   INFO BasicTypeRegistry:150 -Type registration [java.sql.Clob] overrides previous : org.hibernate.type.ClobType@48aaecc3
+2015-12-14 21:30:04   INFO BasicTypeRegistry:150 -Type registration [wrapper_characters_clob] overrides previous : org.hibernate.type.CharacterArrayClobType@7c0c77c7
+2015-12-14 21:30:04   INFO BasicTypeRegistry:150 -Type registration [characters_clob] overrides previous : org.hibernate.type.PrimitiveCharacterArrayClobType@7adda9cc
+2015-12-14 21:30:04   INFO BasicTypeRegistry:150 -Type registration [wrapper_materialized_blob] overrides previous : org.hibernate.type.WrappedMaterializedBlobType@5cee5251
+2015-12-14 21:30:04   INFO BasicTypeRegistry:150 -Type registration [materialized_blob] overrides previous : org.hibernate.type.MaterializedBlobType@433d61fb
+2015-12-14 21:30:04   INFO BasicTypeRegistry:150 -Type registration [materialized_clob] overrides previous : org.hibernate.type.MaterializedClobType@5c909414
+2015-12-14 21:30:04   INFO SessionFactoryObjectFactory:105 -Not binding factory to JNDI, no JNDI name configured
+2015-12-14 21:30:06   INFO CookiePool:30 -****************cookiePool线程start！****************
+2015-12-14 21:30:06   INFO UrlPool:31 -****************urlPool线程start！****************
+2015-12-14 21:30:06   INFO WeiboSpider:55 -****************Spider线程start！****************
+2015-12-14 21:30:06   INFO WeiboSpider:59 -urlPool is Empty...
+2015-12-14 21:30:06   INFO WeiboSpider:55 -****************Spider线程start！****************
+2015-12-14 21:30:06   INFO WeiboSpider:59 -urlPool is Empty...
+2015-12-14 21:30:06   INFO WeiboSpider:55 -****************Spider线程start！****************
+2015-12-14 21:30:06   INFO WeiboSpider:59 -urlPool is Empty...
+2015-12-14 21:30:06   INFO WeiboSpider:55 -****************Spider线程start！****************
+2015-12-14 21:30:06   INFO WeiboSpider:59 -urlPool is Empty...
+2015-12-14 21:30:08   INFO CookiePool:85 -add 3 cookies successful!
+2015-12-14 21:30:23   WARN BasicResourcePool$AcquireTask:1841 -com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@6eb15a60 -- Acquisition Attempt Failed!!! Clearing pending acquires. While trying to acquire a needed new resource, we failed to succeed more than the maximum number of allowed acquisition attempts (30). Last acquisition attempt exception: 
+java.sql.SQLException: Unknown character set index for field '224' received from server.
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:910)
+	at com.mysql.jdbc.Connection.getCharsetNameForIndex(Connection.java:3556)
+	at com.mysql.jdbc.Field.<init>(Field.java:192)
+	at com.mysql.jdbc.MysqlIO.unpackField(MysqlIO.java:731)
+	at com.mysql.jdbc.MysqlIO.getResultSet(MysqlIO.java:387)
+	at com.mysql.jdbc.MysqlIO.readResultsForQueryOrUpdate(MysqlIO.java:2076)
+	at com.mysql.jdbc.MysqlIO.readAllResults(MysqlIO.java:1451)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:1787)
+	at com.mysql.jdbc.Connection.execSQL(Connection.java:3277)
+	at com.mysql.jdbc.Connection.execSQL(Connection.java:3206)
+	at com.mysql.jdbc.Statement.executeQuery(Statement.java:1232)
+	at com.mysql.jdbc.Connection.loadServerVariables(Connection.java:4478)
+	at com.mysql.jdbc.Connection.initializePropsFromServer(Connection.java:4062)
+	at com.mysql.jdbc.Connection.createNewIO(Connection.java:2789)
+	at com.mysql.jdbc.Connection.<init>(Connection.java:1555)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:285)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:135)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:182)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:171)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:137)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1014)
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$800(BasicResourcePool.java:32)
+	at com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask.run(BasicResourcePool.java:1810)
+	at com.mchange.v2.async.ThreadPerTaskAsynchronousRunner$TaskThread.run(ThreadPerTaskAsynchronousRunner.java:255)
+2015-12-14 21:30:23   WARN JDBCExceptionReporter:233 -SQL Error: 0, SQLState: null
+2015-12-14 21:30:23  ERROR JDBCExceptionReporter:234 -Connections could not be acquired from the underlying database!
+2015-12-14 21:30:23   WARN JDBCExceptionReporter:233 -SQL Error: 0, SQLState: null
+2015-12-14 21:30:23  ERROR JDBCExceptionReporter:234 -An SQLException was provoked by the following failure: com.mchange.v2.resourcepool.ResourcePoolException: A ResourcePool cannot acquire a new resource -- the factory or source appears to be down.
+2015-12-14 21:30:23   INFO DAO:51 -rollback failed!
+org.hibernate.exception.GenericJDBCException: Cannot open connection
+	at org.hibernate.exception.SQLStateConverter.handledNonSpecificException(SQLStateConverter.java:140)
+	at org.hibernate.exception.SQLStateConverter.convert(SQLStateConverter.java:128)
+	at org.hibernate.exception.JDBCExceptionHelper.convert(JDBCExceptionHelper.java:66)
+	at org.hibernate.exception.JDBCExceptionHelper.convert(JDBCExceptionHelper.java:52)
+	at org.hibernate.jdbc.ConnectionManager.openConnection(ConnectionManager.java:449)
+	at org.hibernate.jdbc.ConnectionManager.getConnection(ConnectionManager.java:167)
+	at org.hibernate.jdbc.JDBCContext.connection(JDBCContext.java:160)
+	at org.hibernate.transaction.JDBCTransaction.begin(JDBCTransaction.java:81)
+	at org.hibernate.impl.SessionImpl.beginTransaction(SessionImpl.java:1473)
+	at nju.iip.dao.DAO.rollback(DAO.java:49)
+	at nju.iip.dao.WeiboAccountDao.getAccountlist(WeiboAccountDao.java:66)
+	at nju.iip.util.UrlPool.getSpiderURL(UrlPool.java:48)
+	at nju.iip.util.UrlPool.run(UrlPool.java:32)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.sql.SQLException: An SQLException was provoked by the following failure: com.mchange.v2.resourcepool.ResourcePoolException: A ResourcePool cannot acquire a new resource -- the factory or source appears to be down.
+	at com.mchange.v2.sql.SqlUtils.toSQLException(SqlUtils.java:106)
+	at com.mchange.v2.sql.SqlUtils.toSQLException(SqlUtils.java:65)
+	at com.mchange.v2.sql.SqlUtils.toSQLException(SqlUtils.java:62)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool.checkoutPooledConnection(C3P0PooledConnectionPool.java:531)
+	at com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource.getConnection(AbstractPoolBackedDataSource.java:128)
+	at org.hibernate.connection.C3P0ConnectionProvider.getConnection(C3P0ConnectionProvider.java:78)
+	at org.hibernate.jdbc.ConnectionManager.openConnection(ConnectionManager.java:446)
+	... 11 more
+Caused by: com.mchange.v2.resourcepool.ResourcePoolException: A ResourcePool cannot acquire a new resource -- the factory or source appears to be down.
+	at com.mchange.v2.resourcepool.BasicResourcePool.awaitAvailable(BasicResourcePool.java:1279)
+	at com.mchange.v2.resourcepool.BasicResourcePool.prelimCheckoutResource(BasicResourcePool.java:557)
+	at com.mchange.v2.resourcepool.BasicResourcePool.checkoutResource(BasicResourcePool.java:477)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool.checkoutPooledConnection(C3P0PooledConnectionPool.java:525)
+	... 14 more
+2015-12-14 21:30:23   WARN BasicResourcePool$AcquireTask:1841 -com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@15fd322d -- Acquisition Attempt Failed!!! Clearing pending acquires. While trying to acquire a needed new resource, we failed to succeed more than the maximum number of allowed acquisition attempts (30). Last acquisition attempt exception: 
+java.sql.SQLException: Unknown character set index for field '224' received from server.
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:910)
+	at com.mysql.jdbc.Connection.getCharsetNameForIndex(Connection.java:3556)
+	at com.mysql.jdbc.Field.<init>(Field.java:192)
+	at com.mysql.jdbc.MysqlIO.unpackField(MysqlIO.java:731)
+	at com.mysql.jdbc.MysqlIO.getResultSet(MysqlIO.java:387)
+	at com.mysql.jdbc.MysqlIO.readResultsForQueryOrUpdate(MysqlIO.java:2076)
+	at com.mysql.jdbc.MysqlIO.readAllResults(MysqlIO.java:1451)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:1787)
+	at com.mysql.jdbc.Connection.execSQL(Connection.java:3277)
+	at com.mysql.jdbc.Connection.execSQL(Connection.java:3206)
+	at com.mysql.jdbc.Statement.executeQuery(Statement.java:1232)
+	at com.mysql.jdbc.Connection.loadServerVariables(Connection.java:4478)
+	at com.mysql.jdbc.Connection.initializePropsFromServer(Connection.java:4062)
+	at com.mysql.jdbc.Connection.createNewIO(Connection.java:2789)
+	at com.mysql.jdbc.Connection.<init>(Connection.java:1555)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:285)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:135)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:182)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:171)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:137)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1014)
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$800(BasicResourcePool.java:32)
+	at com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask.run(BasicResourcePool.java:1810)
+	at com.mchange.v2.async.ThreadPerTaskAsynchronousRunner$TaskThread.run(ThreadPerTaskAsynchronousRunner.java:255)
+2015-12-14 21:30:23   INFO WeiboAccountDao:67 -getAccountlist
+org.hibernate.exception.GenericJDBCException: Cannot open connection
+	at org.hibernate.exception.SQLStateConverter.handledNonSpecificException(SQLStateConverter.java:140)
+	at org.hibernate.exception.SQLStateConverter.convert(SQLStateConverter.java:128)
+	at org.hibernate.exception.JDBCExceptionHelper.convert(JDBCExceptionHelper.java:66)
+	at org.hibernate.exception.JDBCExceptionHelper.convert(JDBCExceptionHelper.java:52)
+	at org.hibernate.jdbc.ConnectionManager.openConnection(ConnectionManager.java:449)
+	at org.hibernate.jdbc.ConnectionManager.getConnection(ConnectionManager.java:167)
+	at org.hibernate.jdbc.JDBCContext.connection(JDBCContext.java:160)
+	at org.hibernate.transaction.JDBCTransaction.begin(JDBCTransaction.java:81)
+	at org.hibernate.impl.SessionImpl.beginTransaction(SessionImpl.java:1473)
+	at nju.iip.dao.DAO.begin(DAO.java:39)
+	at nju.iip.dao.WeiboAccountDao.getAccountlist(WeiboAccountDao.java:60)
+	at nju.iip.util.UrlPool.getSpiderURL(UrlPool.java:48)
+	at nju.iip.util.UrlPool.run(UrlPool.java:32)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.sql.SQLException: Connections could not be acquired from the underlying database!
+	at com.mchange.v2.sql.SqlUtils.toSQLException(SqlUtils.java:106)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool.checkoutPooledConnection(C3P0PooledConnectionPool.java:529)
+	at com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource.getConnection(AbstractPoolBackedDataSource.java:128)
+	at org.hibernate.connection.C3P0ConnectionProvider.getConnection(C3P0ConnectionProvider.java:78)
+	at org.hibernate.jdbc.ConnectionManager.openConnection(ConnectionManager.java:446)
+	... 11 more
+Caused by: com.mchange.v2.resourcepool.CannotAcquireResourceException: A ResourcePool could not acquire a resource from its primary factory or source.
+	at com.mchange.v2.resourcepool.BasicResourcePool.awaitAvailable(BasicResourcePool.java:1319)
+	at com.mchange.v2.resourcepool.BasicResourcePool.prelimCheckoutResource(BasicResourcePool.java:557)
+	at com.mchange.v2.resourcepool.BasicResourcePool.checkoutResource(BasicResourcePool.java:477)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool.checkoutPooledConnection(C3P0PooledConnectionPool.java:525)
+	... 14 more
+2015-12-14 21:30:23   WARN BasicResourcePool$AcquireTask:1841 -com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@1f8e6260 -- Acquisition Attempt Failed!!! Clearing pending acquires. While trying to acquire a needed new resource, we failed to succeed more than the maximum number of allowed acquisition attempts (30). Last acquisition attempt exception: 
+java.sql.SQLException: Unknown character set index for field '224' received from server.
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:910)
+	at com.mysql.jdbc.Connection.getCharsetNameForIndex(Connection.java:3556)
+	at com.mysql.jdbc.Field.<init>(Field.java:192)
+	at com.mysql.jdbc.MysqlIO.unpackField(MysqlIO.java:731)
+	at com.mysql.jdbc.MysqlIO.getResultSet(MysqlIO.java:387)
+	at com.mysql.jdbc.MysqlIO.readResultsForQueryOrUpdate(MysqlIO.java:2076)
+	at com.mysql.jdbc.MysqlIO.readAllResults(MysqlIO.java:1451)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:1787)
+	at com.mysql.jdbc.Connection.execSQL(Connection.java:3277)
+	at com.mysql.jdbc.Connection.execSQL(Connection.java:3206)
+	at com.mysql.jdbc.Statement.executeQuery(Statement.java:1232)
+	at com.mysql.jdbc.Connection.loadServerVariables(Connection.java:4478)
+	at com.mysql.jdbc.Connection.initializePropsFromServer(Connection.java:4062)
+	at com.mysql.jdbc.Connection.createNewIO(Connection.java:2789)
+	at com.mysql.jdbc.Connection.<init>(Connection.java:1555)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:285)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:135)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:182)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:171)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:137)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1014)
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$800(BasicResourcePool.java:32)
+	at com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask.run(BasicResourcePool.java:1810)
+	at com.mchange.v2.async.ThreadPerTaskAsynchronousRunner$TaskThread.run(ThreadPerTaskAsynchronousRunner.java:255)
+2015-12-14 21:30:23   WARN BasicResourcePool$AcquireTask:1841 -com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@ef9f98d -- Acquisition Attempt Failed!!! Clearing pending acquires. While trying to acquire a needed new resource, we failed to succeed more than the maximum number of allowed acquisition attempts (30). Last acquisition attempt exception: 
+java.sql.SQLException: Unknown character set index for field '224' received from server.
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:910)
+	at com.mysql.jdbc.Connection.getCharsetNameForIndex(Connection.java:3556)
+	at com.mysql.jdbc.Field.<init>(Field.java:192)
+	at com.mysql.jdbc.MysqlIO.unpackField(MysqlIO.java:731)
+	at com.mysql.jdbc.MysqlIO.getResultSet(MysqlIO.java:387)
+	at com.mysql.jdbc.MysqlIO.readResultsForQueryOrUpdate(MysqlIO.java:2076)
+	at com.mysql.jdbc.MysqlIO.readAllResults(MysqlIO.java:1451)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:1787)
+	at com.mysql.jdbc.Connection.execSQL(Connection.java:3277)
+	at com.mysql.jdbc.Connection.execSQL(Connection.java:3206)
+	at com.mysql.jdbc.Statement.executeQuery(Statement.java:1232)
+	at com.mysql.jdbc.Connection.loadServerVariables(Connection.java:4478)
+	at com.mysql.jdbc.Connection.initializePropsFromServer(Connection.java:4062)
+	at com.mysql.jdbc.Connection.createNewIO(Connection.java:2789)
+	at com.mysql.jdbc.Connection.<init>(Connection.java:1555)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:285)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:135)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:182)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:171)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:137)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1014)
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$800(BasicResourcePool.java:32)
+	at com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask.run(BasicResourcePool.java:1810)
+	at com.mchange.v2.async.ThreadPerTaskAsynchronousRunner$TaskThread.run(ThreadPerTaskAsynchronousRunner.java:255)
+2015-12-14 21:30:23   WARN BasicResourcePool$AcquireTask:1841 -com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@68e3235 -- Acquisition Attempt Failed!!! Clearing pending acquires. While trying to acquire a needed new resource, we failed to succeed more than the maximum number of allowed acquisition attempts (30). Last acquisition attempt exception: 
+java.sql.SQLException: Unknown character set index for field '224' received from server.
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:910)
+	at com.mysql.jdbc.Connection.getCharsetNameForIndex(Connection.java:3556)
+	at com.mysql.jdbc.Field.<init>(Field.java:192)
+	at com.mysql.jdbc.MysqlIO.unpackField(MysqlIO.java:731)
+	at com.mysql.jdbc.MysqlIO.getResultSet(MysqlIO.java:387)
+	at com.mysql.jdbc.MysqlIO.readResultsForQueryOrUpdate(MysqlIO.java:2076)
+	at com.mysql.jdbc.MysqlIO.readAllResults(MysqlIO.java:1451)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:1787)
+	at com.mysql.jdbc.Connection.execSQL(Connection.java:3277)
+	at com.mysql.jdbc.Connection.execSQL(Connection.java:3206)
+	at com.mysql.jdbc.Statement.executeQuery(Statement.java:1232)
+	at com.mysql.jdbc.Connection.loadServerVariables(Connection.java:4478)
+	at com.mysql.jdbc.Connection.initializePropsFromServer(Connection.java:4062)
+	at com.mysql.jdbc.Connection.createNewIO(Connection.java:2789)
+	at com.mysql.jdbc.Connection.<init>(Connection.java:1555)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:285)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:135)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:182)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:171)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:137)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1014)
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$800(BasicResourcePool.java:32)
+	at com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask.run(BasicResourcePool.java:1810)
+	at com.mchange.v2.async.ThreadPerTaskAsynchronousRunner$TaskThread.run(ThreadPerTaskAsynchronousRunner.java:255)
+2015-12-14 21:30:23   WARN BasicResourcePool$AcquireTask:1841 -com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@6affc068 -- Acquisition Attempt Failed!!! Clearing pending acquires. While trying to acquire a needed new resource, we failed to succeed more than the maximum number of allowed acquisition attempts (30). Last acquisition attempt exception: 
+java.sql.SQLException: Unknown character set index for field '224' received from server.
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:910)
+	at com.mysql.jdbc.Connection.getCharsetNameForIndex(Connection.java:3556)
+	at com.mysql.jdbc.Field.<init>(Field.java:192)
+	at com.mysql.jdbc.MysqlIO.unpackField(MysqlIO.java:731)
+	at com.mysql.jdbc.MysqlIO.getResultSet(MysqlIO.java:387)
+	at com.mysql.jdbc.MysqlIO.readResultsForQueryOrUpdate(MysqlIO.java:2076)
+	at com.mysql.jdbc.MysqlIO.readAllResults(MysqlIO.java:1451)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:1787)
+	at com.mysql.jdbc.Connection.execSQL(Connection.java:3277)
+	at com.mysql.jdbc.Connection.execSQL(Connection.java:3206)
+	at com.mysql.jdbc.Statement.executeQuery(Statement.java:1232)
+	at com.mysql.jdbc.Connection.loadServerVariables(Connection.java:4478)
+	at com.mysql.jdbc.Connection.initializePropsFromServer(Connection.java:4062)
+	at com.mysql.jdbc.Connection.createNewIO(Connection.java:2789)
+	at com.mysql.jdbc.Connection.<init>(Connection.java:1555)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:285)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:135)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:182)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:171)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:137)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1014)
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$800(BasicResourcePool.java:32)
+	at com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask.run(BasicResourcePool.java:1810)
+	at com.mchange.v2.async.ThreadPerTaskAsynchronousRunner$TaskThread.run(ThreadPerTaskAsynchronousRunner.java:255)
+2015-12-14 21:30:23   WARN BasicResourcePool$AcquireTask:1841 -com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@7269d1b7 -- Acquisition Attempt Failed!!! Clearing pending acquires. While trying to acquire a needed new resource, we failed to succeed more than the maximum number of allowed acquisition attempts (30). Last acquisition attempt exception: 
+java.sql.SQLException: Unknown character set index for field '224' received from server.
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:910)
+	at com.mysql.jdbc.Connection.getCharsetNameForIndex(Connection.java:3556)
+	at com.mysql.jdbc.Field.<init>(Field.java:192)
+	at com.mysql.jdbc.MysqlIO.unpackField(MysqlIO.java:731)
+	at com.mysql.jdbc.MysqlIO.getResultSet(MysqlIO.java:387)
+	at com.mysql.jdbc.MysqlIO.readResultsForQueryOrUpdate(MysqlIO.java:2076)
+	at com.mysql.jdbc.MysqlIO.readAllResults(MysqlIO.java:1451)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:1787)
+	at com.mysql.jdbc.Connection.execSQL(Connection.java:3277)
+	at com.mysql.jdbc.Connection.execSQL(Connection.java:3206)
+	at com.mysql.jdbc.Statement.executeQuery(Statement.java:1232)
+	at com.mysql.jdbc.Connection.loadServerVariables(Connection.java:4478)
+	at com.mysql.jdbc.Connection.initializePropsFromServer(Connection.java:4062)
+	at com.mysql.jdbc.Connection.createNewIO(Connection.java:2789)
+	at com.mysql.jdbc.Connection.<init>(Connection.java:1555)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:285)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:135)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:182)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:171)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:137)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1014)
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$800(BasicResourcePool.java:32)
+	at com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask.run(BasicResourcePool.java:1810)
+	at com.mchange.v2.async.ThreadPerTaskAsynchronousRunner$TaskThread.run(ThreadPerTaskAsynchronousRunner.java:255)
+2015-12-14 21:36:29   INFO Version:37 -Hibernate Commons Annotations 3.2.0.Final
+2015-12-14 21:36:29   INFO Environment:603 -Hibernate 3.6.4.Final
+2015-12-14 21:36:29   INFO Environment:636 -hibernate.properties not found
+2015-12-14 21:36:29   INFO Environment:814 -Bytecode provider name : javassist
+2015-12-14 21:36:29   INFO Environment:695 -using JDK 1.4 java.sql.Timestamp handling
+2015-12-14 21:36:30   INFO Configuration:2156 -configuring from resource: /hibernate.cfg.xml
+2015-12-14 21:36:30   INFO Configuration:2175 -Configuration resource: /hibernate.cfg.xml
+2015-12-14 21:36:30   INFO Configuration:789 -Reading mappings from resource : nju/iip/dto/WeiboAccount.hbm.xml
+2015-12-14 21:36:30   INFO Configuration:789 -Reading mappings from resource : nju/iip/dto/WeiboData.hbm.xml
+2015-12-14 21:36:30   INFO Configuration:2297 -Configured SessionFactory: null
+2015-12-14 21:36:30   INFO HbmBinder:353 -Mapping class: nju.iip.dto.WeiboAccount -> WeiboAccount
+2015-12-14 21:36:30   INFO HbmBinder:353 -Mapping class: nju.iip.dto.WeiboData -> WeiboData
+2015-12-14 21:36:30   INFO Configuration:1676 -Hibernate Validator not found: ignoring
+2015-12-14 21:36:31   INFO HibernateSearchEventListenerRegister:75 -Unable to find org.hibernate.search.event.FullTextIndexEventListener on the classpath. Hibernate Search is not enabled.
+2015-12-14 21:36:31   INFO ConnectionProviderFactory:173 -Initializing connection provider: org.hibernate.connection.C3P0ConnectionProvider
+2015-12-14 21:36:31   INFO C3P0ConnectionProvider:103 -C3P0 using driver: com.mysql.jdbc.Driver at URL: jdbc:mysql://114.212.86.23/weibo
+2015-12-14 21:36:31   INFO C3P0ConnectionProvider:104 -Connection properties: {user=root, password=****}
+2015-12-14 21:36:31   INFO C3P0ConnectionProvider:107 -autocommit mode: false
+2015-12-14 21:36:31   WARN C3P0ConnectionProvider:232 -Both hibernate-style property 'hibernate.c3p0.max_statement' and c3p0-style property 'c3p0.max_statement' have been set in hibernate.properties. Hibernate-style property 'hibernate.c3p0.max_statement' will be used and c3p0-style property 'c3p0.max_statement' will be ignored!
+2015-12-14 21:36:31   WARN C3P0ConnectionProvider:232 -Both hibernate-style property 'hibernate.c3p0.time_out' and c3p0-style property 'c3p0.time_out' have been set in hibernate.properties. Hibernate-style property 'hibernate.c3p0.time_out' will be used and c3p0-style property 'c3p0.time_out' will be ignored!
+2015-12-14 21:36:31   WARN C3P0ConnectionProvider:232 -Both hibernate-style property 'hibernate.c3p0.min_size' and c3p0-style property 'c3p0.min_size' have been set in hibernate.properties. Hibernate-style property 'hibernate.c3p0.min_size' will be used and c3p0-style property 'c3p0.min_size' will be ignored!
+2015-12-14 21:36:31   WARN C3P0ConnectionProvider:232 -Both hibernate-style property 'hibernate.c3p0.max_size' and c3p0-style property 'c3p0.max_size' have been set in hibernate.properties. Hibernate-style property 'hibernate.c3p0.max_size' will be used and c3p0-style property 'c3p0.max_size' will be ignored!
+2015-12-14 21:36:31   INFO MLog:80 -MLog clients using log4j logging.
+2015-12-14 21:36:32   INFO C3P0Registry:204 -Initializing c3p0-0.9.1 [built 16-January-2007 14:46:42; debug? true; trace: 10]
+2015-12-14 21:36:32   INFO AbstractPoolBackedDataSource:462 -Initializing c3p0 pool... com.mchange.v2.c3p0.PoolBackedDataSource@351dbe57 [ connectionPoolDataSource -> com.mchange.v2.c3p0.WrapperConnectionPoolDataSource@12a65b18 [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, debugUnreturnedConnectionStackTraces -> false, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge73s9d18l976ge2bxo4|77e4c80f, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 30, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, nestedDataSource -> com.mchange.v2.c3p0.DriverManagerDataSource@f96b2fa7 [ description -> null, driverClass -> null, factoryClassLocation -> null, identityToken -> 1hge73s9d18l976ge2bxo4|10b48321, jdbcUrl -> jdbc:mysql://114.212.86.23/weibo, properties -> {user=******, password=******} ], preferredTestQuery -> null, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false; userOverrides: {} ], dataSourceName -> null, factoryClassLocation -> null, identityToken -> 1hge73s9d18l976ge2bxo4|7bb58ca3, numHelperThreads -> 3 ]
+2015-12-14 21:36:32   INFO Dialect:135 -Using dialect: org.hibernate.dialect.MySQLDialect
+2015-12-14 21:36:33   INFO JdbcSupportLoader:108 -Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2015-12-14 21:36:33   INFO SettingsFactory:126 -Database ->
+       name : MySQL
+    version : 5.7.10-log
+      major : 5
+      minor : 7
+2015-12-14 21:36:33   INFO SettingsFactory:132 -Driver ->
+       name : MySQL Connector Java
+    version : mysql-connector-java-5.1.38 ( Revision: fe541c166cec739c74cc727c5da96c1028b4834a )
+      major : 5
+      minor : 1
+2015-12-14 21:36:33   INFO TransactionFactoryFactory:62 -Using default transaction strategy (direct JDBC transactions)
+2015-12-14 21:36:33   INFO TransactionManagerLookupFactory:83 -No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+2015-12-14 21:36:33   INFO SettingsFactory:179 -Automatic flush during beforeCompletion(): disabled
+2015-12-14 21:36:33   INFO SettingsFactory:183 -Automatic session close at end of transaction: disabled
+2015-12-14 21:36:33   INFO SettingsFactory:190 -JDBC batch size: 15
+2015-12-14 21:36:33   INFO SettingsFactory:193 -JDBC batch updates for versioned data: disabled
+2015-12-14 21:36:33   INFO SettingsFactory:198 -Scrollable result sets: enabled
+2015-12-14 21:36:33   INFO SettingsFactory:206 -JDBC3 getGeneratedKeys(): enabled
+2015-12-14 21:36:33   INFO SettingsFactory:214 -Connection release mode: auto
+2015-12-14 21:36:33   INFO SettingsFactory:238 -Maximum outer join fetch depth: 2
+2015-12-14 21:36:33   INFO SettingsFactory:241 -Default batch fetch size: 1
+2015-12-14 21:36:33   INFO SettingsFactory:245 -Generate SQL with comments: disabled
+2015-12-14 21:36:33   INFO SettingsFactory:249 -Order SQL updates by primary key: disabled
+2015-12-14 21:36:33   INFO SettingsFactory:253 -Order SQL inserts for batching: disabled
+2015-12-14 21:36:33   INFO SettingsFactory:431 -Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+2015-12-14 21:36:33   INFO ASTQueryTranslatorFactory:47 -Using ASTQueryTranslatorFactory
+2015-12-14 21:36:33   INFO SettingsFactory:261 -Query language substitutions: {}
+2015-12-14 21:36:33   INFO SettingsFactory:266 -JPA-QL strict compliance: disabled
+2015-12-14 21:36:33   INFO SettingsFactory:271 -Second-level cache: enabled
+2015-12-14 21:36:33   INFO SettingsFactory:275 -Query cache: disabled
+2015-12-14 21:36:33   INFO SettingsFactory:406 -Cache region factory : org.hibernate.cache.impl.NoCachingRegionFactory
+2015-12-14 21:36:33   INFO SettingsFactory:285 -Optimize cache for minimal puts: disabled
+2015-12-14 21:36:33   INFO SettingsFactory:294 -Structured second-level cache entries: disabled
+2015-12-14 21:36:33   INFO SettingsFactory:323 -Statistics: disabled
+2015-12-14 21:36:33   INFO SettingsFactory:327 -Deleted entity synthetic identifier rollback: disabled
+2015-12-14 21:36:33   INFO SettingsFactory:343 -Default entity-mode: pojo
+2015-12-14 21:36:33   INFO SettingsFactory:347 -Named query checking : enabled
+2015-12-14 21:36:33   INFO SettingsFactory:351 -Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+2015-12-14 21:36:33   INFO SessionFactoryImpl:202 -building session factory
+2015-12-14 21:36:33   INFO BasicTypeRegistry:150 -Type registration [blob] overrides previous : org.hibernate.type.BlobType@1534f01b
+2015-12-14 21:36:33   INFO BasicTypeRegistry:150 -Type registration [java.sql.Blob] overrides previous : org.hibernate.type.BlobType@1534f01b
+2015-12-14 21:36:33   INFO BasicTypeRegistry:150 -Type registration [materialized_blob] overrides previous : org.hibernate.type.MaterializedBlobType@78e117e3
+2015-12-14 21:36:33   INFO BasicTypeRegistry:150 -Type registration [materialized_clob] overrides previous : org.hibernate.type.MaterializedClobType@2ea227af
+2015-12-14 21:36:33   INFO BasicTypeRegistry:150 -Type registration [wrapper_characters_clob] overrides previous : org.hibernate.type.CharacterArrayClobType@4386f16
+2015-12-14 21:36:33   INFO BasicTypeRegistry:150 -Type registration [wrapper_materialized_blob] overrides previous : org.hibernate.type.WrappedMaterializedBlobType@363ee3a2
+2015-12-14 21:36:33   INFO BasicTypeRegistry:150 -Type registration [clob] overrides previous : org.hibernate.type.ClobType@4690b489
+2015-12-14 21:36:33   INFO BasicTypeRegistry:150 -Type registration [java.sql.Clob] overrides previous : org.hibernate.type.ClobType@4690b489
+2015-12-14 21:36:33   INFO BasicTypeRegistry:150 -Type registration [characters_clob] overrides previous : org.hibernate.type.PrimitiveCharacterArrayClobType@79b06cab
+2015-12-14 21:36:33   INFO SessionFactoryObjectFactory:105 -Not binding factory to JNDI, no JNDI name configured
+2015-12-14 21:36:36   INFO CookiePool:30 -****************cookiePool线程start！****************
+2015-12-14 21:36:36   INFO WeiboSpider:55 -****************Spider线程start！****************
+2015-12-14 21:36:36   INFO WeiboSpider:59 -urlPool is Empty...
+2015-12-14 21:36:36   INFO WeiboSpider:55 -****************Spider线程start！****************
+2015-12-14 21:36:36   INFO WeiboSpider:59 -urlPool is Empty...
+2015-12-14 21:36:36   INFO UrlPool:31 -****************urlPool线程start！****************
+2015-12-14 21:36:36   INFO WeiboSpider:55 -****************Spider线程start！****************
+2015-12-14 21:36:36   INFO WeiboSpider:59 -urlPool is Empty...
+2015-12-14 21:36:36   INFO WeiboSpider:55 -****************Spider线程start！****************
+2015-12-14 21:36:36   INFO WeiboSpider:59 -urlPool is Empty...
+2015-12-14 21:36:37   INFO UrlPool:71 -本次待爬取URL总数为：760
+2015-12-14 21:36:37   INFO UrlPool:33 -****************urlPool线程finish！****************
+2015-12-14 21:36:41   INFO HttpUtil:25 -***************AntiCrawler detected***************
+2015-12-14 21:36:41   INFO HttpUtil:57 -***************new cookie is:PHPSESSID=c74e868390f415c18e269af4cbfc1335;SUB=_2A257arW4DeThGeNN7lEW8yrLwjmIHXVWPk5wrDV6PUJbrdANLW39kWqRLFIhCD674UrtKsOMceF0FQ9Gmw..;_T_WM=2528c8c41203ac83eb3f9cb6399c9854;gsid_CTandWM=4ulX57061aYaxe9OPWaXbmsKycP;
+2015-12-14 21:36:41   INFO HttpUtil:25 -***************AntiCrawler detected***************
+2015-12-14 21:36:41   INFO HttpUtil:57 -***************new cookie is:PHPSESSID=50275c8b97f7fb57c0aa962d96d98a76;SUB=_2A257arW3DeRhGeRN71YU9SfMzT6IHXVWPk5_rDV6PUJbrdANLXPQkWpbH4g_4JWdpeT8WIDGom3-yuHjAA..;_T_WM=46dc53a0ea4b32752c76ec5703fa2a00;gsid_CTandWM=4uB157061tOFWvV3zIGIy9PVt10;
+2015-12-14 21:36:41   INFO HttpUtil:25 -***************AntiCrawler detected***************
+2015-12-14 21:36:41   INFO HttpUtil:51 -the sum of cookies are:2
+2015-12-14 21:36:41   INFO HttpUtil:52 -***************begin sleep!!!!***************
+2015-12-14 21:36:41   INFO CookiePool:85 -add 3 cookies successful!
+2015-12-14 21:36:41   INFO HttpUtil:25 -***************AntiCrawler detected***************
+2015-12-14 21:36:41   INFO HttpUtil:51 -the sum of cookies are:3
+2015-12-14 21:36:41   INFO HttpUtil:52 -***************begin sleep!!!!***************
+2015-12-14 21:36:42   INFO HttpUtil:25 -***************AntiCrawler detected***************
+2015-12-14 21:36:42   INFO HttpUtil:57 -***************new cookie is:PHPSESSID=c74e868390f415c18e269af4cbfc1335;SUB=_2A257arW4DeThGeNN7lEW8yrLwjmIHXVWPk5wrDV6PUJbrdANLW39kWqRLFIhCD674UrtKsOMceF0FQ9Gmw..;_T_WM=2528c8c41203ac83eb3f9cb6399c9854;gsid_CTandWM=4ulX57061aYaxe9OPWaXbmsKycP;
+2015-12-14 21:36:42   INFO HttpUtil:25 -***************AntiCrawler detected***************
+2015-12-14 21:36:42   INFO HttpUtil:57 -***************new cookie is:PHPSESSID=26aef59a1a1ed0551463b16b82d42d31;SUB=_2A257arW4DeRhGedH6FAR9y3MzjmIHXVWPk5wrDV6PUJbrdANLWzckWqaSgmCRdjZPl5FaMi3UDr2fyf5cw..;_T_WM=902075f033b187190814ef4a67b8abe3;gsid_CTandWM=4u5v57061iVdJ7cTFsEo086Ct0T;
+2015-12-14 21:37:14   INFO WeiboSpider:70 -already crawler weibo numbers:106
+2015-12-14 21:37:19   INFO WeiboSpider:70 -already crawler weibo numbers:208
+2015-12-14 21:37:35   INFO WeiboSpider:70 -already crawler weibo numbers:312
+2015-12-14 21:37:40   INFO WeiboSpider:70 -already crawler weibo numbers:413
+2015-12-14 21:37:53   INFO WeiboSpider:70 -already crawler weibo numbers:519
+2015-12-14 21:38:05   INFO WeiboSpider:70 -already crawler weibo numbers:627
+2015-12-14 21:38:20   INFO WeiboSpider:70 -already crawler weibo numbers:735
+2015-12-14 21:38:27   INFO WeiboSpider:70 -already crawler weibo numbers:842
+2015-12-14 21:38:43   INFO WeiboSpider:70 -already crawler weibo numbers:951
+2015-12-14 21:38:51   INFO WeiboSpider:70 -already crawler weibo numbers:1053
+2015-12-14 21:39:07   INFO WeiboSpider:70 -already crawler weibo numbers:1155
+2015-12-14 21:39:12   INFO WeiboSpider:70 -already crawler weibo numbers:1259
+2015-12-14 21:39:25   INFO WeiboSpider:70 -already crawler weibo numbers:1364
+2015-12-14 21:39:41   INFO WeiboSpider:70 -already crawler weibo numbers:1470
+2015-12-14 21:39:57   INFO WeiboSpider:70 -already crawler weibo numbers:1575
+2015-12-14 21:40:04   INFO WeiboSpider:70 -already crawler weibo numbers:1682
+2015-12-14 21:40:17   INFO WeiboSpider:70 -already crawler weibo numbers:1792
+2015-12-14 21:40:26   INFO WeiboSpider:70 -already crawler weibo numbers:1901
+2015-12-14 21:40:46   INFO WeiboSpider:70 -already crawler weibo numbers:2009
+2015-12-14 21:40:53   INFO WeiboSpider:70 -already crawler weibo numbers:2114
+2015-12-14 21:41:01   INFO WeiboSpider:70 -already crawler weibo numbers:2219
+2015-12-14 21:41:08   INFO WeiboSpider:70 -already crawler weibo numbers:2323
+2015-12-14 21:41:23   INFO WeiboSpider:70 -already crawler weibo numbers:2431
+2015-12-14 21:41:27   INFO WeiboSpider:70 -already crawler weibo numbers:2533
+2015-12-14 21:41:45   INFO WeiboSpider:70 -already crawler weibo numbers:2639
+2015-12-14 21:41:49   INFO WeiboSpider:70 -already crawler weibo numbers:2743
+2015-12-14 21:42:06   INFO WeiboSpider:70 -already crawler weibo numbers:2849
+2015-12-14 21:42:08   INFO WeiboSpider:70 -already crawler weibo numbers:2959
+2015-12-14 21:42:23   INFO WeiboSpider:70 -already crawler weibo numbers:3068
+2015-12-14 21:42:34   INFO WeiboSpider:70 -already crawler weibo numbers:3175
+2015-12-14 21:42:43   INFO WeiboSpider:70 -already crawler weibo numbers:3277
+2015-12-14 21:42:51   INFO WeiboSpider:70 -already crawler weibo numbers:3383
+2015-12-14 21:42:58   INFO WeiboSpider:70 -already crawler weibo numbers:3487
+2015-12-14 21:43:39   INFO Version:37 -Hibernate Commons Annotations 3.2.0.Final
+2015-12-14 21:43:39   INFO Environment:603 -Hibernate 3.6.4.Final
+2015-12-14 21:43:39   INFO Environment:636 -hibernate.properties not found
+2015-12-14 21:43:39   INFO Environment:814 -Bytecode provider name : javassist
+2015-12-14 21:43:40   INFO Environment:695 -using JDK 1.4 java.sql.Timestamp handling
+2015-12-14 21:43:40   INFO Configuration:2156 -configuring from resource: /hibernate.cfg.xml
+2015-12-14 21:43:40   INFO Configuration:2175 -Configuration resource: /hibernate.cfg.xml
+2015-12-14 21:43:40   INFO Configuration:789 -Reading mappings from resource : nju/iip/dto/WeiboAccount.hbm.xml
+2015-12-14 21:43:40   INFO Configuration:789 -Reading mappings from resource : nju/iip/dto/WeiboData.hbm.xml
+2015-12-14 21:43:40   INFO Configuration:2297 -Configured SessionFactory: null
+2015-12-14 21:43:40   INFO HbmBinder:353 -Mapping class: nju.iip.dto.WeiboAccount -> WeiboAccount
+2015-12-14 21:43:40   INFO HbmBinder:353 -Mapping class: nju.iip.dto.WeiboData -> WeiboData
+2015-12-14 21:43:40   INFO Configuration:1676 -Hibernate Validator not found: ignoring
+2015-12-14 21:43:40   INFO HibernateSearchEventListenerRegister:75 -Unable to find org.hibernate.search.event.FullTextIndexEventListener on the classpath. Hibernate Search is not enabled.
+2015-12-14 21:43:40   INFO ConnectionProviderFactory:173 -Initializing connection provider: org.hibernate.connection.C3P0ConnectionProvider
+2015-12-14 21:43:40   INFO C3P0ConnectionProvider:103 -C3P0 using driver: com.mysql.jdbc.Driver at URL: jdbc:mysql://114.212.86.23/weibo
+2015-12-14 21:43:40   INFO C3P0ConnectionProvider:104 -Connection properties: {user=root, password=****}
+2015-12-14 21:43:40   INFO C3P0ConnectionProvider:107 -autocommit mode: false
+2015-12-14 21:43:40   WARN C3P0ConnectionProvider:232 -Both hibernate-style property 'hibernate.c3p0.max_statement' and c3p0-style property 'c3p0.max_statement' have been set in hibernate.properties. Hibernate-style property 'hibernate.c3p0.max_statement' will be used and c3p0-style property 'c3p0.max_statement' will be ignored!
+2015-12-14 21:43:40   WARN C3P0ConnectionProvider:232 -Both hibernate-style property 'hibernate.c3p0.time_out' and c3p0-style property 'c3p0.time_out' have been set in hibernate.properties. Hibernate-style property 'hibernate.c3p0.time_out' will be used and c3p0-style property 'c3p0.time_out' will be ignored!
+2015-12-14 21:43:40   WARN C3P0ConnectionProvider:232 -Both hibernate-style property 'hibernate.c3p0.min_size' and c3p0-style property 'c3p0.min_size' have been set in hibernate.properties. Hibernate-style property 'hibernate.c3p0.min_size' will be used and c3p0-style property 'c3p0.min_size' will be ignored!
+2015-12-14 21:43:40   WARN C3P0ConnectionProvider:232 -Both hibernate-style property 'hibernate.c3p0.max_size' and c3p0-style property 'c3p0.max_size' have been set in hibernate.properties. Hibernate-style property 'hibernate.c3p0.max_size' will be used and c3p0-style property 'c3p0.max_size' will be ignored!
+2015-12-14 21:43:40   INFO MLog:80 -MLog clients using log4j logging.
+2015-12-14 21:43:41   INFO C3P0Registry:204 -Initializing c3p0-0.9.1 [built 16-January-2007 14:46:42; debug? true; trace: 10]
+2015-12-14 21:43:41   INFO AbstractPoolBackedDataSource:462 -Initializing c3p0 pool... com.mchange.v2.c3p0.PoolBackedDataSource@39c08c1f [ connectionPoolDataSource -> com.mchange.v2.c3p0.WrapperConnectionPoolDataSource@174928e0 [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, debugUnreturnedConnectionStackTraces -> false, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge73s9d18liej29z301n|77e4c80f, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 30, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, nestedDataSource -> com.mchange.v2.c3p0.DriverManagerDataSource@fe0dfd6f [ description -> null, driverClass -> null, factoryClassLocation -> null, identityToken -> 1hge73s9d18liej29z301n|10b48321, jdbcUrl -> jdbc:mysql://114.212.86.23/weibo, properties -> {user=******, password=******} ], preferredTestQuery -> null, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false; userOverrides: {} ], dataSourceName -> null, factoryClassLocation -> null, identityToken -> 1hge73s9d18liej29z301n|7bb58ca3, numHelperThreads -> 3 ]
+2015-12-14 21:43:42   INFO Dialect:135 -Using dialect: org.hibernate.dialect.MySQLDialect
+2015-12-14 21:43:42   INFO JdbcSupportLoader:108 -Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2015-12-14 21:43:42   INFO SettingsFactory:126 -Database ->
+       name : MySQL
+    version : 5.7.10-log
+      major : 5
+      minor : 7
+2015-12-14 21:43:42   INFO SettingsFactory:132 -Driver ->
+       name : MySQL Connector Java
+    version : mysql-connector-java-5.1.38 ( Revision: fe541c166cec739c74cc727c5da96c1028b4834a )
+      major : 5
+      minor : 1
+2015-12-14 21:43:42   INFO TransactionFactoryFactory:62 -Using default transaction strategy (direct JDBC transactions)
+2015-12-14 21:43:42   INFO TransactionManagerLookupFactory:83 -No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+2015-12-14 21:43:42   INFO SettingsFactory:179 -Automatic flush during beforeCompletion(): disabled
+2015-12-14 21:43:42   INFO SettingsFactory:183 -Automatic session close at end of transaction: disabled
+2015-12-14 21:43:42   INFO SettingsFactory:190 -JDBC batch size: 15
+2015-12-14 21:43:42   INFO SettingsFactory:193 -JDBC batch updates for versioned data: disabled
+2015-12-14 21:43:42   INFO SettingsFactory:198 -Scrollable result sets: enabled
+2015-12-14 21:43:42   INFO SettingsFactory:206 -JDBC3 getGeneratedKeys(): enabled
+2015-12-14 21:43:42   INFO SettingsFactory:214 -Connection release mode: auto
+2015-12-14 21:43:42   INFO SettingsFactory:238 -Maximum outer join fetch depth: 2
+2015-12-14 21:43:42   INFO SettingsFactory:241 -Default batch fetch size: 1
+2015-12-14 21:43:42   INFO SettingsFactory:245 -Generate SQL with comments: disabled
+2015-12-14 21:43:42   INFO SettingsFactory:249 -Order SQL updates by primary key: disabled
+2015-12-14 21:43:42   INFO SettingsFactory:253 -Order SQL inserts for batching: disabled
+2015-12-14 21:43:42   INFO SettingsFactory:431 -Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+2015-12-14 21:43:42   INFO ASTQueryTranslatorFactory:47 -Using ASTQueryTranslatorFactory
+2015-12-14 21:43:42   INFO SettingsFactory:261 -Query language substitutions: {}
+2015-12-14 21:43:42   INFO SettingsFactory:266 -JPA-QL strict compliance: disabled
+2015-12-14 21:43:42   INFO SettingsFactory:271 -Second-level cache: enabled
+2015-12-14 21:43:42   INFO SettingsFactory:275 -Query cache: disabled
+2015-12-14 21:43:42   INFO SettingsFactory:406 -Cache region factory : org.hibernate.cache.impl.NoCachingRegionFactory
+2015-12-14 21:43:42   INFO SettingsFactory:285 -Optimize cache for minimal puts: disabled
+2015-12-14 21:43:42   INFO SettingsFactory:294 -Structured second-level cache entries: disabled
+2015-12-14 21:43:42   INFO SettingsFactory:323 -Statistics: disabled
+2015-12-14 21:43:42   INFO SettingsFactory:327 -Deleted entity synthetic identifier rollback: disabled
+2015-12-14 21:43:42   INFO SettingsFactory:343 -Default entity-mode: pojo
+2015-12-14 21:43:42   INFO SettingsFactory:347 -Named query checking : enabled
+2015-12-14 21:43:42   INFO SettingsFactory:351 -Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+2015-12-14 21:43:42   INFO SessionFactoryImpl:202 -building session factory
+2015-12-14 21:43:42   INFO BasicTypeRegistry:150 -Type registration [blob] overrides previous : org.hibernate.type.BlobType@1534f01b
+2015-12-14 21:43:42   INFO BasicTypeRegistry:150 -Type registration [java.sql.Blob] overrides previous : org.hibernate.type.BlobType@1534f01b
+2015-12-14 21:43:42   INFO BasicTypeRegistry:150 -Type registration [materialized_blob] overrides previous : org.hibernate.type.MaterializedBlobType@78e117e3
+2015-12-14 21:43:42   INFO BasicTypeRegistry:150 -Type registration [materialized_clob] overrides previous : org.hibernate.type.MaterializedClobType@2ea227af
+2015-12-14 21:43:42   INFO BasicTypeRegistry:150 -Type registration [wrapper_characters_clob] overrides previous : org.hibernate.type.CharacterArrayClobType@4386f16
+2015-12-14 21:43:42   INFO BasicTypeRegistry:150 -Type registration [wrapper_materialized_blob] overrides previous : org.hibernate.type.WrappedMaterializedBlobType@363ee3a2
+2015-12-14 21:43:42   INFO BasicTypeRegistry:150 -Type registration [clob] overrides previous : org.hibernate.type.ClobType@4690b489
+2015-12-14 21:43:42   INFO BasicTypeRegistry:150 -Type registration [java.sql.Clob] overrides previous : org.hibernate.type.ClobType@4690b489
+2015-12-14 21:43:42   INFO BasicTypeRegistry:150 -Type registration [characters_clob] overrides previous : org.hibernate.type.PrimitiveCharacterArrayClobType@79b06cab
+2015-12-14 21:43:42   INFO SessionFactoryObjectFactory:105 -Not binding factory to JNDI, no JNDI name configured
+2015-12-14 21:43:45   INFO CookiePool:30 -****************cookiePool线程start！****************
+2015-12-14 21:43:45   INFO UrlPool:31 -****************urlPool线程start！****************
+2015-12-14 21:43:45   INFO WeiboSpider:55 -****************Spider线程start！****************
+2015-12-14 21:43:45   INFO WeiboSpider:59 -urlPool is Empty...
+2015-12-14 21:43:45   INFO WeiboSpider:55 -****************Spider线程start！****************
+2015-12-14 21:43:45   INFO WeiboSpider:59 -urlPool is Empty...
+2015-12-14 21:43:46   INFO WeiboSpider:55 -****************Spider线程start！****************
+2015-12-14 21:43:46   INFO WeiboSpider:59 -urlPool is Empty...
+2015-12-14 21:43:46   INFO WeiboSpider:55 -****************Spider线程start！****************
+2015-12-14 21:43:46   INFO WeiboSpider:59 -urlPool is Empty...
+2015-12-14 21:43:47   INFO UrlPool:71 -本次待爬取URL总数为：760
+2015-12-14 21:43:47   INFO UrlPool:33 -****************urlPool线程finish！****************
+2015-12-14 21:43:49   INFO HttpUtil:25 -***************AntiCrawler detected***************
+2015-12-14 21:43:49   INFO HttpUtil:57 -***************new cookie is:PHPSESSID=19eaedc428f59f939a7746ec95e0f4fa;SUB=_2A257arfEDeThGeNN7lEW8yrLwjmIHXVWPkwMrDV6PUJbrdAKLWXEkWpBnwKpCVFMnIc-BhpqEu5da4V57g..;_T_WM=55cb2e7c74584a30a5a4bdd602a970fc;gsid_CTandWM=4ulX57061aYaxe9OPWaXbmsKycP;
+2015-12-14 21:43:49   INFO CookiePool:85 -add 3 cookies successful!
+2015-12-14 21:45:29   INFO Version:37 -Hibernate Commons Annotations 3.2.0.Final
+2015-12-14 21:45:29   INFO Environment:603 -Hibernate 3.6.4.Final
+2015-12-14 21:45:29   INFO Environment:636 -hibernate.properties not found
+2015-12-14 21:45:29   INFO Environment:814 -Bytecode provider name : javassist
+2015-12-14 21:45:29   INFO Environment:695 -using JDK 1.4 java.sql.Timestamp handling
+2015-12-14 21:45:29   INFO Configuration:2156 -configuring from resource: /hibernate.cfg.xml
+2015-12-14 21:45:29   INFO Configuration:2175 -Configuration resource: /hibernate.cfg.xml
+2015-12-14 21:45:29   INFO Configuration:789 -Reading mappings from resource : nju/iip/dto/WeiboAccount.hbm.xml
+2015-12-14 21:45:30   INFO Configuration:789 -Reading mappings from resource : nju/iip/dto/WeiboData.hbm.xml
+2015-12-14 21:45:30   INFO Configuration:2297 -Configured SessionFactory: null
+2015-12-14 21:45:30   INFO HbmBinder:353 -Mapping class: nju.iip.dto.WeiboAccount -> WeiboAccount
+2015-12-14 21:45:30   INFO HbmBinder:353 -Mapping class: nju.iip.dto.WeiboData -> WeiboData
+2015-12-14 21:45:30   INFO Configuration:1676 -Hibernate Validator not found: ignoring
+2015-12-14 21:45:30   INFO HibernateSearchEventListenerRegister:75 -Unable to find org.hibernate.search.event.FullTextIndexEventListener on the classpath. Hibernate Search is not enabled.
+2015-12-14 21:45:30   INFO ConnectionProviderFactory:173 -Initializing connection provider: org.hibernate.connection.C3P0ConnectionProvider
+2015-12-14 21:45:30   INFO C3P0ConnectionProvider:103 -C3P0 using driver: com.mysql.jdbc.Driver at URL: jdbc:mysql://114.212.86.23/weibo
+2015-12-14 21:45:30   INFO C3P0ConnectionProvider:104 -Connection properties: {user=root, password=****}
+2015-12-14 21:45:30   INFO C3P0ConnectionProvider:107 -autocommit mode: false
+2015-12-14 21:45:30   WARN C3P0ConnectionProvider:232 -Both hibernate-style property 'hibernate.c3p0.max_statement' and c3p0-style property 'c3p0.max_statement' have been set in hibernate.properties. Hibernate-style property 'hibernate.c3p0.max_statement' will be used and c3p0-style property 'c3p0.max_statement' will be ignored!
+2015-12-14 21:45:30   WARN C3P0ConnectionProvider:232 -Both hibernate-style property 'hibernate.c3p0.time_out' and c3p0-style property 'c3p0.time_out' have been set in hibernate.properties. Hibernate-style property 'hibernate.c3p0.time_out' will be used and c3p0-style property 'c3p0.time_out' will be ignored!
+2015-12-14 21:45:30   WARN C3P0ConnectionProvider:232 -Both hibernate-style property 'hibernate.c3p0.min_size' and c3p0-style property 'c3p0.min_size' have been set in hibernate.properties. Hibernate-style property 'hibernate.c3p0.min_size' will be used and c3p0-style property 'c3p0.min_size' will be ignored!
+2015-12-14 21:45:30   WARN C3P0ConnectionProvider:232 -Both hibernate-style property 'hibernate.c3p0.max_size' and c3p0-style property 'c3p0.max_size' have been set in hibernate.properties. Hibernate-style property 'hibernate.c3p0.max_size' will be used and c3p0-style property 'c3p0.max_size' will be ignored!
+2015-12-14 21:45:30   INFO MLog:80 -MLog clients using log4j logging.
+2015-12-14 21:45:30   INFO C3P0Registry:204 -Initializing c3p0-0.9.1 [built 16-January-2007 14:46:42; debug? true; trace: 10]
+2015-12-14 21:45:31   INFO AbstractPoolBackedDataSource:462 -Initializing c3p0 pool... com.mchange.v2.c3p0.PoolBackedDataSource@4097e958 [ connectionPoolDataSource -> com.mchange.v2.c3p0.WrapperConnectionPoolDataSource@1e208619 [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, debugUnreturnedConnectionStackTraces -> false, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge73s9d18lkr2esn6r1x|77e4c80f, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 30, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, nestedDataSource -> com.mchange.v2.c3p0.DriverManagerDataSource@4e55aa8 [ description -> null, driverClass -> null, factoryClassLocation -> null, identityToken -> 1hge73s9d18lkr2esn6r1x|10b48321, jdbcUrl -> jdbc:mysql://114.212.86.23/weibo, properties -> {user=******, password=******} ], preferredTestQuery -> null, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false; userOverrides: {} ], dataSourceName -> null, factoryClassLocation -> null, identityToken -> 1hge73s9d18lkr2esn6r1x|7bb58ca3, numHelperThreads -> 3 ]
+2015-12-14 21:45:31   INFO Dialect:135 -Using dialect: org.hibernate.dialect.MySQLDialect
+2015-12-14 21:45:31   INFO JdbcSupportLoader:108 -Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2015-12-14 21:45:31   INFO SettingsFactory:126 -Database ->
+       name : MySQL
+    version : 5.7.10-log
+      major : 5
+      minor : 7
+2015-12-14 21:45:31   INFO SettingsFactory:132 -Driver ->
+       name : MySQL Connector Java
+    version : mysql-connector-java-5.1.38 ( Revision: fe541c166cec739c74cc727c5da96c1028b4834a )
+      major : 5
+      minor : 1
+2015-12-14 21:45:31   INFO TransactionFactoryFactory:62 -Using default transaction strategy (direct JDBC transactions)
+2015-12-14 21:45:31   INFO TransactionManagerLookupFactory:83 -No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+2015-12-14 21:45:31   INFO SettingsFactory:179 -Automatic flush during beforeCompletion(): disabled
+2015-12-14 21:45:31   INFO SettingsFactory:183 -Automatic session close at end of transaction: disabled
+2015-12-14 21:45:31   INFO SettingsFactory:190 -JDBC batch size: 15
+2015-12-14 21:45:31   INFO SettingsFactory:193 -JDBC batch updates for versioned data: disabled
+2015-12-14 21:45:31   INFO SettingsFactory:198 -Scrollable result sets: enabled
+2015-12-14 21:45:31   INFO SettingsFactory:206 -JDBC3 getGeneratedKeys(): enabled
+2015-12-14 21:45:31   INFO SettingsFactory:214 -Connection release mode: auto
+2015-12-14 21:45:32   INFO SettingsFactory:238 -Maximum outer join fetch depth: 2
+2015-12-14 21:45:32   INFO SettingsFactory:241 -Default batch fetch size: 1
+2015-12-14 21:45:32   INFO SettingsFactory:245 -Generate SQL with comments: disabled
+2015-12-14 21:45:32   INFO SettingsFactory:249 -Order SQL updates by primary key: disabled
+2015-12-14 21:45:32   INFO SettingsFactory:253 -Order SQL inserts for batching: disabled
+2015-12-14 21:45:32   INFO SettingsFactory:431 -Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+2015-12-14 21:45:32   INFO ASTQueryTranslatorFactory:47 -Using ASTQueryTranslatorFactory
+2015-12-14 21:45:32   INFO SettingsFactory:261 -Query language substitutions: {}
+2015-12-14 21:45:32   INFO SettingsFactory:266 -JPA-QL strict compliance: disabled
+2015-12-14 21:45:32   INFO SettingsFactory:271 -Second-level cache: enabled
+2015-12-14 21:45:32   INFO SettingsFactory:275 -Query cache: disabled
+2015-12-14 21:45:32   INFO SettingsFactory:406 -Cache region factory : org.hibernate.cache.impl.NoCachingRegionFactory
+2015-12-14 21:45:32   INFO SettingsFactory:285 -Optimize cache for minimal puts: disabled
+2015-12-14 21:45:32   INFO SettingsFactory:294 -Structured second-level cache entries: disabled
+2015-12-14 21:45:32   INFO SettingsFactory:323 -Statistics: disabled
+2015-12-14 21:45:32   INFO SettingsFactory:327 -Deleted entity synthetic identifier rollback: disabled
+2015-12-14 21:45:32   INFO SettingsFactory:343 -Default entity-mode: pojo
+2015-12-14 21:45:32   INFO SettingsFactory:347 -Named query checking : enabled
+2015-12-14 21:45:32   INFO SettingsFactory:351 -Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+2015-12-14 21:45:32   INFO SessionFactoryImpl:202 -building session factory
+2015-12-14 21:45:32   INFO BasicTypeRegistry:150 -Type registration [blob] overrides previous : org.hibernate.type.BlobType@1534f01b
+2015-12-14 21:45:32   INFO BasicTypeRegistry:150 -Type registration [java.sql.Blob] overrides previous : org.hibernate.type.BlobType@1534f01b
+2015-12-14 21:45:32   INFO BasicTypeRegistry:150 -Type registration [materialized_blob] overrides previous : org.hibernate.type.MaterializedBlobType@78e117e3
+2015-12-14 21:45:32   INFO BasicTypeRegistry:150 -Type registration [materialized_clob] overrides previous : org.hibernate.type.MaterializedClobType@2ea227af
+2015-12-14 21:45:32   INFO BasicTypeRegistry:150 -Type registration [wrapper_characters_clob] overrides previous : org.hibernate.type.CharacterArrayClobType@4386f16
+2015-12-14 21:45:32   INFO BasicTypeRegistry:150 -Type registration [wrapper_materialized_blob] overrides previous : org.hibernate.type.WrappedMaterializedBlobType@363ee3a2
+2015-12-14 21:45:32   INFO BasicTypeRegistry:150 -Type registration [clob] overrides previous : org.hibernate.type.ClobType@4690b489
+2015-12-14 21:45:32   INFO BasicTypeRegistry:150 -Type registration [java.sql.Clob] overrides previous : org.hibernate.type.ClobType@4690b489
+2015-12-14 21:45:32   INFO BasicTypeRegistry:150 -Type registration [characters_clob] overrides previous : org.hibernate.type.PrimitiveCharacterArrayClobType@79b06cab
+2015-12-14 21:45:32   INFO SessionFactoryObjectFactory:105 -Not binding factory to JNDI, no JNDI name configured
+2015-12-14 21:45:34   INFO UrlPool:31 -****************urlPool线程start！****************
+2015-12-14 21:45:34   INFO WeiboSpider:55 -****************Spider线程start！****************
+2015-12-14 21:45:34   INFO WeiboSpider:59 -urlPool is Empty...
+2015-12-14 21:45:34   INFO WeiboSpider:55 -****************Spider线程start！****************
+2015-12-14 21:45:34   INFO WeiboSpider:59 -urlPool is Empty...
+2015-12-14 21:45:34   INFO CookiePool:30 -****************cookiePool线程start！****************
+2015-12-14 21:45:34   INFO WeiboSpider:55 -****************Spider线程start！****************
+2015-12-14 21:45:34   INFO WeiboSpider:59 -urlPool is Empty...
+2015-12-14 21:45:34   INFO WeiboSpider:55 -****************Spider线程start！****************
+2015-12-14 21:45:34   INFO WeiboSpider:59 -urlPool is Empty...
+2015-12-14 21:45:35   INFO UrlPool:71 -本次待爬取URL总数为：760
+2015-12-14 21:45:35   INFO UrlPool:33 -****************urlPool线程finish！****************
+2015-12-14 21:45:38   INFO HttpUtil:25 -***************AntiCrawler detected***************
+2015-12-14 21:45:38   INFO HttpUtil:57 -***************new cookie is:PHPSESSID=5843d231f9cad2318f34b3bb50f0dce5;SUB=_2A257arhSDeThGeNN7lEW8yrLwjmIHXVWPkyarDV6PUJbrdANLWP8kWpguw85Lbp6klrMo1nHw1eWNJjtFQ..;_T_WM=b25e253819aa549315e1ec4bd393c387;gsid_CTandWM=4ulX57061aYaxe9OPWaXbmsKycP;
+2015-12-14 21:45:38   INFO CookiePool:85 -add 3 cookies successful!
+2015-12-14 21:45:38   INFO HttpUtil:25 -***************AntiCrawler detected***************
+2015-12-14 21:45:38   INFO HttpUtil:57 -***************new cookie is:PHPSESSID=e7c8cfed91dffb5e28bd980d3299706a;SUB=_2A257arhRDeRhGeRN71YU9SfMzT6IHXVWPkyZrDV6PUJbrdANLW2jkWpt2qxxrWDLcAjlKnF7lNoGZZsd2w..;_T_WM=9444d3a01f0782e17395db3d94a09f4b;gsid_CTandWM=4uB157061tOFWvV3zIGIy9PVt10;
+2015-12-14 21:45:38   INFO HttpUtil:25 -***************AntiCrawler detected***************
+2015-12-14 21:45:38   INFO HttpUtil:57 -***************new cookie is:PHPSESSID=c1a5bb0b850740441ccb9872e88d2a93;SUB=_2A257arhSDeRhGedH6FAR9y3MzjmIHXVWPkyarDV6PUJbrdANLXjBkWoMhx7eCpjPeeAFV6vTH5skYPqyhQ..;_T_WM=3ccd24365e934f76792d6eb12c521c9f;gsid_CTandWM=4u5v57061iVdJ7cTFsEo086Ct0T;
+2015-12-14 21:45:38   INFO HttpUtil:25 -***************AntiCrawler detected***************
+2015-12-14 21:45:38   INFO HttpUtil:51 -the sum of cookies are:3
+2015-12-14 21:45:38   INFO HttpUtil:52 -***************begin sleep!!!!***************
+2015-12-14 21:45:39   INFO HttpUtil:25 -***************AntiCrawler detected***************
+2015-12-14 21:45:39   INFO HttpUtil:51 -the sum of cookies are:3
+2015-12-14 21:45:39   INFO HttpUtil:52 -***************begin sleep!!!!***************
