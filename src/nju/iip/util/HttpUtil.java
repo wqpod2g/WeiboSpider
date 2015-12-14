@@ -80,6 +80,10 @@ public class HttpUtil {
 			String value = e.attr("value");
 			sumPages = Integer.valueOf(value);
 		}
+		else{
+			sumPages = -1;
+			logger.error("getPageNum error",e);
+		}
 		return sumPages;
 	}
 	

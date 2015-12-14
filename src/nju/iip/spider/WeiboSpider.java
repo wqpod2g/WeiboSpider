@@ -35,6 +35,8 @@ public class WeiboSpider implements Runnable {
 			.getLogger(WeiboSpider.class);
 
 	private BlockingQueue<String> urlQueue;
+	
+	private WeiboDataDao wdd = new WeiboDataDao();
 
 	public WeiboSpider(BlockingQueue<String> urlQueue) {
 		this.urlQueue = urlQueue;
@@ -61,14 +63,15 @@ public class WeiboSpider implements Runnable {
 						logger.info("already crawler weibo numbers:" + sum);
 						count = 0;
 					}
-					WeiboDataDao wdd = new WeiboDataDao();
 					wdd.saveWeibo(weibo_list);
+					bf.saveBloomFilter();//持久化boolm过滤器
 				}
 			}
 		} catch (Exception e) {
 			logger.error("WeiboSpider error", e);
 			Thread.currentThread().interrupt();
 		}
+		logger.info("****************WeiboSpider线程stop！****************");
 	}
 
 	/**
@@ -102,7 +105,6 @@ public class WeiboSpider implements Runnable {
 				}
 				else {
 					bf.add(key);
-					bf.saveBloomFilter();//持久化boolm过滤器
 				}
 				String reg = "转发理由";
 				Elements cmtEle = weibo.select("div:contains(" + reg + ")");
@@ -177,12 +179,16 @@ public class WeiboSpider implements Runnable {
 	public static void main(String[] args) {
 		BlockingQueue<String> UrlQueue = new LinkedBlockingQueue<String>();
 		CookiePool cookiePool = new CookiePool();//cookie池
-		WeiboSpider spider = new WeiboSpider(UrlQueue);//爬虫任务
+		WeiboSpider spider1 = new WeiboSpider(UrlQueue);//爬虫任务1
+		WeiboSpider spider2 = new WeiboSpider(UrlQueue);//爬虫任务2
+		WeiboSpider spider3 = new WeiboSpider(UrlQueue);//爬虫任务3
 		UrlPool urlPool = new UrlPool(UrlQueue);//url池
 		ExecutorService service = Executors.newCachedThreadPool();
 		service.execute(cookiePool);
 		service.execute(urlPool);
-		service.execute(spider);
+		service.execute(spider1);
+		service.execute(spider2);
+		service.execute(spider3);
 	}
 
 }

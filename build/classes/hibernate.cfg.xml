@@ -3,28 +3,33 @@
 "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
 
 <hibernate-configuration>
-   <session-factory>
-   <property name="hibernate.dialect">
-      org.hibernate.dialect.MySQLDialect
-   </property>
-   <property name="hibernate.connection.driver_class">
-      com.mysql.jdbc.Driver
-   </property>
+	<session-factory>
+		<property name="hibernate.dialect">
+			org.hibernate.dialect.MySQLDialect
+		</property>
+		<property name="hibernate.connection.driver_class">
+			com.mysql.jdbc.Driver
+		</property>
 
-   <!-- Assume test is the database name -->
-   <property name="hibernate.connection.url">
-      jdbc:mysql://114.212.80.14/weibo
-   </property>
-   <property name="hibernate.connection.username">
-      root
-   </property>
-   <property name="hibernate.connection.password">
-      iip
-   </property>
+		<!-- Assume test is the database name -->
+		<property name="hibernate.connection.url">
+			jdbc:mysql://114.212.82.60/weibo
+		</property>
+		<property name="hibernate.connection.username">
+			root
+		</property>
+		<property name="hibernate.connection.password">
+			iip
+		</property>
 
-   <!-- List of XML mapping files -->
-   <mapping resource="nju/iip/dto/WeiboAccount.hbm.xml"/>
-   <mapping resource="nju/iip/dto/WeiboData.hbm.xml"/>
+		<property name="c3p0.min_size">10</property> <!--在连接池中可用数据库连接的最小数目 -->
+		<property name="c3p0.max_size">30</property> <!--在连接池中所有数据库连接的最大数目 -->
+		<property name="c3p0.time_out">1800</property> <!--设定数据库连接的超时时间 -->
+		<property name="c3p0.max_statement">50</property> <!--可以被缓存的PreparedStatement的最大数目 -->
 
-</session-factory>
+		<!-- List of XML mapping files -->
+		<mapping resource="nju/iip/dto/WeiboAccount.hbm.xml" />
+		<mapping resource="nju/iip/dto/WeiboData.hbm.xml" />
+
+	</session-factory>
 </hibernate-configuration>

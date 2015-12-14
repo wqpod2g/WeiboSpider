@@ -17,12 +17,12 @@ public class WeiboDataDao extends DAO{
 	public void saveWeibo(List<WeiboData> weibo_list) {
 		try{
 			begin();
+			getSession().flush();
+			getSession().clear(); 
 			for(WeiboData weibo:weibo_list) {
 				getSession().save(weibo);
 			}
 			commit();
-			getSession().flush();
-			getSession().clear(); 
 		}catch(Exception e) {
 			rollback();
 			logger.error("saveWeibo failed!",e);

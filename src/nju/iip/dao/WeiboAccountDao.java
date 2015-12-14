@@ -37,12 +37,12 @@ public class WeiboAccountDao extends DAO{
 	public void updateHistory(String accountUrl) {
 		try{
 			begin();
+			getSession().flush();
+			getSession().clear(); 
 			Query q = getSession().createQuery("update WeiboAccount a set a.history = 1 where accountUrl = :accountUrl");
 			q.setString("accountUrl", accountUrl);
 			q.executeUpdate();
 			commit();
-			getSession().flush();
-			getSession().clear(); 
 		}catch(HibernateException e) {
 			rollback();
     		logger.info("getAccountlist",e);
@@ -58,6 +58,8 @@ public class WeiboAccountDao extends DAO{
 		List<WeiboAccount> list = null;
 		try {
 			begin();
+			getSession().flush();
+			getSession().clear(); 
 			Query q = getSession().createQuery("from WeiboAccount");
 			list=q.list();
 		}catch (HibernateException e) {

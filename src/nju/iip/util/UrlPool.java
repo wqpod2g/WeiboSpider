@@ -55,6 +55,8 @@ public class UrlPool implements Runnable{
 			//全部爬取
 			if(history==0) {
 				sumPages = HttpUtil.getPageNum(url);
+				if(sumPages==-1)
+					continue;
 				wad.updateHistory(accountUrl);//标记为已全部爬取
 			}
 			//增量爬取
