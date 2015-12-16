@@ -8,27 +8,40 @@ package nju.iip.dto;
 public class WeiboData {
 	
 	private int id;
-	private String baseUrl;//微博所在页面链接
+	private String weiboUrl;
 	private String author;//作者
 	private String text;//正文
 	private int loves;//赞 数量
 	private int repost;//转发 数量
 	private int comment;//评论
-	private String time;//发布时间
+	private String postTime;//发布时间
 	private String device;//发布设备
-	private String inputTime; //爬取时间
+	private String crawlTime; //爬取时间
 	
+	
+	public String getCrawlTime() {
+		return crawlTime;
+	}
+	public void setCrawlTime(String crawlTime) {
+		this.crawlTime = crawlTime;
+	}
+	public String getPostTime() {
+		return postTime;
+	}
+	public void setPostTime(String postTime) {
+		this.postTime = postTime;
+	}
+	public String getWeiboUrl() {
+		return weiboUrl;
+	}
+	public void setWeiboUrl(String weiboUrl) {
+		this.weiboUrl = weiboUrl;
+	}
 	public int getId() {
 		return id;
 	}
 	public void setId(int id) {
 		this.id = id;
-	}
-	public String getBaseUrl() {
-		return baseUrl;
-	}
-	public void setBaseUrl(String baseUrl) {
-		this.baseUrl = baseUrl;
 	}
 	public String getAuthor() {
 		return author;
@@ -60,23 +73,11 @@ public class WeiboData {
 	public void setComment(int comment) {
 		this.comment = comment;
 	}
-	public String getTime() {
-		return time;
-	}
-	public void setTime(String time) {
-		this.time = time;
-	}
 	public String getDevice() {
 		return device;
 	}
 	public void setDevice(String device) {
 		this.device = device;
-	}
-	public String getInputTime() {
-		return inputTime;
-	}
-	public void setInputTime(String inputTime) {
-		this.inputTime = inputTime;
 	}
 
 }

@@ -13,7 +13,7 @@
 
 		<!-- Assume test is the database name -->
 		<property name="hibernate.connection.url">
-			jdbc:mysql://114.212.86.23/weibo
+			jdbc:mysql://192.168.31.162/weibo
 		</property>
 		<property name="hibernate.connection.username">
 			root

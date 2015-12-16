@@ -11,14 +11,14 @@
 		<id name="id" type="int" column="id">
 			<generator class="native" />
 		</id>
-		<property name="baseUrl" column="baseUrl" type="string" />
+		<property name="weiboUrl" column="weiboUrl" type="string" />
 		<property name="author" column="author" type="string" />
 		<property name="text" column="text" type="string" />
 		<property name="loves" column="loves" type="int" />
 		<property name="repost" column="repost" type="int" />
 		<property name="comment" column="comment" type="int" />
 		<property name="device" column="device" type="string" />
-		<property name="time" column="time" type="string" />
-		<property name="inputTime" column="inputTime" type="string" />
+		<property name="postTime" column="postTime" type="string" />
+		<property name="crawlTime" column="crawlTime" type="string" />
 	</class>
 </hibernate-mapping>

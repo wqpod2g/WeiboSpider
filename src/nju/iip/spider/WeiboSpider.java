@@ -37,11 +37,9 @@ public class WeiboSpider implements Runnable {
 	
 	private WeiboDataDao wdd = new WeiboDataDao();
 	
-	private int spiderID;
 
-	public WeiboSpider(BlockingQueue<String> urlQueue,int spiderID) {
+	public WeiboSpider(BlockingQueue<String> urlQueue) {
 		this.urlQueue = urlQueue;
-		this.spiderID = spiderID;
 	}
 	
 	private BloomFactory bf = BloomFactory.getInstance();
@@ -52,16 +50,16 @@ public class WeiboSpider implements Runnable {
 
 	@Override
 	public void run() {
-		logger.info("****************Spider线程start！****************");
+		logger.info("****************"+Thread.currentThread().getName()+" Spider线程start！****************");
 		try {
 			while (true) {
 				if(urlQueue.size()==0) {
-					logger.info("urlPool is Empty...");
+					logger.info(Thread.currentThread().getName()+" Spider:urlPool is Empty...waitting url put into urlPool");
 				}
 				String url = urlQueue.take();
 				if (url != null) {
 					String html = HttpUtil.getHTML(url);
-					List<WeiboData> weibo_list = parserWeibo(html,url);
+					List<WeiboData> weibo_list = parserWeibo(html);
 					count+= weibo_list.size();
 					if(count>100) {
 						synchronized(WeiboSpider.class) {
@@ -77,7 +75,7 @@ public class WeiboSpider implements Runnable {
 		} catch (Exception e) {
 			logger.error("WeiboSpider error", e);
 		}
-		logger.info("****************"+spiderID+"号Spider线程stop！****************");
+		logger.info("****************"+Thread.currentThread().getName()+" Spider线程stop！****************");
 	}
 
 	/**
@@ -86,7 +84,7 @@ public class WeiboSpider implements Runnable {
 	 * @param html
 	 * @return
 	 */
-	public List<WeiboData> parserWeibo(String html,String url) {
+	public List<WeiboData> parserWeibo(String html) {
 		
 		DateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 		DateFormat dateFormatYear = new SimpleDateFormat("yyyy");
@@ -119,30 +117,31 @@ public class WeiboSpider implements Runnable {
 							+ " 原文:" + text;
 				}
 				String device = weibo.getElementsByClass("ct").text();// 来自某某设备
-				String time = "";// 发文时间
+				String postTime = "";// 发文时间
 				int p = device.indexOf("来");
 				if (p > 0) {
-					time = device.substring(0, p);
+					postTime = device.substring(0, p);
 					device = device.substring(p);
 				}
-				if (time.contains("分钟前")) {
-					int n = Integer.parseInt(time.substring(0,
-							time.indexOf("分钟前")).trim());
+				if (postTime.contains("分钟前")) {
+					int n = Integer.parseInt(postTime.substring(0,
+							postTime.indexOf("分钟前")).trim());
 					Date date = new Date(System.currentTimeMillis() - n * 60000);
-					time = sdf.format(date).toString();
-				} else if (time.contains("今天")) {
-					time = time.substring(3, 8);
+					postTime = sdf.format(date).toString();
+				} else if (postTime.contains("今天")) {
+					postTime = postTime.substring(3, 8);
 					DateFormat Format = new SimpleDateFormat("yyyy-MM-dd");
 					String currentTime = Format.format(new Date());
-					time = currentTime.toString() + " " + time + ":00";
-				} else if (time.contains("月")) {
-					String month = time.substring(0, 2);
-					String day = time.substring(3, 5);
-					String hourAndMinute = time.substring(7, 12) + ":00";
-					time = currentYear + "-" + month + "-" + day + " "
+					postTime = currentTime.toString() + " " + postTime + ":00";
+				} else if (postTime.contains("月")) {
+					String month = postTime.substring(0, 2);
+					String day = postTime.substring(3, 5);
+					String hourAndMinute = postTime.substring(7, 12) + ":00";
+					postTime = currentYear + "-" + month + "-" + day + " "
 							+ hourAndMinute;
 				}
 				int attitude = 0, repost = 0, comment = 0;
+				String weiboUrl = "";
 				Elements urlEles = weibo.select("a[href]");
 				for (Element temp : urlEles) {
 					if (temp.text().contains("原文"))
@@ -160,7 +159,7 @@ public class WeiboSpider implements Runnable {
 						repost = Integer.parseInt(in);
 					}
 					if (u.contains("comment")) {
-
+						weiboUrl = u;
 						String in = temp.text();
 						int pos = in.indexOf("[");
 						in = in.substring(pos + 1, in.length() - 1);
@@ -168,14 +167,14 @@ public class WeiboSpider implements Runnable {
 					}
 				}
 				data.setAuthor(author);
-            	data.setBaseUrl(url);
+            	data.setWeiboUrl(weiboUrl);
             	data.setComment(comment);
             	data.setDevice(device);
             	data.setLoves(attitude);
             	data.setRepost(repost);
             	data.setText(text);
-            	data.setTime(time);
-            	data.setInputTime(sdf.format(new Date()));
+            	data.setPostTime(postTime);
+            	data.setCrawlTime(sdf.format(new Date()));
 				weibo_list.add(data);
 			}
 		}
@@ -185,10 +184,9 @@ public class WeiboSpider implements Runnable {
 	public static void main(String[] args) {
 		BlockingQueue<String> UrlQueue = new LinkedBlockingQueue<String>();
 		CookiePool cookiePool = new CookiePool();//cookie池
-		WeiboSpider spider1 = new WeiboSpider(UrlQueue,1);//爬虫任务1
-		WeiboSpider spider2 = new WeiboSpider(UrlQueue,2);//爬虫任务2
-		WeiboSpider spider3 = new WeiboSpider(UrlQueue,3);//爬虫任务3
-		WeiboSpider spider4 = new WeiboSpider(UrlQueue,4);//爬虫任务4
+		WeiboSpider spider1 = new WeiboSpider(UrlQueue);//爬虫任务1
+		WeiboSpider spider2 = new WeiboSpider(UrlQueue);//爬虫任务2
+		WeiboSpider spider3 = new WeiboSpider(UrlQueue);//爬虫任务3
 		UrlPool urlPool = new UrlPool(UrlQueue);//url池
 		ExecutorService service = Executors.newCachedThreadPool();
 		service.execute(cookiePool);
@@ -196,7 +194,6 @@ public class WeiboSpider implements Runnable {
 		service.execute(spider1);
 		service.execute(spider2);
 		service.execute(spider3);
-		service.execute(spider4);
 	}
 
 }

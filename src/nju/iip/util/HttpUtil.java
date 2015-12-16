@@ -49,7 +49,7 @@ public class HttpUtil {
 				times++;
 				if(times>CookiePool.getCookiesNum()) {
 					logger.info("the sum of cookies are:"+CookiePool.getCookiesNum());
-					logger.info("***************begin sleep!!!!***************");
+					logger.info("***************"+Thread.currentThread().getName()+" begin sleep!!!!***************");
 					Thread.sleep(20*60*1000);
 					times = 0;
 				}
